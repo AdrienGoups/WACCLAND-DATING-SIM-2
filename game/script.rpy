@@ -47,6 +47,16 @@ label start:
     # It's so not funny I hid it in the code!
     m "My real name is Mathias Cockland!"
 
+    pause 10
+
+    "The time has cometh for the Wacclandeth of Dating SIM.... 2!!!!!!!!!!"
+    "the revengeance of the electric boogaloo of CHUNGUS"
+    "No adrien I ain't fixin' the goddamn script"
+
+    #FR THIS TIME THIS IS THE start
+
+    "The year is 20XX, everyone plays fox at TAS level of perfection."
+
     # This ends the game.
 
     return
