@@ -18,41 +18,41 @@ label start:
 
     play music "bgm/chungus.mp3" fadeout (1.5)
 
-    scene black
+    #scene black
 
-    pause 1.5
+    #pause 1.5
     
-    show asami_neutral
+    #show asami_neutral
     
-    with Dissolve (1.5)
+    #with Dissolve (1.5)
     
-    a "So, you're here! Welcome to WACCLAND DaTING SIM 2, where the game isn't even started yet and I'm just here to test the character sprites"
+    #a "So, you're here! Welcome to WACCLAND DaTING SIM 2, where the game isn't even started yet and I'm just here to test the character sprites"
     
-    show asami_dumbass
-    hide asami_neutral
-    show miyuki_neutral with Dissolve(0.5):
-        xpos -300
-        ypos 100
-    show bob_neutral with Dissolve(0.5):
-        xpos 1000
-        ypos -50
+    #show asami_dumbass
+    #hide asami_neutral
+    #show miyuki_neutral with Dissolve(0.5):
+        #xpos -300
+        #ypos 100
+    #show bob_neutral with Dissolve(0.5):
+        #xpos 1000
+        #ypos -50
     
-    b "Hello, it is me Bob"
-    hide bob_neutral with Dissolve(0.5)
+    #b "Hello, it is me Bob"
+    #hide bob_neutral with Dissolve(0.5)
     
-    show masashi_neutral with Dissolve(0.5):
-        xpos 1000
-        ypos -50
-    a "Did you know that!"
+    #show masashi_neutral with Dissolve(0.5):
+        #xpos 1000
+        #ypos -50
+    #a "Did you know that!"
     # This joke isn't funny!
     # It's so not funny I hid it in the code!
-    m "My real name is Mathias Cockland!"
+    #m "My real name is Mathias Cockland!"
 
-    pause 10
+    #pause 10
 
-    "The time has cometh for the Wacclandeth of Dating SIM.... 2!!!!!!!!!!"
-    "the revengeance of the electric boogaloo of CHUNGUS"
-    "No adrien I ain't fixin' the goddamn script"
+    #"The time has cometh for the Wacclandeth of Dating SIM.... 2!!!!!!!!!!"
+    #"the revengeance of the electric boogaloo of CHUNGUS"
+    #"No adrien I ain't fixin' the goddamn script"
 
     # FR THIS TIME THIS IS THE start
 
