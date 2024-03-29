@@ -62,12 +62,13 @@ label start:
     "But even then, we had to fight it..."
 
     # MET UNE IMAGE DE LA PLANETE QUI SE FAIT ATTACKER OR SOME SHIT
+    scene destroyed_world with Dissolve (3)
 
-    pause 10
+    pause 5
 
     unk "MC, the only way you can save this world is to go back in time."
     unk "I will send you back, 6 months back from now."
-    unk "During these 6 months, you have one mission. One of the greatest importance"
+    unk "During these 6 months, you have one mission. One of the greatest importance..."
     unk "Go get bitches. At any cost, no matter if it's one or a thousand... You must get a Girlfriend!"
     m "I understand..."
     m "I'll do it!"
@@ -83,6 +84,20 @@ label start:
     c "Masashi Kamiya... Thoust grand quest begins here."
     c "Acquire a Maiden. That is thy task."
     c "Now, go forth with Wacc and Land, my child!"
+
+    play sound "sfx/bonk.mp3"
+
+    scene bedroom with dissolve
+    
+    stop music
+
+    m "Huh... I fell from my bed. I'm such a Epic gamer who has no bitches!"
+
+    play sound "sfx/vine boom.mp3"
+
+    show saul with dissolve
+
+    "Saul Goodman Jumpscare"
 
     # This ends the game.
 

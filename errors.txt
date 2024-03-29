@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 66: expected statement.
-    Pause 10
-            ^
+File "game/script.rpy", line 96: end of line expected.
+    show saul.png with Dissolve
+             ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Mar 29 11:11:53 2024
+Fri Mar 29 11:24:52 2024

@@ -46,3 +46,14 @@ image black:
 
 image white:
     "bg/white.png"
+
+image destroyed_world:
+    "bg/destroyed_world.png"
+    zoom 1.5
+
+image bedroom:
+    "bg/bedroom.png"
+    zoom 1.5
+
+image saul:
+    "saul.png"

@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 76, in script
-    scene black with dissolve (1.5)
-TypeError: 'Dissolve' object is not callable
+  File "game/script.rpy", line 96, in script
+    show saul with dissolve
+OSError: Couldn't find file 'sfx/vine boom.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 76, in script
-    scene black with dissolve (1.5)
+  File "game/script.rpy", line 96, in script
+    show saul with dissolve
   File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\ast.py", line 1363, in execute
     renpy.exports.with_statement(trans, paired=paired)
   File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\exports.py", line 1781, in with_statement
@@ -18,13 +18,24 @@ Full traceback:
     return self.interact(trans_pause=True,
   File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\display\core.py", line 2165, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\display\core.py", line 2608, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\display\core.py", line 2518, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-TypeError: 'Dissolve' object is not callable
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\display\core.py", line 3022, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\audio\audio.py", line 1205, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\audio\audio.py", line 1183, in periodic_thread_main
+    periodic_pass()
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\audio\audio.py", line 1125, in periodic_pass
+    c.periodic()
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'sfx/vine boom.mp3'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 WACCLAND DATING SIM 1.0
-Fri Mar 29 11:14:15 2024
+Fri Mar 29 11:27:25 2024
