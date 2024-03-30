@@ -25,6 +25,11 @@ image asami_kill:
     "char/asami_kill.png"
     ypos 1200 xpos 900
     zoom 0.55
+    
+image asami_smug:
+    "char/asami_smug.png"
+    ypos 1200 xpos 900
+    zoom 0.55
         
 image miyuki_neutral:
     "char/miyuki_neutral.png"
