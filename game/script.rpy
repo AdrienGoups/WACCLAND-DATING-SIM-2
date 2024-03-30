@@ -132,8 +132,8 @@ label start:
     m "What in the-???"
     unk "AHHHHH!!!! GOMENASAI!?!?!? WHATASHI WA GENERIC ANIME GIRL MOMENT #3??!!?!??!"
     "uh what the fuck is he cooking??????"
-    # mathias proceeds to run to school, fall down the stairs but he do a quadruple backflip, lands on his hand on the rail before pushing him up and landing on the rail
-    # where he grinds like sonic before landing safely, but not before a random girl falls down the stairs and push him down
+    # I ain't cookin' more until you figure out what to do
+    
     play sound "sfx/vine boom.mp3"
 
     show saul with dissolve
