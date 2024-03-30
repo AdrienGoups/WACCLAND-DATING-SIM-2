@@ -48,7 +48,7 @@ image masashi_neutral:
 
 image yomki:
     "char/yomki.png"
-    ypos 1200
+    ypos 1100
     xpos 900
     zoom 0.55
 
