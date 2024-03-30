@@ -303,9 +303,9 @@ label start:
 
     show yomki with Dissolve (0.5)
 
-    y "Hey bro, wanna head to WaccDonald with me!"
+    y "Hey bro, wanna head to WaccDonald's with me!"
     m "(If I go with him, I won't be able to patch things out right away.)"
-    m "(But Yomki's my friend since elemantary school.)"
+    m "(But Yomki's my friend since elementary school.)"
 
     menu: 
         "What will you do?"
