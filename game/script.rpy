@@ -62,9 +62,11 @@ label start:
     "But even then, we had to fight it..."
 
     # MET UNE IMAGE DE LA PLANETE QUI SE FAIT ATTACKER OR SOME SHIT
-    scene destroyed_world with Dissolve (3)
+    scene destroyed_world with Dissolve (3):
+        ypos -0.3 xpos -0.3
+        ease 10.0 ypos 0
 
-    pause 5
+    pause 0.5
 
     "The land was scorched to the ground..."
     "They had come, the ones who are only known as the *REDACTED FOR SPOILERS*..."
@@ -80,7 +82,7 @@ label start:
     scene black with Dissolve (1.5)
     scene white with Dissolve (3)
 
-    play music ("bgm/god.mp3") fadeout (1.5)
+    play music ("bgm/man....mp3") fadeout (1.5)
 
     show chungus with Dissolve (3)
 
@@ -133,7 +135,8 @@ label start:
     unk "AHHHHH!!!! GOMENASAI!?!?!? WHATASHI WA GENERIC ANIME GIRL MOMENT #3??!!?!??!"
     "uh what the fuck is he cooking??????"
     # I ain't cookin' more until you figure out what to do
-    
+    m "(What the hell is happening right now? It's like my life has been turned into a generic anime!)"
+
     play sound "sfx/vine boom.mp3"
 
     show saul with dissolve
