@@ -10,6 +10,7 @@ define c = Character("Big Chungus")
 define a = Character("Asami")
 define t = Character("Teacher")
 define i = Character("Mr. Izumi")
+define y = Character("Yomki")
 define unk = Character("???")
 
 
