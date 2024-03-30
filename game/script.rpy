@@ -195,7 +195,7 @@ label start:
     hide asami_mad with Dissolve (1)
 
     "She then goes to sit right behind you, unfortunately..."
-    i "Well, Good Morning everyone. My name is Izumi, just a plain' ol' teacher."
+    i "Well, Good Morning everyone. My name is Nanami Izumi, just a plain' ol' teacher."
     "Female Student 1" "Wow, he's so cool and hot!"
     "Female Student 2" "He looks so mature!"
 
