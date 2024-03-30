@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 96: end of line expected.
-    show saul.png with Dissolve
-             ^
+File "game/script.rpy", line 157: expected 'simple_expression' not found.
+    show asami_neutral with with Dissolve (1)
+                            ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Mar 29 11:24:52 2024
+Sat Mar 30 14:46:28 2024

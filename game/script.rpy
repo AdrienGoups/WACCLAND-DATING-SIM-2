@@ -8,6 +8,8 @@ define u = Character("Usui")
 define b = Character("Bob")
 define c = Character("Big Chungus")
 define a = Character("Asami")
+define t = Character("Teacher")
+define i = Character("Mr. Izumi")
 define unk = Character("???")
 
 
@@ -109,7 +111,7 @@ label start:
     m "Dammit, the curse of shitty games has befallen me."
     m "..."
     m "...Wait... yeah probably should get up..."
-    m "Yet another captivating day of school awaits me."
+    m "Yet another captivating school year awaits me..."
 
     scene black with dissolve
 
@@ -136,6 +138,81 @@ label start:
     "uh what the fuck is he cooking??????"
     # I ain't cookin' more until you figure out what to do
     m "(What the hell is happening right now? It's like my life has been turned into a generic anime!)"
+    "Tu décideras si sa sa reste parce que moi je vais juste le skip"
+    # KING CRIMSON
+    "The school is now right in view. And still 15 minutes until the bell rings!"
+    m "(And now I'm standing at the doors of Waccland Peak Academy.)"
+    m "(First founded in 1869, this school was the gathering place for all the most brilliant minds.)"
+    m "(It's name derives from Kevin Waccland, the saviour of the world, inventor of Wa Ku Yo!)"
+    m "(A place for such amazing people, named after the most amazing person.)"
+    m "(Well, now it's just a normal high school that even normal people can go. That's how I got here.)"
+    m "Well I better go to my class before the bell rings"
+    "You follow the indications to your new class, class 1-C"
+    scene classroom with Dissolve (1)
+    "As you enter the door, you quickly maneuver through the desks to arrive at your assigned desk, right beside the window in the second to last row."
+    m "(I'm still sleepy... shouldn't have gamed all night...)"
+    "You slowly close your eyes..."
+    scene black with Dissolve (2)
+    unk "HEYYYYYY!!!!!"
+    scene classroom with Dissolve (2)
+
+    m "What?!"
+    show asami_neutral with Dissolve (1)
+
+    unk "You've just woken up for school and you're gonna go back to sleep now?"
+    m "Who the fuck are you?"
+    unk "Me? That's not important right now! This is Waccland Dating SIM 2: the game of all time!"
+    m "(What's with this sussy girl, I'm just minding my own business and she starts critize my gamer lifestyle of sleeping through the entire class.)"
+    m "(And what in the fuck even is a Waccland Dating SIm 2???)"
+    unk "What's with that reaction! Very well, I shall introduce myself."
+
+    show asami_dumbass
+    # change to smug when it will be available
+    hide asami_neutral
+
+    a "The name's LASTNAME Asami! You better remember it, for I am the one who shall soon rule this world!!!"
+    m "(This kid's delusional... I better ignore her, maybe she'll leave soon.)"
+    a "Well, i just arrived here, can't afford to be picky with friends!"
+    a "And you were conveniently in the desk right in front of me!"
+    a "My parents came here for work and with that I arrive here with no one I know!"
+    a "Back home, I had like a hundred friends. Now i have to start back at 0. But I won't let that stop me!"
+    a "After all, I'm not a loser gamer that talks to no one!"
+    m "(What is she even talking about, I stopped listening 6 lines ago...)"
+    m "Sigh..."
+
+    hide asami_dumbass
+    show asami_mad
+
+    a "Hey are you ignoring me!"
+    m "I sure am, now leave me alone."
+    a "That's not very polite! You're talking to such a cute girl and you don't even bother listening to a word she says!"
+    m "I don't see the correlation between your points. I'm trying to sleep here."
+    a "The audacity! Are you stupid?"
+    a "Don't answer. I already know you are!"
+    a "Who even greets a stranger like that?"
+    
+    "Suddenly, the doors slams open."
+    t "Quiet everyone, class is going to start soon!"
+    a "We'll continue this later! I won't stop until you understand the errors of your ways!"
+    t "I said quiet, Asami!"
+    a "Okay..."
+
+    hide asami_mad with Dissolve (1)
+
+    "She then goes to sit right behind you, unfortunately..."
+    i "Well, Good Morning everyone. My name is Izumi, just a plain' ol' teacher."
+    "Female Student 1" "Wow, he's so cool and hot!"
+    "Female Student 2" "He looks so mature!"
+    m "(Man, all the female students are talking about the new teacher...)"
+    m "(This is so cliché, can't they just, I don't know... concentrate on the class instead????)"
+    m "(It's almost always the same as soon as we have a young male teacher.)"
+    m "(Well, no use complaining about that on the first day of school, they'll stop once they realize he's just a plain old teacher.)"
+    "You sat through the entire class between dream and reality, contemplating the meaning of life and why you decided to make another Waccland DaTING SIM."
+
+    "Ding dong bing bong!"
+
+    i "Well, looks like time is up, we'll continue next class were we left off."
+
 
     play sound "sfx/vine boom.mp3"
 
