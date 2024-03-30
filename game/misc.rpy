@@ -52,6 +52,12 @@ image yomki:
     xpos 900
     zoom 0.55
 
+image izumi_neutral:
+    "char/izumi_neutral.png"
+    ypos 1200
+    xpos 900
+    zoom 0.55
+
 image chungus:
     "char/chungus.png"
         

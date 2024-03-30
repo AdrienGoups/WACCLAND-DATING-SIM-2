@@ -181,6 +181,12 @@ label start:
     a "Who even greets a stranger like that?"
     
     "Suddenly, the doors slams open."
+
+    show asami_mad:
+        ease 1 xpos 1600
+
+    show izumi_neutral with Dissolve (0.5)
+
     t "Quiet everyone, class is going to start soon!"
     a "We'll continue this later! I won't stop until you understand the errors of your ways!"
     t "I said quiet, Asami!"
@@ -192,6 +198,9 @@ label start:
     i "Well, Good Morning everyone. My name is Izumi, just a plain' ol' teacher."
     "Female Student 1" "Wow, he's so cool and hot!"
     "Female Student 2" "He looks so mature!"
+
+    hide izumi_neutral with Dissolve (0.5)
+
     m "(Man, all the female students are talking about the new teacher...)"
     m "(This is so cliché, can't they just, I don't know... concentrate on the class instead????)"
     m "(It's almost always the same as soon as we have a young male teacher.)"
@@ -202,7 +211,11 @@ label start:
 
     "Ding dong bing bong!"
 
+    show izumi_neutral with Dissolve (0.5)
+
     i "Well, looks like time is up, we'll continue next class were we left off."
+
+    hide izumi_neutral with Dissolve (0.5)
 
     show asami_kill with Dissolve (0.5)
     
@@ -221,8 +234,8 @@ label start:
     hide masashi_neutral with Dissolve (0.5)
 
     show asami_neutral with Dissolve(0.5):
-        xpos 1000
-        ypos 30
+        xpos 900
+        ypos 140
 
     unk "Yeah, for real, this guy has never lost before. Trust."
 
@@ -237,8 +250,8 @@ label start:
 
     hide asami_neutral
     show asami_mad:
-        xpos 1000
-        ypos 30
+        xpos 900
+        ypos 140
 
     a "How dare you insinuate that I am this amoeba's girlfriend!"
     a "This guy's been ignoring me for the entire time while I talked about my life story."
@@ -254,8 +267,8 @@ label start:
 
     hide asami_mad
     show asami_unsure:
-        xpos 1000
-        ypos 30
+        xpos 900
+        ypos 140
 
     m "..."
     a "..."
@@ -263,8 +276,8 @@ label start:
     
     hide asami_unsure
     show asami_mad:
-        xpos 1000
-        ypos 30
+        xpos 900
+        ypos 140
     
     a "It's too late now! We'll never be friends! I'm done talking to you!"
     
@@ -276,7 +289,12 @@ label start:
         ease 1.5 xpos 400 ypos 100
 
     y "Bruh. I guess better luck next time MC."
-    y "I gotta"
+    y "I gotta go now, bye."
+
+    hide yomki with Dissolve (0.5)
+
+    m "(She later came back after realizing it's still 10 in the morning.)"
+    m "(Well, not that I really care.)"
 
     "but suddenly"
 
