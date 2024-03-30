@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 157: expected 'simple_expression' not found.
-    show asami_neutral with with Dissolve (1)
-                            ^
+File "game/script.rpy", line 258: expected end of line
+    play music ("bgm/alphen.mp3") Fadeout (3)
+                                  ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat Mar 30 14:46:28 2024
+Sat Mar 30 16:31:01 2024

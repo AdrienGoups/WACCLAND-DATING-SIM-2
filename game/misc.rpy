@@ -26,8 +26,8 @@ image asami_kill:
     ypos 1200 xpos 900
     zoom 0.55
     
-image asami_smug:
-    "char/asami_smug.png"
+image asami_unsure:
+    "char/asami_unsure.png"
     ypos 1200 xpos 900
     zoom 0.55
         
@@ -83,3 +83,8 @@ image bedroom:
 
 image saul:
     "saul.png"
+
+image billy:
+    "char/billy.png"
+    ypos 1700 xpos 900
+    zoom 0.4

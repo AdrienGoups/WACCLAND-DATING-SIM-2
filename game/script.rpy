@@ -203,6 +203,8 @@ label start:
     "Ding dong bing bong!"
 
     i "Well, looks like time is up, we'll continue next class were we left off."
+
+    show asami_kill with Dissolve (0.5)
     
     a "But for us it's now, I-STILL-HAVEN'T-ASKED-FOR-YOUR-NAME-kun!"
     m "Class just finished and you're already rambling..."
@@ -232,19 +234,83 @@ label start:
     m "(Unfortunately, he isn't in my class this year.)"
     y "Sup, it's me Yomki. What you tryin' to do with my bro?"
     y "Huh, don't tell me MC has a girlfriend now???????"
+
+    hide asami_neutral
+    show asami_mad:
+        xpos 1000
+        ypos 30
+
     a "How dare you insinuate that I am this amoeba's girlfriend!"
     a "This guy's been ignoring me for the entire time while I talked about my life story."
     y "Can we skip dialogue here?"
     m "Nah, bro. This is a visual novel, if you skipped everything you wouldn't even have a game."
-    y "I have no idea where to make this go adrien please help me."
-    y "btw yes i am definitely the real yomki, the true admin of Waccland Discord Server."
+    y "I have no idea whats going on."
+    a "Returning to the original subject, Kamiya-kun, I require an apology."
+    m "Why should I need to apology, I didn't do anything. You're the one who's annoying me"
+    a "'Didn't do anything', You ignored me and then you call me annoying!"
+    y "Guys, does it even matter?"
+    y "You are not enemies... Nobody here has any enemies."
+    y "Thus, you two are not enemies."
 
+    hide asami_mad
+    show asami_unsure:
+        xpos 1000
+        ypos 30
+
+    m "..."
+    a "..."
+    m "I'm sorry Asami, I shouldn't have ignored you. I was rude even though I barely knew you..."
+    
+    hide asami_unsure
+    show asami_mad:
+        xpos 1000
+        ypos 30
+    
+    a "It's too late now! We'll never be friends! I'm done talking to you!"
+    
+    hide asami_mad with Dissolve (1)
+
+    m "(She leaves the class running. I think she forgot that classes still aren't done for the day. Maybe she'll realize this and return soon.)"
+
+    show yomki:
+        ease 1.5 xpos 400 ypos 100
+
+    y "Bruh. I guess better luck next time MC."
+    y "I gotta"
+
+    "but suddenly"
 
     play sound "sfx/vine boom.mp3"
 
     show saul with dissolve
 
     "Saul Goodman Jumpscare"
+    hide saul
+
+    stop music
+
+    "HE appears."
+    "HE approaches YOU."
+
+    show billy
+    play music ("bgm/alphen.mp3") fadeout (3)
+
+    "Billy" "YO ITS ME BILLY WACCLAND SMP IV HERE TO TELL YOU TO GET BITCHES LOSER!!!!!!!!"
+    "Billy" "COCK AMIRITE FELLAS"
+    "Billy" "Anyway, this is YOUR Waccland DaTING SIM 2: Electric Boogaloo, now go now."
+    "With Wacc and land."
+    "YOu suddenly remember Big CHungus'S words."
+    m "NO WAY I NEED TO COOK"
+    m "BE MY GIRLFRIEND ASAMI"
+    a "Fuck no! WTF!"
+    y "Damn, such a rizzler."
+    m "(I...I-I.... failed....?)"
+    m "(My sigma rizz failed me...??????)"
+    m "THIS GAME SUCKS"
+    m "Fuck this shit I'm OUT!"
+    "You then jump off the window and die"
+    play sound "sfx/vine boom.mp3"
+    "The end."
 
     # This ends the game.
 
