@@ -241,7 +241,7 @@ label start:
 
     show yomki with Dissolve (0.5):
         xpos 0
-        ypos 100
+        ypos 25
 
     m "(This guy is my good friend Yomki, I have no idea why he's backing up my obvious bullshit.)"
     m "(Unfortunately, he isn't in my class this year.)"
@@ -286,15 +286,62 @@ label start:
     m "(She leaves the class running. I think she forgot that classes still aren't done for the day. Maybe she'll realize this and return soon.)"
 
     show yomki:
-        ease 1.5 xpos 400 ypos 100
+        ease 1.5 xpos 400 ypos 25
 
     y "Bruh. I guess better luck next time MC."
     y "I gotta go now, bye."
 
     hide yomki with Dissolve (0.5)
 
+    m "(What a chad, this dude.)"
+
     m "(She later came back after realizing it's still 10 in the morning.)"
     m "(Well, not that I really care.)"
+    "The rest of the day goes by without any other incident."
+    "Ding dong bing bong."
+    m "(Maybe I should try to patch things up with Asami, if I let things like this, it's probably only gonna bring me trouble.)"
+
+    show yomki with Dissolve (0.5)
+
+    y "Hey bro, wanna head to WaccDonald with me!"
+    m "(If I go with him, I won't be able to patch things out right away.)"
+    m "(But Yomki's my friend since elemantary school.)"
+
+    menu: 
+        "What will you do?"
+
+        "Talk to Asami":
+            jump AsamiEvent1
+        "Hang out with Yomki":
+            jump YomkiEvent1
+
+label YomkiEvent1:
+
+    # TrueEnding Flag 1 here btw (Yes it's mandatory)
+    m "(Finally, I decide to hang out with my bro Yomki.)"
+    m "I'm coming! We're taking nuggets for sure!"
+
+    jump Day1EventEnd
+
+label AsamiEvent1:
+
+    # +1 Asami Rizz Point
+
+    m "(After thinking about it, I gotta fix things up.)"
+    m "Sorry, not right now. I have something to do."
+    y "Huh, something to do?"
+    y "Oh yeah Dark Souls XX just dropped."
+    y "I gotta go get it from Epic Games UK."
+    y "Well good luck with Manx the Souder Requiem Over Heaven!"
+
+    hide yomki with Dissolve (0.5)
+
+    m "(I couldn't even say anything before he left.)"
+    m "Well whatever."
+
+    jump Day1EventEnd
+
+label Day1EventEnd:
 
     "but suddenly"
 
