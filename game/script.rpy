@@ -106,7 +106,6 @@ label start:
     m "I feel like I should be remembering something important just now..."
     m "Dammit, the curse of shitty games has befallen me."
     m "..."
-    
     m "...Wait... yeah probably should get up..."
     m "Yet another captivating day of school awaits me."
 
@@ -114,8 +113,27 @@ label start:
 
     "You quickly prepare yourself for school."
     "You also vaguely question why you suddenly started to think out loud, but you dismiss the idea pretty quickly"
-    
+    m "Whatever, I'm leaving now!.... Why am I yelling this, I literally live alone..."
 
+    scene residential with dissolve
+
+    play music "bgm/2.ogg"
+    
+    m "Huh...? Something feels different today..."
+    m "I should probably hurry up"
+    "You bolt towards the school quickly dodging the cars as you pass through crosswalks on your way there."
+    "A set of stairs separate you from the entrance to the school."
+    "As your foot approaches the floor, your body begins to plummet towards the ground."
+    m "Oh shit, I'm gonna die!"
+    "Mustering up your determination to not end your life prematurally, you execute a quadruple backflip before griping the rail with your hands and pulling yourself up on the rail."
+    "Now with your feets on the rail, you grind down the remainder of the stairs before landing safely at the bottom."
+    m "Damn, it's like I'm the protagonist or something!"
+    "Suddenly, a scream echoes out behind before you're pushed to the ground by a great force."
+    m "What in the-???"
+    unk "AHHHHH!!!! GOMENASAI!?!?!? WHATASHI WA GENERIC ANIME GIRL MOMENT #3??!!?!??!"
+    "uh what the fuck is he cooking??????"
+    # mathias proceeds to run to school, fall down the stairs but he do a quadruple backflip, lands on his hand on the rail before pushing him up and landing on the rail
+    # where he grinds like sonic before landing safely, but not before a random girl falls down the stairs and push him down
     play sound "sfx/vine boom.mp3"
 
     show saul with dissolve
