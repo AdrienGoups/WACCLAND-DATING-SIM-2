@@ -89,10 +89,14 @@ label start:
 
     show chungus with Dissolve (3)
 
+    c "It is nice to meet you, sussy boi."
+    c "I am the being known as Big Chungus,"
+    c "the god of this world."
     c "Masashi Kamiya... Thoust grand quest begins here."
     c "It all begins here..."
     c "Acquire a Maiden. That is thy task."
     c "Now, go forth with Wacc and Land, my child!"
+    c "For this is YOUR Waccland Dating SIM 2: Electric Boogaloo."
 
     play sound "sfx/bonk.mp3"
 
@@ -355,16 +359,21 @@ label Day1EventEnd:
 
     stop music
 
-    "HE appears."
+    "You feel a strong aura approaching."
+
+    "Someone enters the classroom."
     "HE approaches YOU."
 
-    show billy
+    show billy with Dissolve (2):
+        xalign 0.7
+        ypos 25
     play music ("bgm/alphen.mp3") fadeout (3)
 
     "Billy" "YO ITS ME BILLY WACCLAND SMP IV HERE TO TELL YOU TO GET BITCHES LOSER!!!!!!!!"
     "Billy" "COCK AMIRITE FELLAS"
-    "Billy" "Anyway, this is YOUR Waccland DaTING SIM 2: Electric Boogaloo, now go now."
+    "Billy" "So basically, this is YOUR Waccland DaTING SIM 2: Electric Boogaloo, now go now."
     "With Wacc and land."
+    hide billy with Dissolve (1)
     "YOu suddenly remember Big CHungus'S words."
     m "NO WAY I NEED TO COOK"
     m "BE MY GIRLFRIEND ASAMI"

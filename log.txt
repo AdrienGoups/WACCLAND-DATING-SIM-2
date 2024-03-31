@@ -1,13 +1,13 @@
-2024-03-31 00:11:26 UTC
+2024-03-31 00:22:47 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.1.24030407
 
 Early init took 0.07s
-Loading error handling took 0.05s
-Loading script took 0.90s
+Loading error handling took 0.04s
+Loading script took 0.17s
 Loading save slot metadata took 0.21s
 Loading persistent took 0.00s
-Running init code took 0.09s
+Running init code took 0.05s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
