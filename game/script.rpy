@@ -788,7 +788,6 @@ label Day1EventEnd:
     m "(No use thinking about this shit more than necessary.)"
 
     m "Uhhhhh tf do i cook??????"
-
     "but suddenly"
 
     play sound "sfx/vine boom.mp3"
@@ -801,7 +800,6 @@ label Day1EventEnd:
     stop music fadeout (3)
 
     "You feel a strong aura approaching."
-
     "Someone enters the classroom."
     "HE approaches YOU."
 
