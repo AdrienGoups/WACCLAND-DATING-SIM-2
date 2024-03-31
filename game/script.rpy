@@ -105,11 +105,11 @@ label start:
     stop music
 
     m "Huh..."
-    "A blinding light passes through the curtains straight into your face..."
-    "You realize that you have overslept and that your alarm has been ringing for a good 15 minutes"
+    m "A blinding light passes through the curtains straight into my face..."
+    m "(I realize that I have overslept and that my alarm has been ringing for a good 15 minutes.)"
     m "Isn't 15 minutes a bit much?!"
     # nah i'd win
-    "You quickly turn off the alarm"
+    m "(I quickly turn off the alarm.)"
     m "..."
     m "The hell was this dream??"
     m "I feel like I should be remembering something important just now..."
@@ -120,8 +120,8 @@ label start:
 
     scene black with dissolve
 
-    "You quickly prepare yourself for school."
-    "You also vaguely question why you suddenly started to think out loud, but you dismiss the idea pretty quickly"
+    m "(I quickly prepare myself for school.)"
+    m "(I also vaguely question why I suddenly started to think out loud, but I dismiss the idea pretty quickly.)"
     m "Whatever, I'm leaving now!.... Why am I yelling this, I literally live alone..."
 
     scene residential with dissolve
@@ -131,20 +131,20 @@ label start:
     m "Huh...? Something feels different today..."
     m "Probably nothing..."
     m "I should probably hurry up"
-    "You bolt towards the school quickly dodging the cars as you pass through crosswalks on your way there."
-    "A set of stairs separate you from the entrance to the school."
-    "The school is now right in view. And still 15 minutes until the bell rings."
-    m "(And now I'm standing at the doors of Waccland Peak Academy.)"
+    m "(I bolt towards the school quickly dodging the cars as I pass through crosswalks on my way there.)"
+    m "(A set of stairs separate me from the entrance to the school.)"
+    m "(The school is now right in view. And still 15 minutes until the bell rings.)"
+    m "(And now I'm standing at the doors of Waccland's Peak Academy.)"
     m "(First founded in 1869, this school was the gathering place for all the most brilliant minds.)"
     m "(It's name derives from Kevin Waccland, the saviour of the world, inventor of Wa Ku Ho!)"
     m "(A place for such amazing people, named after the most amazing person.)"
     m "(Well, now it's just a normal high school that even normal people can go. That's how I got here.)"
     m "Well I better go to my class before the bell rings"
-    "You follow the indications to your new class, class 1-C"
+    m "(I follow the indications to your new class, class 1-C)"
     scene classroom with Dissolve (1)
-    "As you enter the door, you quickly maneuver through the desks to arrive at your assigned desk, right beside the window in the second to last row."
+    m "As I enter the door, I quickly maneuver through the desks to arrive at your assigned desk, right beside the window in the second to last row."
     m "(I'm still sleepy... shouldn't have gamed all night...)"
-    "You slowly close your eyes..."
+    m "I slowly close my eyes..."
     scene black with Dissolve (2)
     unk "HEYYYYYY!!!!!"
     scene classroom with Dissolve (2)
@@ -198,7 +198,7 @@ label start:
 
     hide asami_mad with Dissolve (1)
 
-    "She then goes to sit right behind you, unfortunately..."
+    m "She then goes to sit right behind me, unfortunately..."
     i "Well, Good Morning everyone. My name is Nanami Izumi, just a plain' ol' teacher."
     "Female Student 1" "Wow, he's so cool and hot!"
     "Female Student 2" "He looks so mature!"
@@ -209,9 +209,9 @@ label start:
     m "(This is so cliché, can't they just, I don't know... concentrate on the class instead????)"
     m "(It's almost always the same as soon as we have a young male teacher.)"
     m "(Well, no use complaining about that on the first day of school, they'll stop once they realize he's just a plain old teacher.)"
-    "You sat through the entire class between dream and reality, contemplating the meaning of life and why you decided to game all night."
-    "You briefly wonder if this whole scenario was schemed by someone..."
-    "...Altough you quickly dismiss the idea."
+    m "I sat through the entire class between dream and reality, contemplating the meaning of life and why I decided to game all night."
+    m "I briefly wonder if this whole scenario was schemed by someone..."
+    m "...Altough I quickly dismiss the idea."
 
     "Ding dong bing bong!"
 
@@ -357,8 +357,7 @@ label AsamiEvent1:
     m "(After thinking about it, I gotta fix things up.)"
     m "Sorry, not right now. I have something to do."
     y "Huh, something to do?"
-    y "Oh yeah Dark Souls XX just dropped."
-    y "I gotta go get it from Epic Games UK."
+    y "Oh wait never mind, I gotta no-life dark souls XX"
     y "Well good luck with Manx the Souder Requiem Over Heaven!"
 
     hide yomki with Dissolve (0.5)
@@ -384,7 +383,6 @@ label AsamiEvent1:
     hide asami_judge with Dissolve (0.5)
 
     m "(She continued walking down the stairs, ignoring me)"
-    m "Don't ignore me!"
 
     show asami_mad with Dissolve (0.5)
 
@@ -393,8 +391,8 @@ label AsamiEvent1:
     hide asami_mad with Dissolve (0.5)
 
     m "(She glances at me once before continuing.)"
-    m "Wait for me!"
-    m "(I go down the stairs and find her annoyed by my persistence.)"
+    m "(I didn't go there just for nothing!)"
+    m "(I go down the stairs, although she seems annoyed by my persistence.)"
 
     show asami_judge with Dissolve (0.5)
 
@@ -407,6 +405,7 @@ label AsamiEvent1:
 
     a "If you become my friend, then I'll gladly accept it!"
     m "..."
+    m "(Is she stupid or what...?)"
     m "(I began wondering if I should accept.)"
     m "(On one hand, the entire case will be solved. But...)"
     pause 0.1
@@ -434,23 +433,13 @@ label AsamiEvent1:
     m "(Man, I already regret my choice.)"
     m "(I may have accidently ruined my entire year.)"
     m "(Too late to go back.)"
-    m "(Asami then grabbed her back she put on the floor when I interrupted her.)"
+    m "(Asami then grabbed her bag that she put on the floor when I interrupted her.)"
 
     hide asami_happy with Dissolve (0.5)
 
     m "(She left without saying anything else.)"
     m "(So, here I am... left alone wondering what to do now.)"
     m "Sigh.... guess I'll go home"
-
-    # Kamiya tries to apologize again to Asami
-    # Asami seems to be ignoring him
-    # right before leaving she calls out to him
-    # asami tells Kamiya that she'll forgive him if he accepts her as a friend
-    # Kamiya wonders if he really should accept her apology seeing as she's fucking annoying
-    # But since you chose to talk with her you decide to accept her deal
-    # Asami tells kamiya that of course you'd accept her deal since she's so cute with a smug face (allegedly)
-    # Asami then takes her bag and leaves without saying anything else
-    # Kamiya immediatly regrets his actions
 
     jump Day1EventEnd
 
