@@ -464,8 +464,18 @@ label Day1EventEnd:
     m "Especially since I barely slept last night."
     m "(Or did something make me exhausted this morning.)"
     m "(My memories seems a bit hazy.)"
-    m "(Maybe it's the chicken nuggets thats hitting.)"
-    m "(...that doesn't make any sense, why the fuck would chicken do that?)"
+    if Yomki_Event_1:
+        m "(Maybe it's the chicken nuggets thats hitting.)"
+        m "(...that doesn't make any sense, why the fuck would chicken do that?)"
+        
+    #YOMKI EVENT END
+    
+    else:
+        m "(That's weird...)"
+        m "(I don't remember eating something weird...)"
+        
+    #END OF ROUTE SPLIT
+    
     m "(Meh, it's probably nothing!)"
 
     scene black with Dissolve (1)
@@ -502,7 +512,7 @@ label Day1EventEnd:
 
         a "Hey Kamiya, good morning!"
         a "Don't you feel blessed being graced by such a cute girl in the morning?"
-        m "No, I don't thank you very much."
+        m "No, I don't, thank you very much."
         
         show asami_judge
         hide asami_happy
@@ -612,14 +622,14 @@ label Day1EventEnd:
 
     show yomki with Dissolve (0.5)
 
-    y "Anyway bro, we spent all these days griding in Dark Souls XX."
+    y "Anyway bro, we spent all these days grinding in Dark Souls XX."
     y "It's about time we go grind in real life."
     y "Let's go hit the gym and get GAINS after school!"
     m "(I could do what Yomki said, but I'm also intrigued by that girl...)"
 
     menu:
 
-        "Hit the gym with yo bro Yomki.":
+        "Hit the gym with your bro Yomki.":
             jump YomkiEvent2
         "Talk to the girl on the rooftop.":
             jump MiyukiEvent1
@@ -628,7 +638,7 @@ label Day1EventEnd:
         #The True Route
         $ Yomki_Event_2 = True
 
-        m "(I can't abandon my bro. We gotta get gains!!!!!)"
+        m "(I can't abandon my bro. We gotta get gains!)"
         m "Hell yeah, bro!"
         m "(We then left school to go the gym after class ended.)"
 
@@ -652,22 +662,22 @@ label Day1EventEnd:
         show bob_neutral with Dissolve (1)
 
         unk "Sup, bébé chat. You here to get gains as well?"
-        m "Who the fuck are you?"
-        m "(Who the hell starts a conversation with someone by calling them bébé chat.)"
-        m "Eeeeh... yeah."
+        m "Who the hell are you?"
+        m "(Who even starts a conversation with someone by calling them bébé chat?)"
+        m "Huhhh... yeah."
         unk "Damn, I go here every day. I'm gonna get as buff as a JoJo character."
         unk "Do you take the Sauce?"
         m "The fuck you mean sauce?"
         unk "The Sauce. Don't you know what Sauce is?"
-        b "Anyway, the name's Yasuhiro Bob, you can call me Bob, or bébé chat, IDC."
+        b "Anyway, the name's Yasuhiro Bob, you can call me Bob, or bébé chat, I don't really care."
         m "(Sauce, does he mean like, steroids? Of course I don't take that.)"
         m "Well, my name is Masashi Kamiya, you can call me MC."
         b "Okay, bébé chat."
         m "I didn't say you could call me that."
-        m "But to answer your question, no. Why the fuck would I take steroids."
+        m "But to answer your question, no. Why would I take steroids."
         b "Huh, what do you mean? The Sauce man!"
         b "I mean Ice Cream sandwiches."
-        m "Huh! But that's not even sauce."
+        m "Huh?! But that's not even sauce."
         b "It is if your as bébé chat as me."
         
         show bob_neutral:
@@ -677,9 +687,9 @@ label Day1EventEnd:
             xpos 0 ypos 25
 
         y "What's taking you so long, MC. It's not long to get water."
-        y "Who the fuck dis???"
+        y "Who the fuck this???"
         y "Didn't know you were gay, MC!!?!?!"
-        m "TF you mean, I just met this dude."
+        m "The fuck you mean, I just met this dude."
         b "Anyway, *With deep ass voice* later bébés chats."
 
         hide bob_neutral with Dissolve(0.5)
@@ -687,10 +697,10 @@ label Day1EventEnd:
             ease 1 xpos 400 ypos 25
 
         y "Whaaaaaatt theee heeeeeeelllllllll..."
-        m "(Very intersting character...)"
+        m "(Very intersting person...)"
         m "(I better act like nothing ever happenned.)"
         m "(It would be better for my mental health.)"
-        y "BTW, where's my water?"
+        y "By the way, where's my water?"
         m "Comin' right up!"
         m "(After this, me and Yomki went our separate ways and I headed back home.)"
 
@@ -704,20 +714,20 @@ label Day1EventEnd:
         m "Sorry bro, not today. I have no energy."
         y "You better not be thinking of talking to that girl again. That would be cringe."
         m "Nah, nah, this ain't it."
-        m "A sigma such as I would never fall to some lowly temptation like this!"
+        m "A gamer such as I would never fall to some lowly temptation like this!"
         y "That's true bro. G'day."
 
         hide yomki with Dissolve (0.5)
 
-        m "(Yomki then left to his class.)"
+        m "(Yomki then left to go to his class.)"
         m "(I feel bad for lying, but a chance like this will never present itself ever again.)"
-        m "(I go back to the rooftop after class, with some chance she'll be there.)"
+        m "(I go back to the rooftop after class, with some chance she'll be there again.)"
 
         scene rooftop with Dissolve (0.5)
 
         play music ("bgm/6.ogg") fadeout (1)
 
-        m "(Class ended and I went straight to the rooftop.)"
+        m "(Class ended, and I went straight to the rooftop.)"
         
         show miyuki_neutral with Dissolve (0.5)
 
@@ -735,7 +745,7 @@ label Day1EventEnd:
         show miyuki_neutral with Dissolve (0.5)
         # changer l'expression pour une meilleure
 
-        unk "Huh? The fuck is wrong with this guy?"
+        unk "Huh? The hell is wrong with this guy?"
 
         # serious face
 
@@ -749,7 +759,7 @@ label Day1EventEnd:
         unk "Don't know anything about it. Never bothered to watch it."
         m "(Damn, my luck ran out. She's a fake.)"
         m "(A damn normie. What a waste of my time.)"
-        m "(Well, after all the trouble I went through might as well ask for her name.)"
+        m "(Well, after all the trouble I went through, might as well ask for her name.)"
         m "Well, sorry for bothering you. But before I go, could I at least know your name?"
 
         #change expression
@@ -759,10 +769,10 @@ label Day1EventEnd:
         #change to miyuki neutral
 
         mi "My name is Mochizuki Miyuki. Do you have anything else to say? I'm quite busy after all."
-        m "(If she's so busy, then why the hell is she alone on the rooftop.)"
+        m "(If she's so busy, then why is she alone on the rooftop?)"
         m "(Whatever, I got what I asked for, time to leave.)"
         m "Then goodbye, Mochizuki-san."
-        m "(I quickly leave before the cringe kills me.)"
+        m "(I quickly leave before the embarassment of revealing myself to a fake fan kills me.)"
 
         scene corridor with Dissolve (1)
 
@@ -779,7 +789,8 @@ label Day1EventEnd:
 
     if Yomki_Event_2:
 
-        m "(That Bob guy was weird as hell. But he still has rizz even though it's fuckin' weird.)"
+        m "(That Bob guy was weird as hell...)"
+        m "(Why does he insist on calling ice cream sandwiches ''Sauce''...)"
 
     elif Miyuki_Event_2:
 
@@ -792,7 +803,30 @@ label Day1EventEnd:
         "I WILL CUT IT DOWN."
         "TF IS THIS SHIT."
 
-    m "(No use thinking about this shit more than necessary.)"
+    m "(No use thinking about this more than necessary.)"
+    m "(I should just go to sleep...)"
+
+    scene black Dissolve(0.5)
+
+    "The next day..."
+
+    scene residential with Dissolve(0.5)
+
+    m "(Day 3 of my new school life, and it's not going very well...)"
+    m "(Everyone I've met thus far has been either completely insane or kind of assholes.)"
+    m "(I do wonder what other quirky people I will meet next...)"
+    m "(But I sure wish this streak of weirdness would end soon...)"
+    m "(I don't mind weird stuff happening once in a while... but this is a bit much.)"
+
+    scene classroom with Dissolve(0.5)
+
+    m "(I sit down and attend my classes like usual.)"
+    m "(The classes go by without much interesting happening.)"
+
+    "Ding dong bing bong"
+
+    m "Guess the day's over."
+    m ""
 
     m "Uhhhhh tf do i cook??????"
     "but suddenly"
