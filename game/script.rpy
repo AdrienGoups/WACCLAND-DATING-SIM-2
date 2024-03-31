@@ -318,6 +318,7 @@ label start:
 label YomkiEvent1:
 
     # TrueEnding Flag 1 here btw (Yes it's mandatory)
+    # +1 Yomki Rizz Point
     m "(Finally, I decide to hang out with my bro Yomki.)"
     m "I'm coming! We're taking nuggets for sure!"
 
