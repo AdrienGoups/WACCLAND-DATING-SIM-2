@@ -30,6 +30,21 @@ image asami_unsure:
     "char/asami_unsure.png"
     ypos 1200 xpos 900
     zoom 0.55
+
+image asami_judge:
+    "char/asami_judge.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image asami_happy:
+    "char/asami_happy.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image asami_intrigued:
+    "char/asami_intrigued.png"
+    ypos 1200 xpos 900
+    zoom 0.55
         
 image miyuki_neutral:
     "char/miyuki_neutral.png"
@@ -89,6 +104,10 @@ image bedroom:
 
 image waccdonald:
     "bg/waccdonald.png"
+    zoom 1.5
+
+image corridor:
+    "bg/corridor.png"
     zoom 1.5
 
 image saul:

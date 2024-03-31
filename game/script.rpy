@@ -365,6 +365,89 @@ label AsamiEvent1:
 
     m "(I couldn't even say anything before he left.)"
     m "Well whatever."
+    m "(She left already, so I have to run after her.)"
+    m "(I quickly packed up my things and left.)"
+
+    scene corridor with Dissolve (1)
+
+    m "(I see her walking towards the stairs to leave.)"
+    m "(I quickly chase after her and yell out:)"
+    m "Asami wait!"
+    
+    show asami_judge with Dissolve (0.5)
+
+    a "Eh?"
+    a "..."
+    m "I wanted to apologize again for earlier."
+    a "..."
+
+    hide asami_judge with Dissolve (0.5)
+
+    m "(She continued walking down the stairs, ignoring me)"
+    m "Don't ignore me!"
+
+    show asami_mad with Dissolve (0.5)
+
+    a "..."
+
+    hide asami_mad with Dissolve (0.5)
+
+    m "(She glances at me once before continuing.)"
+    m "Wait for me!"
+    m "(I go down the stairs and find her annoyed by my persistence.)"
+
+    show asami_judge with Dissolve (0.5)
+
+    a "..."
+    a "Kamiya-kun... if you really want to apoligize to me..."
+    a "I'll accept your apology only on one condition."
+
+    hide asami_judge
+    show asami_smug
+
+    a "If you become my friend, then I'll gladly accept it!"
+    m "..."
+    m "(I began wondering if I should accept.)"
+    m "(On one hand, the entire case will be solved. But...)"
+    pause 0.1
+    m "(Man, she really is annoying.)"
+    m "(Well, I went to the trouble and all of going to apologize.)"
+    m "(I take a deep breath before sealing my fate.)"
+    m "..."
+    m "Okay, I accept. I'll become your friend."
+
+    hide asami_smug
+    show asami_intrigued
+
+    a "You really mean it...?"
+
+    hide asami_intrigued
+    show asami_smug
+
+    a "Well, of course you'd accept!"
+    a "You couldn't possibly decline being friends with such a cute girl!"
+
+    hide asami_smug
+    show asami_happy
+
+    a "Just be glad you're now friends with someone as great as me!"
+    m "(Man, I already regret my choice.)"
+    m "(I may have accidently ruined my entire year.)"
+    m "(Too late to go back.)"
+    m "(Asami then grabbed her back she put on the floor when I interrupted her.)"
+    m "(She left without saying anything else.)"
+    m "(So, here I am... left alone wondering what to do now.)"
+    m "Sigh.... guess I'll go home"
+
+    # Kamiya tries to apologize again to Asami
+    # Asami seems to be ignoring him
+    # right before leaving she calls out to him
+    # asami tells Kamiya that she'll forgive him if he accepts her as a friend
+    # Kamiya wonders if he really should accept her apology seeing as she's fucking annoying
+    # But since you chose to talk with her you decide to accept her deal
+    # Asami tells kamiya that of course you'd accept her deal since she's so cute with a smug face (allegedly)
+    # Asami then takes her bag and leaves without saying anything else
+    # Kamiya immediatly regrets his actions
 
     jump Day1EventEnd
 
