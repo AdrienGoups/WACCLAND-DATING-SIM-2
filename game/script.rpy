@@ -140,9 +140,9 @@ label start:
     m "(A place for such amazing people, named after the most amazing person.)"
     m "(Well, now it's just a normal high school that even normal people can go. That's how I got here.)"
     m "Well I better go to my class before the bell rings"
-    m "(I follow the indications to your new class, class 1-C)"
+    m "(I follow the indications to my new class, class 1-C)"
     scene classroom with Dissolve (1)
-    m "As I enter the door, I quickly maneuver through the desks to arrive at your assigned desk, right beside the window in the second to last row."
+    m "As I enter the door, I quickly maneuver through the desks to arrive at my assigned desk, right beside the window in the second to last row."
     m "(I'm still sleepy... shouldn't have gamed all night...)"
     m "I slowly close my eyes..."
     scene black with Dissolve (2)
