@@ -54,7 +54,7 @@ image miyuki_neutral:
 image bob_neutral:
     "char/bob_neutral.png"
     ypos 1100 xpos 900
-    zoom 0.7
+    zoom 0.55
 
 image usui_neutral:
     "char/usui_neutral.png"
@@ -68,8 +68,7 @@ image masashi_neutral:
 
 image yomki:
     "char/yomki.png"
-    ypos 1100
-    xpos 900
+    ypos 1100 xpos 900
     zoom 0.55
 
 image izumi_neutral:
@@ -121,6 +120,10 @@ image club:
 
 image rooftop:
     "bg/rooftop.png"
+    zoom 1.5
+
+image gym:
+    "bg/gym.png"
     zoom 1.5
 
 image saul:

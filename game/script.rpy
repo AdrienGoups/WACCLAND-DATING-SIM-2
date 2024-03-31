@@ -14,7 +14,10 @@ define y = Character("Yomki")
 define mi = Character("Miyuki")
 define unk = Character("???")
 
-
+$ Asami_Event_1 = False
+$ Yomki_Event_1 = False
+$ Yomki_Event_2 = False
+$ Miyuki_Event_2 = False
 
 # The game starts here.
 
@@ -325,7 +328,7 @@ label YomkiEvent1:
     # TrueEnding Flag 1 here btw (Yes it's mandatory)
     # +1 Yomki Rizz Point
     $ Yomki_Event_1 = True
-    $ Asami_Event_1 = False
+
     m "(Finally, I decide to hang out with my bro Yomki.)"
     m "I'm coming! We're taking nuggets for sure!"
 
@@ -357,7 +360,7 @@ label AsamiEvent1:
 
     # +1 Asami Rizz Point
     $ Asami_Event_1 = True
-    $ Yomki_Event_1 = False
+
     m "(After thinking about it, I gotta fix things up.)"
     m "Sorry, not right now. I have something to do."
     y "Huh, something to do?"
@@ -616,15 +619,87 @@ label Day1EventEnd:
 
     label YomkiEvent2:
         #The True Route
+        $ Yomki_Event_2 = True
+
         m "(I can't abandon my bro. We gotta get gains!!!!!)"
+        m "Hell yeah, bro!"
+        m "(We then left school to go the gym.)"
+
+        scene gym with Dissolve (1)
+        play music ("bgm/bro time.mp3") fadeout (1)
+        show yomki with Dissolve (0.5)
+
+        y "One more bro."
+        m "Ngyaaaaahhhhh!!!!!"
+        y "Heck yeah, bro! You da man!"
+        m "(We passed time training in the gym.)"
+        m "I'm about done for today now."
+        y "Yeah, more than that and we're gonna literally die."
+        m "Wait a sec, gonna buy you a drink."
+        y "No way."
+        
+        hide yomki with Dissolve(0.5)
+
+        m "(I then went to the vending machine to get a drink for me and Yomki)"
+
+        show bob_neutral with Dissolve (1)
+
+        unk "Sup, bébé chat. You here to get gains as well?"
+        m "Who the fuck are you?"
+        m "(Who the hell starts a conversation with someone by calling them bébé chat.)"
+        m "Eeeeh... yeah."
+        unk "Damn, I go here every day. I'm gonna get as buff as a JoJo character."
+        unk "Do you take the Sauce?"
+        m "The fuck you mean sauce?"
+        unk "The Sauce. Don't you know what Sauce is?"
+        b "Anyway, the name's Yasuhiro Bob, you can call me Bob, or bébé chat, IDC."
+        m "(Sauce, does he mean like, steroids? Of course I don't take that.)"
+        m "Well, my name is Masashi Kamiya, you can call me MC."
+        b "Okay, bébé chat."
+        m "I didn't say you could call me that."
+        m "But to answer your question, no. Why the fuck would I take steroids."
+        b "Huh, what do you mean? The Sauce man!"
+        b "I mean Ice Cream sandwiches."
+        m "Huh! But that's not even sauce."
+        b "It is if your as bébé chat as me."
+        
+        show bob_neutral:
+            ease 1 xpos 1400 ypos 1100
+
+        show yomki with Dissolve(1):
+            xpos 0 ypos 25
+
+        y "What's taking you so long, MC. It's not long to get water."
+        y "Who the fuck dis???"
+        y "Didn't know you were gay, MC!!?!?!"
+        m "TF you mean, I just met this dude."
+        b "Anyway, *With deep ass voice* later bébés chats."
+
+        hide bob_neutral with Dissolve(0.5)
+        show yomki:
+            ease 1 xpos 400 ypos 25
+
+        y "Whaaaaaatt theee helllllllll..."
+        m "(Very intersting character...)"
+        m "(I better act like nothing ever happenned.)"
+        m "(It would be better for my mental health.)"
+        y "BTW, where's my water?"
+        m "Comin' right up!"
+        m "(After this, me and Yomki went our separate ways and I headed back home.)"
 
         jump Day2EventEnd
 
     label MiyukiEvent1:
 
+        $ Miyuki_Event_2 = True
+
         jump Day2EventEnd
 
     label Day2EventEnd:
+
+    show bedroom with Dissolve(1)
+    play music ("bgm/bedroom.mp3") fadeout (1)
+
 
     m "Uhhhhh tf do i cook??????"
 
