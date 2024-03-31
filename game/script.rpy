@@ -602,6 +602,30 @@ label Day1EventEnd:
 
     show yomki with Dissolve (0.5)
 
+    y "Anyway bro, we spent all these days griding in Dark Souls XX."
+    y "It's about time we go grind in real life."
+    y "Let's go hit the gym and get GAINS!"
+    m "(I could do what Yomki said, but I'm also intrigued by that girl...)"
+
+    menu:
+
+        "Hit the gym with yo bro Yomki.":
+            jump YomkiEvent2
+        "Talk to the girl on the rooftop.":
+            jump MiyukiEvent1
+
+    label YomkiEvent2:
+        #The True Route
+        m "(I can't abandon my bro. We gotta get gains!!!!!)"
+
+        jump Day2EventEnd
+
+    label MiyukiEvent1:
+
+        jump Day2EventEnd
+
+    label Day2EventEnd:
+
     m "Uhhhhh tf do i cook??????"
 
     "but suddenly"
