@@ -435,6 +435,9 @@ label AsamiEvent1:
     m "(I may have accidently ruined my entire year.)"
     m "(Too late to go back.)"
     m "(Asami then grabbed her back she put on the floor when I interrupted her.)"
+
+    hide asami_happy with Dissolve (0.5)
+
     m "(She left without saying anything else.)"
     m "(So, here I am... left alone wondering what to do now.)"
     m "Sigh.... guess I'll go home"
