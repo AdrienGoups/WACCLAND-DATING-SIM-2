@@ -87,6 +87,10 @@ image bedroom:
     "bg/bedroom.png"
     zoom 1.5
 
+image waccdonald:
+    "bg/waccdonald.png"
+    zoom 1.5
+
 image saul:
     "saul.png"
 

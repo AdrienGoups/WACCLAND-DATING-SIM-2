@@ -326,6 +326,8 @@ label YomkiEvent1:
     m "(Finally, I decide to hang out with my bro Yomki.)"
     m "I'm coming! We're taking nuggets for sure!"
 
+    play music ("bgm/5.ogg") fadein (1)
+
     hide yomki with Dissolve (0.5)
     scene waccdonald with Dissolve (1)
     show yomki with Dissolve (0.5)
@@ -342,7 +344,9 @@ label YomkiEvent1:
     y "Nah bro! MANX THE SOUDER!"
     m "NO WAY FRFR???!?!?!?"
     y "No cap, bro."
-
+    m "(Me and Yomki finish our meal. Time passes quickly as we discuss the strategies we used for each bosses.)"
+    m "(After a while we decided to go back home.)"
+    hide yomki with Dissolve (0.5)
 
     jump Day1EventEnd
 
@@ -366,6 +370,20 @@ label AsamiEvent1:
 
 label Day1EventEnd:
 
+    scene bedroom with Dissolve (1)
+    play music ("bgm/bedroom.mp3") fadein (1)
+
+    m "Man, today was exhausting... what was that girl's problem!"
+    m "Aside from that, school looks as boring as ever."
+    m "I hope something interesting would happen soon..."
+    m "At least it wouldn't be this boring."
+    m "Well, I'm pretty tired from today, might as well go to sleep early."
+    m "Especially since I barely slept last night."
+    m "(Or did something make me exhausted this morning.)"
+    m "(My memories seems a bit hazy.)"
+    m "(Maybe it's the chicken nuggets thats hitting.)"
+    m "(...that doesn't make any sense, why the fuck would chicken do that?)"
+
     "but suddenly"
 
     play sound "sfx/vine boom.mp3"
@@ -385,7 +403,7 @@ label Day1EventEnd:
     show billy with Dissolve (2):
         xalign 0.7
         ypos 25
-    play music ("bgm/alphen.mp3") fadeout (3)
+    play music ("bgm/alphen.mp3") fadein (1)
 
     "Billy" "YO ITS ME BILLY WACCLAND SMP IV HERE TO TELL YOU TO GET BITCHES LOSER!!!!!!!!"
     "Billy" "COCK AMIRITE FELLAS"
