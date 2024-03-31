@@ -374,7 +374,7 @@ label Day1EventEnd:
     m "(My sigma rizz failed me...??????)"
     m "THIS GAME SUCKS"
     m "Fuck this shit I'm OUT!"
-    "You then jump off the window and die"
+    "You then jump off from the window and die"
     play sound "sfx/vine boom.mp3"
     "The end."
 
