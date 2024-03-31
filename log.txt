@@ -1,13 +1,13 @@
-2024-03-31 14:54:08 UTC
+2024-03-31 15:07:22 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.1.24030407
 
 Early init took 0.07s
 Loading error handling took 0.03s
-Loading script took 0.33s
+Loading script took 0.31s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.06s
+Running init code took 0.05s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
@@ -27,8 +27,8 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.06s
@@ -45,7 +45,7 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
 Resetting cache.
-Early init took 55.24s
+Early init took 42.28s
 Loading error handling took 0.03s
 Loading script took 0.18s
 Loading save slot metadata took 0.03s
@@ -71,7 +71,7 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Interface start took 0.04s
@@ -87,10 +87,30 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "game/script.rpy", line 494, in script
+    if Asami_Event_1:
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\ast.py", line 1842, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 494, in <module>
+    if Asami_Event_1:
+NameError: name 'Asami_Event_1' is not defined
+
+While running game code:
+  File "game/script.rpy", line 494, in script
+    if Asami_Event_1:
+  File "game/script.rpy", line 494, in <module>
+    if Asami_Event_1:
+NameError: name 'Asami_Event_1' is not defined
 Resetting cache.
-Early init took 185.40s
+Early init took 110.04s
 Loading error handling took 0.02s
-Loading script took 0.18s
+Loading script took 0.19s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 Running init code took 0.03s
@@ -112,12 +132,12 @@ Init translation took 0.03s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
+Save screen analysis took 0.02s
 Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.01s
 Save bytecode. took 0.01s
 Running _start took 0.00s
-Interface start took 0.05s
+Interface start took 0.04s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -130,3 +150,30 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
+
+Full traceback:
+  File "game/script.rpy", line 496, in script
+    if Asami_Event_1:
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\ast.py", line 1842, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 496, in <module>
+    if Asami_Event_1:
+NameError: name 'Asami_Event_1' is not defined
+
+While running game code:
+  File "game/script.rpy", line 496, in script
+    if Asami_Event_1:
+  File "game/script.rpy", line 496, in <module>
+    if Asami_Event_1:
+NameError: name 'Asami_Event_1' is not defined
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

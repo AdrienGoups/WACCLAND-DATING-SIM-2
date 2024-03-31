@@ -324,6 +324,8 @@ label YomkiEvent1:
 
     # TrueEnding Flag 1 here btw (Yes it's mandatory)
     # +1 Yomki Rizz Point
+    $ Yomki_Event_1 = True
+    $ Asami_Event_1 = False
     m "(Finally, I decide to hang out with my bro Yomki.)"
     m "I'm coming! We're taking nuggets for sure!"
 
@@ -354,7 +356,8 @@ label YomkiEvent1:
 label AsamiEvent1:
 
     # +1 Asami Rizz Point
-
+    $ Asami_Event_1 = True
+    $ Yomki_Event_1 = False
     m "(After thinking about it, I gotta fix things up.)"
     m "Sorry, not right now. I have something to do."
     y "Huh, something to do?"
@@ -490,17 +493,25 @@ label Day1EventEnd:
 
     # if asami rizz point 1 = idk how to set variables
 
-    # show asami_happy with Dissolve (0.5)
+    if Asami_Event_1:
+
+        show asami_happy with Dissolve (0.5)
+
+        a "THIS DIALOGUE WILL BE CHANGED BUT I DON'T WANT TO DO IT RIGHT NOW I JUST WANNA KNOW IF THIS WORKS"
+
+        hide asami_happy with Dissolve (0.5)
 
     # else the good route
 
-    show asami_judge with Dissolve (0.5)
+    else:
 
-    a "..."
-    m "(Of course she's ignoring me. Well not that it matters.)"
-    m "(At least she's not bothering me.)"
+        show asami_judge with Dissolve (0.5)
 
-    hide asami_judge with Dissolve (0.5)
+        a "..."
+        m "(Of course she's ignoring me. Well not that it matters.)"
+        m "(At least she's not bothering me.)"
+
+        hide asami_judge with Dissolve (0.5)
 
     # END OF CHANGE IN ROUTE
 
