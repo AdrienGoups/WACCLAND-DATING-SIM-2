@@ -134,7 +134,7 @@ label start:
     
     m "Huh...? Something feels different today..."
     m "Probably nothing..."
-    m "I should probably hurry up"
+    m "I should probably hurry up."
     m "(I bolt towards the school quickly dodging the cars as I pass through crosswalks on my way there.)"
     m "(A set of stairs separate me from the entrance to the school.)"
     m "(The school is now right in view. And still 15 minutes until the bell rings.)"
@@ -213,9 +213,9 @@ label start:
     m "(This is so cliché, can't they just, I don't know... concentrate on the class instead????)"
     m "(It's almost always the same as soon as we have a young male teacher.)"
     m "(Well, no use complaining about that on the first day of school, they'll stop once they realize he's just a plain old teacher.)"
-    m "I sat through the entire class between dream and reality, contemplating the meaning of life and why I decided to game all night."
-    m "I briefly wonder if this whole scenario was schemed by someone..."
-    m "...Altough I quickly dismiss the idea."
+    m "(I sat through the entire class between dream and reality, contemplating the meaning of life and why I decided to game all night.)"
+    m "(I briefly wonder if this whole scenario was schemed by someone...)"
+    m "(...Altough I quickly dismiss the idea.)"
 
     "Ding dong bing bong!"
 
@@ -267,7 +267,7 @@ label start:
     m "Nah, bro. This is a visual novel, if you skipped everything you wouldn't even have a game."
     y "I have no idea whats going on."
     a "Returning to the original subject, Kamiya-kun, I require an apology."
-    m "Why should I need to apology, I didn't do anything. You're the one who's annoying me"
+    m "Why should I need to apology, I didn't do anything. You're the one who's annoying me!"
     a "'Didn't do anything', You ignored me and then you call me annoying!"
     y "Guys, does it even matter?"
     y "You are not enemies... Nobody here has any enemies."
@@ -302,7 +302,6 @@ label start:
     hide yomki with Dissolve (0.5)
 
     m "(What a chad, this dude.)"
-
     m "(She later came back after realizing it's still 10 in the morning.)"
     m "(Well, not that I really care.)"
     "The rest of the day goes by without any other incident."
@@ -364,7 +363,7 @@ label AsamiEvent1:
     m "(After thinking about it, I gotta fix things up.)"
     m "Sorry, not right now. I have something to do."
     y "Huh, something to do?"
-    y "Oh wait never mind, I gotta no-life dark souls XX"
+    y "Oh wait never mind, I gotta no-life dark souls XX."
     y "Well good luck with Manx the Souder Requiem Over Heaven!"
 
     hide yomki with Dissolve (0.5)
@@ -389,7 +388,7 @@ label AsamiEvent1:
 
     hide asami_judge with Dissolve (0.5)
 
-    m "(She continued walking down the stairs, ignoring me)"
+    m "(She continued walking down the stairs, ignoring me.)"
 
     show asami_mad with Dissolve (0.5)
 
@@ -448,7 +447,7 @@ label AsamiEvent1:
 
     m "(She left without saying anything else.)"
     m "(So, here I am... left alone wondering what to do now.)"
-    m "Sigh.... guess I'll go home"
+    m "Sigh.... guess I'll go home."
 
     jump Day1EventEnd
 
@@ -476,7 +475,7 @@ label Day1EventEnd:
 
     "The next day."
     m "Another poggers day at school..."
-    m "(On my way to the school I see a white hair girl running with a toast in her mouth)"
+    m "(On my way to the school I see a white hair girl running with a toast in her mouth.)"
     m "(Tf is she doing?)"
 
     show usui_neutral:
@@ -500,7 +499,7 @@ label Day1EventEnd:
 
         show asami_happy with Dissolve (0.5)
 
-        a "THIS DIALOGUE WILL BE CHANGED BUT I DON'T WANT TO DO IT RIGHT NOW I JUST WANNA KNOW IF THIS WORKS"
+        a "THIS DIALOGUE WILL BE CHANGED BUT I DON'T WANT TO DO IT RIGHT NOW I JUST WANNA KNOW IF THIS WORKS."
 
         hide asami_happy with Dissolve (0.5)
 
@@ -534,19 +533,19 @@ label Day1EventEnd:
 
     scene club with Dissolve (0.5)
 
-    m "Yo Yomki"
+    m "Yo Yomki."
 
     show yomki with Dissolve (0.5)
 
     y "Yo MC, I gamed so much last night."
-    y "I'm already at my 7th playthrough of Dark Souls XX"
+    y "I'm already at my 7th playthrough of Dark Souls XX."
     m "What? No way, bro?"
     m "You're such a god gamer."
     y "True."
     m "(We continue to chat for a while.)"
     m "Hey, Yomki. Wanna go on the roof"
     y "Yeah bro. I love breaking school regulations."
-    m "(And with that, we headed to the school rooftop)"
+    m "(And with that, we headed to the school rooftop.)"
 
     scene rooftop with Dissolve (1)
 
@@ -640,7 +639,7 @@ label Day1EventEnd:
         
         hide yomki with Dissolve(0.5)
 
-        m "(I then went to the vending machine to get a drink for me and Yomki)"
+        m "(I then went to the vending machine to get a drink for me and Yomki.)"
 
         show bob_neutral with Dissolve (1)
 
@@ -782,8 +781,8 @@ label Day1EventEnd:
     else:
         "You shouldn't be here..."
         "YOUR COCK..., YOUR VERY BALLSACK..."
-        "I WILL CUT IT DOWN"
-        "TF IS THIS SHIT"
+        "I WILL CUT IT DOWN."
+        "TF IS THIS SHIT."
 
     m "(No use thinking about this shit more than necessary.)"
 
@@ -809,20 +808,20 @@ label Day1EventEnd:
     play music ("bgm/alphen.mp3") fadeout (1)
 
     "Billy" "YO ITS ME BILLY WACCLAND SMP IV HERE TO TELL YOU TO GET BITCHES LOSER!!!!!!!!"
-    "Billy" "COCK AMIRITE FELLAS"
+    "Billy" "COCK AMIRITE FELLAS!!!"
     "Billy" "So basically, this is YOUR Waccland DaTING SIM 2: Electric Boogaloo, now go now."
     "With Wacc and land."
     hide billy with Dissolve (1)
     "YOu suddenly remember Big CHungus'S words."
-    m "NO WAY I NEED TO COOK"
-    m "BE MY GIRLFRIEND ASAMI"
+    m "NO WAY I NEED TO COOK!!!"
+    m "BE MY GIRLFRIEND ASAMI!!!"
     a "Fuck no! WTF!"
     y "Damn, such a rizzler."
     m "(I...I-I.... failed....?)"
     m "(My sigma rizz failed me...??????)"
-    m "THIS GAME SUCKS"
+    m "THIS GAME SUCKS!"
     m "Fuck this shit I'm OUT!"
-    "You then jump off from the window and die"
+    "You then jump off from the window and die."
     play sound "sfx/vine boom.mp3"
     "The end."
 
