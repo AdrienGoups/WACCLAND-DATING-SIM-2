@@ -55,6 +55,11 @@ image bob_neutral:
     "char/bob_neutral.png"
     ypos 1100 xpos 900
     zoom 0.7
+
+image usui_neutral:
+    "char/usui_neutral.png"
+    ypos 1200 xpos 900
+    zoom 0.55
         
 image masashi_neutral:
     "char/masashi_neutral.png"

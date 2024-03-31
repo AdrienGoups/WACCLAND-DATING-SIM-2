@@ -458,6 +458,23 @@ label Day1EventEnd:
     m "(My memories seems a bit hazy.)"
     m "(Maybe it's the chicken nuggets thats hitting.)"
     m "(...that doesn't make any sense, why the fuck would chicken do that?)"
+    m "(Meh, it's probably nothing!)"
+
+    scene black with Dissolve (1)
+    scene residential with Dissolve (1)
+
+    "The next day."
+    m "Another poggers day at school..."
+    m "(On my way to the school I see a white hair girl running with a toast in her mouth)"
+    m "(Tf is she doing?)"
+
+    show usui_neutral:
+        xpos -800 ypos 140
+        ease 1 xpos 1920 ypos 140
+    pause 1
+
+    m "Huh... anyway."
+    m "Uhhhhh tf do i cook??????"
 
     "but suddenly"
 
