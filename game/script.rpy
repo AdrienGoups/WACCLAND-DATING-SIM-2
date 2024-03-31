@@ -14,14 +14,14 @@ define y = Character("Yomki")
 define mi = Character("Miyuki")
 define unk = Character("???")
 
-$ Asami_Event_1 = False
-$ Yomki_Event_1 = False
-$ Yomki_Event_2 = False
-$ Miyuki_Event_2 = False
-
 # The game starts here.
 
 label start:
+    
+    $ Asami_Event_1 = False
+    $ Yomki_Event_1 = False
+    $ Yomki_Event_2 = False
+    $ Miyuki_Event_2 = False
 
     play music "bgm/chungus.mp3" fadeout (1.5)
 
