@@ -115,6 +115,14 @@ image corridor:
     "bg/corridor.png"
     zoom 1.5
 
+image clubroom:
+    "bg/clubroom.png"
+    zoom 1.5
+
+image rooftop:
+    "bg/rooftop.png"
+    zoom 1.5
+
 image saul:
     "saul.png"
 
