@@ -11,6 +11,7 @@ define a = Character("Asami")
 define t = Character("Teacher")
 define i = Character("Mr. Izumi")
 define y = Character("Yomki")
+define mi = Character("Miyuki")
 define unk = Character("???")
 
 
@@ -474,6 +475,113 @@ label Day1EventEnd:
     pause 1
 
     m "Huh... anyway."
+    m "Onward to hell!"
+
+    scene classroom with Dissolve (1)
+
+    "Place School, Place Japan, Hour: probably like 8"
+
+    m "(I arrive in class and sit at my desk.)"
+    m "(An annoying face is staring at me right behind me.)"
+
+    # if asami rizz point 1 = idk how to set variables
+
+    # show asami_happy with Dissolve (0.5)
+
+    # else the good route
+
+    show asami_judge with Dissolve (0.5)
+
+    a "..."
+    m "(Of course she's ignoring me. Well not that it matters.)"
+    m "(At least she's not bothering me.)"
+
+    hide asami_judge with Dissolve (0.5)
+
+    # END OF CHANGE IN ROUTE
+
+    show izumi_neutral with Dissolve (0.5)
+
+    "Mr. Izumi enters the classroom."
+    i "Class is about to begin."
+
+    hide izumi_neutral with Dissolve (0.5)
+
+    "Ding dong bing bong."
+    m "(It's finally time for lunch break.)"
+    m "(I'm gonna go see my bro Yomki.)"
+
+    scene clubroom with Dissolve (0.5)
+
+    m "Yo Yomki"
+
+    show yomki with Dissolve (0.5)
+
+    y "Yo MC, I gamed so much last night."
+    y "I'm already at my 7th playthrough in Dark Souls XX"
+    m "What? No way, bro?"
+    m "You're such a god gamer."
+    y "True."
+    m "(We continue to chat for a while.)"
+    m "Hey, Yomki. Wanna go on the roof"
+    y "Yeah bro. I love breaking school regulations."
+    m "And with that, we headed to the school rooftop"
+
+    scene rooftop with Dissolve (1)
+
+    show yomki with Dissolve (0.5)
+
+    m "(We arrived at the school rooftop, but we were not alone.)"
+    y "No way, bro."
+    m "(We witnessed a girl being confessed by what I can only describe as a dumbass.)"
+
+    hide yomki with Dissolve (0.5)
+    show miyuki_neutral with Dissolve (0.5)
+
+    "Dumbass" "Miyuki-chan, ... please go out with me!!!"
+    unk "Huh...?"
+    unk "Are you stupid? I don't even know who you are?"
+    unk "Eww, getting asked out by a random loser..."
+
+    hide miyuki_neutral with Dissolve (0.5)
+
+    m "(The dumbass quickly left while tears dropped from his eyes. What a dumbass? He really asked out a girl that he never talked to???)"
+
+    show yomki with Dissolve (0.5)
+
+    y "Damn bro, this dude got destroyed. Not cool."
+    y "For serious."
+    m "(I quickly turned around again towards the girl.)"
+
+    hide yomki with Dissolve (0.5)
+    show miyuki_neutral with Dissolve (0.5)
+
+    unk "What a waste of time..."
+    m "(While quickly glancing at her bag, I noticed a pin on it.)"
+    m "(It's a pin of WA-KU-Oh!, my favourite anime!)"
+    m "(Could peraphs this girl be one our kind???)"
+    m "(Yomki noticed me staring at her, which he quickly whispered to me.)"
+
+    show miyuki_neutral:
+        ease 1 xpos 900 ypos 140
+    show yomki with Dissolve (0.5):
+        xpos 100 ypos 25
+
+    y "She may look good bro, but that girl ain't one of us."
+    y "She could never be a true gamer."
+    m "Nah, bro, I saw that she had a WA-KU-OH! pin. Only real ones watch that shit."
+    y "Hmmm... IDK then bro..."
+
+    # Change to mad sprite or some shit
+    unk "What are you two exactly staring at...?"
+    m "Uh, nothing."
+    m "(We quickly left before we were questioned by the girl.)"
+    m "(Wouldn't want to ruin another day after what happened yesterday.)"
+
+    scene corridor with Dissolve (1)
+
+    show yomki with Dissolve (0.5)
+
     m "Uhhhhh tf do i cook??????"
 
     "but suddenly"
