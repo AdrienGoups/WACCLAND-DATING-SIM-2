@@ -607,7 +607,7 @@ label Day1EventEnd:
 
     y "Anyway bro, we spent all these days griding in Dark Souls XX."
     y "It's about time we go grind in real life."
-    y "Let's go hit the gym and get GAINS!"
+    y "Let's go hit the gym and get GAINS after school!"
     m "(I could do what Yomki said, but I'm also intrigued by that girl...)"
 
     menu:
@@ -623,7 +623,7 @@ label Day1EventEnd:
 
         m "(I can't abandon my bro. We gotta get gains!!!!!)"
         m "Hell yeah, bro!"
-        m "(We then left school to go the gym.)"
+        m "(We then left school to go the gym after class ended.)"
 
         scene gym with Dissolve (1)
         play music ("bgm/bro time.mp3") fadeout (1)
@@ -679,7 +679,7 @@ label Day1EventEnd:
         show yomki:
             ease 1 xpos 400 ypos 25
 
-        y "Whaaaaaatt theee helllllllll..."
+        y "Whaaaaaatt theee heeeeeeelllllllll..."
         m "(Very intersting character...)"
         m "(I better act like nothing ever happenned.)"
         m "(It would be better for my mental health.)"
@@ -690,8 +690,74 @@ label Day1EventEnd:
         jump Day2EventEnd
 
     label MiyukiEvent1:
-
+        #You really are a beta cuck
         $ Miyuki_Event_2 = True
+
+        m "(I gotta ask her about the pin. WA KU OH! is my life after all.)"
+        m "Sorry bro, not today. I have no energy."
+        y "You better not be thinking of talking to that girl again. That would be cringe."
+        m "Nah, nah, this ain't it."
+        m "A sigma such as I would never fall to some lowly temptation like this!"
+        y "That's true bro. G'day."
+
+        hide yomki with Dissolve (0.5)
+
+        m "(Yomki then left to his class.)"
+        m "(I feel bad for lying, but a chance like this will never present itself ever again.)"
+        m "(I go back to the rooftop after class, with some chance she'll be there.)"
+
+        scene rooftop with Dissolve (0.5)
+
+        m "(Class ended and I went straight to the rooftop.)"
+        
+        show miyuki_neutral with Dissolve (0.5)
+
+        m "(Yes, she's here. Now I can ask her.)"
+        unk "Hmmm... Who are you again?"
+        
+        hide miyuki_neutral with Dissolve (0.5)
+        show masashi_neutral with Dissolve (0.5)
+
+        m "My name is Masashi Kamiya, but you can call me MC!"
+        m "Gaming is my life and Wacc-Fuel is my blood."
+        m "For over ten thousand years, I have protected this world from iminent destruction!"
+
+        hide masashi_neutral with Dissolve (0.5)
+        show miyuki_neutral with Dissolve (0.5)
+        # changer l'expression pour une meilleure
+
+        unk "Huh? The fuck is wrong with this guy?"
+
+        # serious face
+
+        unk "Well, what business did you have with me?"
+        m "Well, uhm..."
+        m "It's about the pin on your backpack, could you possibly be a fan?"
+
+        #change expression
+
+        unk "Huh, this? I just picked it up 'cause it was popular at the time."
+        unk "Don't know anything about it. Never bothered to watch it."
+        m "(Damn, my luck ran out. She's a fake.)"
+        m "(A damn normie. What a waste of my time.)"
+        m "(Well, after all the trouble I went through might as well ask for her name.)"
+        m "Well, sorry for bothering you. But before I go, could I at least know your name?"
+
+        #change expression
+
+        unk "My name?"
+
+        #change to miyuki neutral
+
+        mi "My name is Mochizuki Miyuki. Do you have anything else to say? I'm quite busy after all."
+        m "(If she's so busy, then why the hell is she alone on the rooftop.)"
+        m "(Whatever, I got what I asked for, time to leave.)"
+        m "Then goodbye, Mochizuki-san."
+        m "(I quickly leave before the cringe kills me.)"
+
+        scene corridor with Dissolve (1)
+
+        m "(At this point, I have nothing else to do, so might as well go home.)"
 
         jump Day2EventEnd
 
@@ -700,6 +766,25 @@ label Day1EventEnd:
     show bedroom with Dissolve(1)
     play music ("bgm/bedroom.mp3") fadeout (1)
 
+    m "(I arrived home at last after another tiring day.)"
+
+    if Yomki_Event_2:
+
+        m "(That Bob guy was weird as hell. But he still has rizz even though it's fuckin' weird.)"
+
+    elif Miyuki_Event_2:
+
+        m "(She was not a real fan after all. I hate people who just ride the wave of popularity of things.)"
+        m "(And she talked like she wanted me out of her sight. Well, I guess since I kinda showed up out of nowhere it makes sense.)"
+
+    else:
+        "You shouldn't be here..."
+        "YOUR COCK..., YOUR VERY BALLSACK..."
+        "I WILL CUT IT DOWN"
+        "TF IS THIS SHIT"
+        return
+
+    m "(No use thinking about this shit more than necessary.)"
 
     m "Uhhhhh tf do i cook??????"
 
