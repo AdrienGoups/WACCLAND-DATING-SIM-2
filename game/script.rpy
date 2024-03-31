@@ -474,9 +474,10 @@ label Day1EventEnd:
     play music ("bgm/2.ogg") fadeout (1)
 
     "The next day."
-    m "Another poggers day at school..."
-    m "(On my way to the school I see a white hair girl running with a toast in her mouth.)"
-    m "(Tf is she doing?)"
+    m "Another captivating day at school..."
+    m "(On my way to the school I see a pale haired girl running with a toast in her mouth.)"
+    m "(There's still 5 minutes left before the bell rings...)"
+    m "(Why is she even running...?)"
 
     show usui_neutral:
         xpos -800 ypos 140
@@ -488,7 +489,7 @@ label Day1EventEnd:
 
     scene classroom with Dissolve (1)
 
-    "Place School, Place Japan, Hour: probably like 8"
+    "Waccland's peak academy, Place Japan, Hour: 7:58"
 
     m "(I arrive in class and sit at my desk.)"
     m "(An annoying face is staring at me right behind me.)"
@@ -499,9 +500,16 @@ label Day1EventEnd:
 
         show asami_happy with Dissolve (0.5)
 
-        a "THIS DIALOGUE WILL BE CHANGED BUT I DON'T WANT TO DO IT RIGHT NOW I JUST WANNA KNOW IF THIS WORKS."
+        a "Hey Kamiya, good morning!"
+        a "Don't you feel blessed being graced by such a cute girl in the morning?"
+        m "No, I don't thank you very much."
+        
+        show asami_judge
+        hide asami_happy
+        
+        a "*Sigh* You just can't appreciate the good things in life can you?"
 
-        hide asami_happy with Dissolve (0.5)
+        hide asami_judge with Dissolve (0.5)
 
     # else the good route
 
