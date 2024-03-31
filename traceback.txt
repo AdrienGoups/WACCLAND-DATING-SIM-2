@@ -1,6 +1,6 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('bg/gym.png') at 0x00000000051769d0>:
+While loading <renpy.display.im.Image object ('bg/gym.png') at 0x00000000055df7c0>:
   File "game/script.rpy", line 632, in script
     y "One more bro."
 OSError: Couldn't find file 'bg/gym.png'.
@@ -75,4 +75,4 @@ OSError: Couldn't find file 'bg/gym.png'.
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 WACCLAND DATING SIM 2: Electric Boogaloo 0.1
-Sun Mar 31 13:18:28 2024
+Sun Mar 31 13:25:09 2024

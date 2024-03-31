@@ -708,6 +708,8 @@ label Day1EventEnd:
 
         scene rooftop with Dissolve (0.5)
 
+        play music ("bgm/6.ogg") fadeout (1)
+
         m "(Class ended and I went straight to the rooftop.)"
         
         show miyuki_neutral with Dissolve (0.5)
@@ -782,7 +784,6 @@ label Day1EventEnd:
         "YOUR COCK..., YOUR VERY BALLSACK..."
         "I WILL CUT IT DOWN"
         "TF IS THIS SHIT"
-        return
 
     m "(No use thinking about this shit more than necessary.)"
 
@@ -797,7 +798,7 @@ label Day1EventEnd:
     "Saul Goodman Jumpscare"
     hide saul
 
-    stop music
+    stop music fadeout (3)
 
     "You feel a strong aura approaching."
 

@@ -1,16 +1,16 @@
-2024-03-31 17:18:15 UTC
+2024-03-31 17:24:59 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.1.24030407
 
-Early init took 0.07s
+Early init took 0.08s
 Loading error handling took 0.03s
-Loading script took 0.36s
+Loading script took 0.23s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.06s
+Running init code took 0.05s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Leon\\AppData\\Roaming/RenPy/backups\\WACCLAND-DATING-SIM-2':
 Dump and make backups took 0.05s
@@ -27,11 +27,11 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.01s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.06s
+Interface start took 0.09s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -110,7 +110,14 @@ Full traceback:
     raise IOError("Couldn't find file '%s'." % name)
 OSError: Couldn't find file 'bg/gym.png'.
 
-While loading <renpy.display.im.Image object ('bg/gym.png') at 0x00000000051769d0>:
+While loading <renpy.display.im.Image object ('bg/gym.png') at 0x00000000055df7c0>:
   File "game/script.rpy", line 632, in script
     y "One more bro."
 OSError: Couldn't find file 'bg/gym.png'.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
