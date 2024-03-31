@@ -127,7 +127,7 @@ label start:
 
     scene residential with dissolve
 
-    play music "bgm/2.ogg"
+    play music ("bgm/2.ogg") fadeout (1)
     
     m "Huh...? Something feels different today..."
     m "Probably nothing..."
@@ -327,7 +327,7 @@ label YomkiEvent1:
     m "(Finally, I decide to hang out with my bro Yomki.)"
     m "I'm coming! We're taking nuggets for sure!"
 
-    play music ("bgm/5.ogg") fadein (1)
+    play music ("bgm/5.ogg") fadeout (1)
 
     hide yomki with Dissolve (0.5)
     scene waccdonald with Dissolve (1)
@@ -424,6 +424,8 @@ label AsamiEvent1:
     hide asami_intrigued
     show asami_smug
 
+    play music ("bgm/7.ogg") fadeout (1)
+
     a "Well, of course you'd accept!"
     a "You couldn't possibly decline being friends with such a cute girl!"
 
@@ -447,7 +449,7 @@ label AsamiEvent1:
 label Day1EventEnd:
 
     scene bedroom with Dissolve (1)
-    play music ("bgm/bedroom.mp3") fadein (1)
+    play music ("bgm/bedroom.mp3") fadeout (1)
 
     m "Man, today was exhausting... what was that girl's problem!"
     m "Aside from that, school looks as boring as ever."
@@ -463,6 +465,8 @@ label Day1EventEnd:
 
     scene black with Dissolve (1)
     scene residential with Dissolve (1)
+
+    play music ("bgm/2.ogg") fadeout (1)
 
     "The next day."
     m "Another poggers day at school..."
@@ -508,28 +512,33 @@ label Day1EventEnd:
     hide izumi_neutral with Dissolve (0.5)
 
     "Ding dong bing bong."
+
+    play music ("bgm/break.mp3") fadeout (1)
+
     m "(It's finally time for lunch break.)"
     m "(I'm gonna go see my bro Yomki.)"
 
-    scene clubroom with Dissolve (0.5)
+    scene club with Dissolve (0.5)
 
     m "Yo Yomki"
 
     show yomki with Dissolve (0.5)
 
     y "Yo MC, I gamed so much last night."
-    y "I'm already at my 7th playthrough in Dark Souls XX"
+    y "I'm already at my 7th playthrough of Dark Souls XX"
     m "What? No way, bro?"
     m "You're such a god gamer."
     y "True."
     m "(We continue to chat for a while.)"
     m "Hey, Yomki. Wanna go on the roof"
     y "Yeah bro. I love breaking school regulations."
-    m "And with that, we headed to the school rooftop"
+    m "(And with that, we headed to the school rooftop)"
 
     scene rooftop with Dissolve (1)
 
     show yomki with Dissolve (0.5)
+
+    play music ("bgm/sus.flac") fadeout (1)
 
     m "(We arrived at the school rooftop, but we were not alone.)"
     y "No way, bro."
@@ -559,11 +568,11 @@ label Day1EventEnd:
     unk "What a waste of time..."
     m "(While quickly glancing at her bag, I noticed a pin on it.)"
     m "(It's a pin of WA-KU-Oh!, my favourite anime!)"
-    m "(Could peraphs this girl be one our kind???)"
+    m "(Could perhaps this girl be one our kind???)"
     m "(Yomki noticed me staring at her, which he quickly whispered to me.)"
 
     show miyuki_neutral:
-        ease 1 xpos 900 ypos 140
+        ease 1 xpos 1400 ypos 1200
     show yomki with Dissolve (0.5):
         xpos 100 ypos 25
 
@@ -603,7 +612,7 @@ label Day1EventEnd:
     show billy with Dissolve (2):
         xalign 0.7
         ypos 25
-    play music ("bgm/alphen.mp3") fadein (1)
+    play music ("bgm/alphen.mp3") fadeout (1)
 
     "Billy" "YO ITS ME BILLY WACCLAND SMP IV HERE TO TELL YOU TO GET BITCHES LOSER!!!!!!!!"
     "Billy" "COCK AMIRITE FELLAS"

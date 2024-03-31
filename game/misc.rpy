@@ -48,7 +48,7 @@ image asami_intrigued:
         
 image miyuki_neutral:
     "char/miyuki_neutral.png"
-    ypos 1400 xpos 900
+    ypos 1200 xpos 900
     zoom 0.55
         
 image bob_neutral:
@@ -115,8 +115,8 @@ image corridor:
     "bg/corridor.png"
     zoom 1.5
 
-image clubroom:
-    "bg/clubroom.png"
+image club:
+    "bg/club.png"
     zoom 1.5
 
 image rooftop:
