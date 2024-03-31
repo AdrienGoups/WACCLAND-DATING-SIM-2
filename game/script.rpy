@@ -326,6 +326,24 @@ label YomkiEvent1:
     m "(Finally, I decide to hang out with my bro Yomki.)"
     m "I'm coming! We're taking nuggets for sure!"
 
+    hide yomki with Dissolve (0.5)
+    scene waccdonald with Dissolve (1)
+    show yomki with Dissolve (0.5)
+
+    y "Yo those new Big Waccs are bussin' frfr."
+    m "Sure is bro."
+    m "Still, no matter what year it is, Wacc Nuggets are still so poggers."
+    y "BTW, bro. You started Dark Souls XX?"
+    m "Yeah, I spent the entire night playing. I was so sleepy at school that I just wanted to sleep all day."
+    m "But like you saw, things didn't go as planned."
+    y "Damn, I hate when that happens bro."
+    y "Oh, you won't believe who they brought back for the final boss."
+    m "No way! Let me guess... Michael Zaki's Foreskin duo?"
+    y "Nah bro! MANX THE SOUDER!"
+    m "NO WAY FRFR???!?!?!?"
+    y "No cap, bro."
+
+
     jump Day1EventEnd
 
 label AsamiEvent1:
