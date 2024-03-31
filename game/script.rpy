@@ -22,6 +22,9 @@ label start:
     $ Yomki_Event_1 = False
     $ Yomki_Event_2 = False
     $ Miyuki_Event_2 = False
+    $ Izumi_Event_3 = False
+    $ Gorou_Event_3 = False
+    $ Asami_Event_3 = False
 
     play music "bgm/chungus.mp3" fadeout (1.5)
 
@@ -826,7 +829,62 @@ label Day1EventEnd:
     "Ding dong bing bong"
 
     m "Guess the day's over."
-    m ""
+    m "What should I do next."
+    m "I could hang out with Yomki like usual."
+    m "Or just go home and game all evening..."
+
+    show asami_neutral with Dissolve
+
+    m "Huh... why is she looking at me?"
+
+    if Asami_Event_1 == false:
+        a "..."
+        m "She's been quiet for the last few days."
+        m "Should I try to apologize to her again?"
+        m "I really don't know if it's a good idea."
+    else:
+        a "Hey MC!"
+        a "See you tommorow!"
+    #Route split finished
+
+    m "(I guess I could try my chance talking with Asami too.)"
+
+    menu:
+
+        "Go straight home.":
+            jump IzumiEvent3
+        "Hang out with Yomki again.":
+            jump GorouEvent3
+        "Talk with Asami."
+            jump AsamiEvent3
+
+    label IzumiEvent3:
+
+        $ Izumi_Event_3 = True
+
+        "This is the Izumi day 3 event."
+
+        jump Day3EventEnd
+    
+    label GorouEvent3:
+
+        $ Gorou_Event_3 = True
+
+        "This is the Gorou day 3 event."
+
+        jump Day3EventEnd
+
+    label AsamiEvent3:
+
+        $ Asami_Event_3 = True
+
+        "This is the Asami day 3 event."
+
+        jump Day3EventEnd
+
+    label Day3EventEnd:
+
+    scene bedroom with Dissolve(0.5)
 
     m "Uhhhhh tf do i cook??????"
     "but suddenly"
