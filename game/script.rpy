@@ -1504,7 +1504,7 @@ label Day1EventEnd:
 
     # Dunk sfx
 
-    c "One point, motherfucker."
+    c "One point, motherducker."
     c "A bit slow this one, don't you think?"
     c "Thou can do better, Masashi Kamiya."
     m "(I began to wonder if I even had a chance...)"
