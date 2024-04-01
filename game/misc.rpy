@@ -197,3 +197,14 @@ image billy:
     "char/billy.png"
     ypos 1700 xpos 900
     zoom 0.4
+
+init -1 python:   #create sound channels for simultanious sfx playback
+        renpy.music.register_channel("sound1", "sfx", False)
+        renpy.music.register_channel("sound2", "sfx", False)
+        renpy.music.register_channel("sound3", "sfx", False)
+        renpy.music.register_channel("sound4", "sfx", False)
+        renpy.music.register_channel("sound5", "sfx", False)
+        renpy.music.register_channel("sound6", "sfx", False)
+        renpy.music.register_channel("sound7", "sfx", False)
+        renpy.music.register_channel("sound8", "sfx", False)
+        renpy.music.register_channel("sound9", "sfx", False)

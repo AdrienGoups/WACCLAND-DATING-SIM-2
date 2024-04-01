@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1328: show statement expects a non-empty block.
-    show bob_neutral with Dissolve(0.5):
-                                        ^
+File "game/script.rpy", line 1513: expected end of line
+    play sound2 ("sfx/metal pipe.mp3") volume (0.1) pause 0.1
+                                                    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sun Mar 31 23:06:31 2024
+Mon Apr  1 14:37:39 2024
