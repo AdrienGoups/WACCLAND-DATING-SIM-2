@@ -71,6 +71,11 @@ image yomki:
     ypos 1100 xpos 900
     zoom 0.55
 
+image gorou_neutral:
+    "char/gorou_neutral.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+
 image izumi_neutral:
     "char/izumi_neutral.png"
     ypos 1200

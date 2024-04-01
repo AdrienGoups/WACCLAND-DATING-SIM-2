@@ -12,6 +12,7 @@ define t = Character("Teacher")
 define i = Character("Mr. Izumi")
 define y = Character("Yomki")
 define mi = Character("Miyuki")
+define g = Character("Gorou")
 define unk = Character("???")
 
 # The game starts here.
@@ -959,7 +960,155 @@ label Day1EventEnd:
 
         $ Gorou_Event_3 = True
 
-        "This is the Gorou day 3 event."
+        m "(I guess I'll hang out with Yomki again.)"
+        m "(He IS my best friend after all.)"
+
+        scene club with Dissolve (0.5)
+
+        play music ("bgm/5.ogg") fadeout(1)
+
+        m "Hey, Yomki! You here?"
+
+        show yomki with Dissolve (0.5)
+
+        y "Yeah bro, I'm here."
+        y "Was just talking with one of my homies."
+
+        show yomki:
+            ease 1 xpos 1400 ypos 1100
+
+        show gorou_neutral with Dissolve (0.5)
+
+        y "He's pretty cool, no cap."
+
+        hide yomki with Dissolve (0.5)
+
+        stop music fadeout (1)
+
+        #Edgy music here
+
+        unk "..."
+        unk "I..."
+        unk "I am-"
+        unk "The prince of darkness himself."
+        unk "The owner of the black throne, the one they call the ultimate despair!"
+        unk "I am..."
+
+        show gorou_neutral:
+            ease 1 xpos 1400 ypos 1100
+
+        show yomki with Dissolve (0.5)
+        
+        y "His name is Furukawa Gorou."
+
+        play music ("bgm/7.ogg") fadeout(1)
+
+        g "..."
+        g "C'mon, you ruined my introduction!"
+        m "..."
+        m "(Are you kidding me?)"
+        m "(Yet another mentally ill student?)"
+        g "Like I said, I am the one they call the prince of darkness."
+        g "Common mortals such as you should not come too close to me."
+        m "Uhhh..."
+        m "I have a question."
+        m "Are you stupid?"
+        g "W-what?!?"
+        g "You dare insult me?"
+        g "My power of darkness shall rend you apart."
+        g "There shall be nothing left of your corpse."
+        g "As the wind howls, the shadows within still unsatisfied."
+        m "Can't you just cut the bullshit?"
+        m "Stop acting like a fucking kid, you're a high schooler."
+        g "What did you just say-"
+        g "...hahaha..."
+        g "HAHAHAHAHAHA!!!"
+        g "No one..."
+        g "No one has ever been so foolish as to challenge me!"
+        m "Well sure makes sense, why would anyone want to talk with you."
+        m "You're the kind of guy who never even spoke to a woman before."
+        m "The world doesn't revolve arround you dumbass."
+        y "Yo MC! Not cool bro. That's going too far."
+        g "Indeed, your insolence knows no limit."
+        g "but of course-"
+        g "You have not been chosen by the throne of darkness to stand above heaven and earth."
+        m "Yeah, 'cause my father didn't leave for milk when I was a kid."
+        y "Guys!"
+        y "That's enough!"
+        g "No!"
+        g "This man has insulted me and my whole lineage!"
+        y "Wait, I know what to do."
+
+        stop music fadeout (1)
+
+        "Yomki whispers something into Gorou's ears."
+
+        g "!!!"
+        g "Yomki!"
+        g "Why didn't you tell me earlier that this guy played Waccland chronicles!!!"
+        m "...?"
+        m "Huh?"
+
+        play music ("bgm/8.ogg") fadeout(1)
+
+        g "I sincerely apologize, MY BEST FRIEND!"
+        g "It seems I was mistaken about you!"
+        g "You are not my enemy."
+        g "I have seen the errors of my way."
+        g "How could I forget the words of wisdom my master left me-"
+        g "''Nobody has any enemies, not you, not me.''"
+        g "I don't have any enemies."
+        g "I thank you MY BEST FRIEND, for teaching me this valuable lesson!"
+        m "No need to thank me, MY FRIEND."
+        g "..."
+        g "Wait-"
+        g "I never asked for your name..."
+
+        hide yomki
+        hide gorou_neutral
+        show masashi_neutral
+        with Dissolve (0.5)
+
+        m "My name is Masashi Kamiya, but you can call me MC!"
+        m "Gaming is my life and Wacc-Fuel is my blood."
+        m "For over ten thousand years, I have protected this world from iminent destruction!"
+
+        hide masashi_neutral 
+        show gorou_neutral
+        with Dissolve (0.5)
+
+        m "I'm sorry for doubting you Gorou."
+        m "You were one of my people after all."
+
+        #Gorou smug
+
+        g "As they say in the lands between, those who play Waccland Chronicles are your friends."
+        m "Facts Brother!!!"
+        m "Spit Your shit indeed!"
+        m "(Me and Gorou then proceed to have the nerdiest handshake ever.)"
+        g "It was nice to meet you MC, MY FRIEND."
+        g "Unfortunately, I must go now, for my untouched game needs some playing!"
+        g "Farewell!"
+        m "Bye!"
+
+        hide gorou_neutral with Dissolve (0.5)
+
+        m "I got this guy completely wrong..."
+        m "Man."
+
+        show yomki with Dissolve (0.5)
+
+        y "Told you he was epic, bro!"
+        m "You never dissapoint, bro."
+        m "Alright, wanna walk home?"
+        y "Sure thing, bro."
+
+        scene black with Dissolve (0.5)
+
+        m "(While walking home, me and Yomki continue talking about our countless playtroughs of Dark Souls XX.)"
+        m "(We talked about all the secrets and hidden items we found.)"
+        m "(Truly, Michael Zaki never misses.)"
+        m "(Altough the time for us to part ways soon came.)"
 
         jump Day3EventEnd
 
