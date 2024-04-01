@@ -1515,6 +1515,9 @@ label Day1EventEnd:
     # zoom sfx
 
     m "(As he said this, the chungus zoomed arround the court at lightning speed.)"
+
+    scene ballcg1 with Dissolve (1)
+
     m "(Without even being able to process what was happening, the chungus had already jumped.)"
     m "(I watched in horror as the chungus dunked the ball straight into the basket.)"
 
@@ -1522,6 +1525,10 @@ label Day1EventEnd:
     queue sound ("sfx/explosion4.ogg") volume (0.5)
     pause 1
     play sound2 ("sfx/metal pipe.mp3") volume (0.1) fadeout (3)
+
+    scene school_gym
+    show chungus
+    with Dissolve (1)
 
     c "One point, motherducker."
     c "A bit slow this one, don't you think?"
@@ -1540,6 +1547,9 @@ label Day1EventEnd:
 
     m "(Big Chungus then bolted straight to the basket.)"
     m "..."
+
+    scene ballcg1 with Dissolve (1)
+
     m "(He jumps again...)"
     m "(His paw hits the ball...)"
 
@@ -1550,6 +1560,8 @@ label Day1EventEnd:
     m "(I expected to hear the sound of the ball bouncing on the floor...)"
     m "(All hope was lost, yet...)"
     m "(Instead of the sound of the ball, I heard footsteps.)"
+
+    scene school_gym with Dissolve(1)
 
     pause 1
 
