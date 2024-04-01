@@ -624,7 +624,10 @@ label Day1EventEnd:
     m "Nah, bro, I saw that she had a WA-KU-OH! pin. Only real ones watch that shit."
     y "Hmmm... IDK then bro..."
 
-    # Change to mad sprite or some shit
+    hide miyuki_neutral
+    show miyuki_mad:
+        xpos 1400 ypos 1200
+
     unk "What are you two exactly staring at...?"
     m "Uh, nothing."
     m "(We quickly left before we were questioned by the girl.)"
@@ -765,18 +768,22 @@ label Day1EventEnd:
         m "For over ten thousand years, I have protected this world from iminent destruction!"
 
         hide masashi_neutral with Dissolve (0.5)
-        show miyuki_neutral with Dissolve (0.5)
+        show miyuki_unimpressed with Dissolve (0.5)
         # changer l'expression pour une meilleure
 
         unk "Huh? The hell is wrong with this guy?"
 
         # serious face
+        hide miyuki_unimpressed
+        show miyuki_mad
 
         unk "Well, what business did you have with me?"
         m "Well, uhm..."
         m "It's about the pin on your backpack, could you possibly be a fan?"
 
         #change expression
+        hide miyuki_mad
+        show miyuki_neutral
 
         unk "Huh, this? I just picked it up 'cause it was popular at the time."
         unk "Don't know anything about it. Never bothered to watch it."
@@ -786,10 +793,13 @@ label Day1EventEnd:
         m "Well, sorry for bothering you. But before I go, could I at least know your name?"
 
         #change expression
+        show miyuki_unimpressed
 
         unk "My name?"
 
         #change to miyuki neutral
+        show miyuki_neutral
+        hide miyuki_unimpressed
 
         mi "My name is Mochizuki Miyuki. Do you have anything else to say? I'm quite busy after all."
         m "(If she's so busy, then why is she alone on the rooftop?)"
