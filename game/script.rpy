@@ -209,7 +209,7 @@ label start:
     hide asami_mad with Dissolve (1)
 
     m "She then goes to sit right behind me, unfortunately..."
-    i "Well, Good Morning everyone. My name is Nanami Izumi, just a plain' ol' teacher."
+    i "Well, Good Morning everyone. My name is Izumi Naoki, just a plain' ol' teacher."
     "Female Student 1" "Wow, he's so cool and hot!"
     "Female Student 2" "He looks so mature!"
 
@@ -937,7 +937,7 @@ label Day1EventEnd:
         m "(After this long monologue how could I not ask myself a thousand questions?)"
         m "...uhhh... mr.Izumi...?"
         i "You don't have to call me mister."
-        m "...Izumi, how often do you smoke?"
+        m "...Naoki, how often do you smoke?"
         i "Not that much."
         i "One day you'll understand how it feels like to be a living legend."
         m "...Alright then, have you been playing WACC Quest XIII too much?"
