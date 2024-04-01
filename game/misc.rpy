@@ -76,6 +76,11 @@ image gorou_neutral:
     ypos 1100 xpos 900
     zoom 0.55
 
+image gorou_smug:
+    "char/gorou_smug.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+
 image izumi_neutral:
     "char/izumi_neutral.png"
     ypos 1200

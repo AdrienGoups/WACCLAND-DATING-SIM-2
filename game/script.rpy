@@ -1060,6 +1060,11 @@ label Day1EventEnd:
         m "...?"
         m "Huh?"
 
+        show gorou_neutral:
+            ease 1 xpos 900 ypos 1100
+
+        hide yomki with Dissolve(0.5)
+
         play music ("bgm/8.ogg") fadeout(1)
 
         g "I sincerely apologize, MY BEST FRIEND!"
@@ -1075,7 +1080,6 @@ label Day1EventEnd:
         g "Wait-"
         g "I never asked for your name..."
 
-        hide yomki
         hide gorou_neutral
         show masashi_neutral
         with Dissolve (0.5)
@@ -1091,7 +1095,8 @@ label Day1EventEnd:
         m "I'm sorry for doubting you Gorou."
         m "You were one of my people after all."
 
-        #Gorou smug
+        hide gorou_neutral
+        show gorou_smug
 
         g "As they say in the lands between, those who play Waccland Chronicles are your friends."
         m "Facts Brother!!!"
@@ -1102,7 +1107,7 @@ label Day1EventEnd:
         g "Farewell!"
         m "Bye!"
 
-        hide gorou_neutral with Dissolve (0.5)
+        hide gorou_smug with Dissolve (0.5)
 
         m "I got this guy completely wrong..."
         m "Man."
