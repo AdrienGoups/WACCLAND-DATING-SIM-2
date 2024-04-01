@@ -1132,18 +1132,154 @@ label Day1EventEnd:
 
         $ Asami_Event_3 = True
 
-        "This is the Asami day 3 event."
+        play music "bgm/3.ogg"
+
+        "Alright, I'll talk to Asami"
 
         if Asami_Event_1 == False:
 
             $ Asami_Event_1 = True
 
-            "You had not completed the day 1 event with Asami."
+            m "Asami."
+            a "..."
+            m "I'd like to apologize again."
+            a "..."
+            a "Kamiya-kun... if you really want to apoligize to me..."
+            a "I'll accept your apology only on one condition."
+
+            hide asami_judge
+            show asami_smug
+
+            a "If you become my friend, then I'll gladly accept it!"
+            m "..."
+            m "(Is she stupid or what...?)"
+            m "(I began wondering if I should accept.)"
+            m "(On one hand, the entire case will be solved. But...)"
+            pause 0.1
+            m "(Man, she really is annoying.)"
+            m "(Well, I went to the trouble and all of going to apologize.)"
+            m "(I take a deep breath before sealing my fate.)"
+            m "..."
+            m "Okay, I accept. I'll become your friend."
+
+            hide asami_smug
+            show asami_intrigued
+
+            a "You really mean it...?"
+
+            hide asami_intrigued
+            show asami_smug
+
+            play music ("bgm/7.ogg") fadeout (1)
+
+            a "Well, of course you'd accept!"
+            a "You couldn't possibly decline being friends with such a cute girl!"
+
+            hide asami_smug
+            show asami_happy
+
+            a "Just be glad you're now friends with someone as great as me!"
+            m "(Man, I already regret my choice.)"
+            m "(I may have accidently ruined my entire year.)"
+            m "(Too late to go back.)"
+
+            show asami_neutral
+            hide asami_happy
+
         else:
-            "You have completed the day 1 event with Asami."
+            m "Asami, wait."
+            m "Don't leave yet."
+            m "I wanted to talk with you."
+            a "What is it?"
+            a "You want to ask me out?"
+            m "Huh-"
+            a "Well, of course you would!"
+            a "You are talking to the cutest girl in school after all."
+            m "..."
+            a "Well, just so you know, I refuse!"
+            m "...I never said anything about asking you out..."
 
-        "This is the continuation of the event."
+            hide asami_neutral
+            show asami_confused
 
+            a "What?"
+
+            hide asami_confused
+            show asami_neutral
+
+            a "Nevermind then."
+            m "(Why is she always so... annoying...)"
+
+        a "Kamiya, I wanted to ask you something in return."
+
+        hide asami_neutral
+        show asami_smug
+
+        a "Do you perchance, have a InstaWACC account?"
+        a "I shall grace you with my friendship!"
+        m "Yeah, I got one, altough I barely use it."
+
+        show asami_neutral
+        hide asami_smug
+
+        a "Alright, what's your username"
+        m "I'm not telling you."
+
+        show asami_mad
+        hide asami_neutral
+
+        a "You're getting a friend request from a girl as cute as me, and you refuse her offer?"
+        a "What a weirdo."
+        a "But, unfortunately for you, you have no choice!"
+        m "*Sigh*"
+        m "(At this rate it's going to be more annoying if I don't give her my username.)"
+        m "my username is MC_Kun_420"
+
+        hide asami_neutral
+        show asami_judge
+
+        a "What a lame username..."
+        m "You asked for it didn't you?"
+
+        show asami_neutral
+        hide asami_judge
+
+        m "By the way, while we're at it."
+        m "Do you want to hang out today?"
+        a "Yeah, got nothing else planned."
+
+        hide asami_neutral
+        show asami_smug
+
+        a "If we're going to hang out, then show me arround town!"
+        m "uhhh...."
+        m "I'm the one who proposed hanging out...?"
+        m "Shouldn't I get to choose where we go?"
+        a "What do you mean?"
+        a "If you're going to ask for a date with a girl as cute as me, of course I'm the one who should choose!"
+        m "...I never said this was a date."
+        a "Either way, I'm pretty sure all the places you would have recommended would be shit anyway."
+
+        scene black with Dissolve(0.5)
+
+        m "(Despite these unfortunate circumstances, I show Asami arround town.)"
+        m "(Even with me repeating over and over that this is NOT a date, Asami keeps on rambling on and on about how I should be grateful that a girl as cute as herself is accepting a date with me.)"
+        m "(I somewhat ponder about if choosing to hang out with her was a bad decision...)"
+        m "(But back to the original topic, I showed her all the popular places where people hang out... not that I'd know myself, I just looked it up online.)"
+
+        scene house with Dissolve (0.5)
+
+        show asami_neutral with Dissolve (0.5)
+
+        m "(After showing her arround town, we make a brief stop.)"
+        a "Hey MC."
+        m "What?"
+
+        show asami_happy
+        hide asami_neutral
+
+        a "Where do you live?"
+        
         jump Day3EventEnd
 
     label Day3EventEnd:
