@@ -1135,7 +1135,7 @@ label Day1EventEnd:
 
         $ Asami_Event_3 = True
 
-        play music "bgm/3.ogg"
+        play music "bgm/3.ogg" fadeout (1)
 
         "Alright, I'll talk to Asami"
 
@@ -1186,6 +1186,8 @@ label Day1EventEnd:
             m "(I may have accidently ruined my entire year.)"
             m "(Too late to go back.)"
 
+            play music "bgm/3.ogg" fadeout (1)
+
             show asami_neutral
             hide asami_happy
 
@@ -1194,15 +1196,23 @@ label Day1EventEnd:
             m "Don't leave yet."
             m "I wanted to talk with you."
             a "What is it?"
+
+            hide asami_neutral
+            show asami_smug
+
             a "You want to ask me out?"
             m "Huh-"
             a "Well, of course you would!"
             a "You are talking to the cutest girl in school after all."
             m "..."
+
+            hide asami_smug
+            show asami_judge
+
             a "Well, just so you know, I refuse!"
             m "...I never said anything about asking you out..."
 
-            hide asami_neutral
+            hide asami_judge
             show asami_confused
 
             a "What?"
@@ -1282,6 +1292,125 @@ label Day1EventEnd:
         hide asami_neutral
 
         a "Where do you live?"
+        m "Where I live?"
+        m "Well, if you want to know..."
+        m "43, Mind Your Own Business Street."
+        a "..."
+
+        hide asami_happy
+        show asami_judge
+
+        a "Where even is that?"
+        m "Is your head so empty that it can't even comprehend a simple joke?"
+
+        hide asami_judge
+        show asami_mad
+
+        a "Well, that's just mean MC."
+        a "You shouldn't say that to such a cute girl!"
+        m "Well, what if I don't care then?"
+        a "Enough! You're going to tell me where you live now!"
+        a "That's an order!"
+        m "Why the hell do you even want to know!?"
+
+        hide asami_mad
+        show asami_judge
+        
+        a "Why?"
+
+        hide asami_judge
+        show asami_smug
+
+        a "I just felt like asking."
+        m "(Once again, this girl has pebbles instead of a brain)"
+        a "So tell me-"
+
+        show asami_smug:
+            ease 1 xpos 900 ypos 1100
+
+        show bob_neutral with Dissolve(0.5)
+
+        if Yomki_Event_2:
+            b "Woah bébé chat, didn't know you had a girlfriend!"
+            b "Must be 'cause of your GAINS!"
+
+            hide asami_smug
+            show asami_mad:
+                xpos 900 ypos 1100
+            
+            a "What?"
+            a "This guy my boyfriend?"
+            a "You must have hit your head really hard!"
+            a "Who the hell do you think you are to assume that me, such a cute girl, would have this loser as a boyfriend!"
+            b "I don't know man, you two seemed pretty close."
+            a "Like I said, he is just my friend!"
+            b "Woah, no need to be so defensive, you should take some Sauce!"
+            a "Hphm!"
+            a "Okay."
+            a "But, I better not see you calling me this guy's boyfriend again!"
+            b "Yeah, no problem bébé chat."
+            b "Anyway, MC, don't give up."
+            b "Continue stacking those GAINS!"
+            m "Will do, Bob."
+        else:
+            b "Damn, who is this bébé chat!"
+
+            hide asami_smug
+            show asami_confused
+
+            a "Huh???"
+            a "What's up with this guy?"
+            m "Uhh... I don't know."
+            b "The name's Yasuhiro Bob, nice to meet you two."
+            m "Uhhh... who the hell just walks up to someone and calls them ''bébé chat''?"
+            b "I don't see the problem, we are all bébé chats after all."
+
+            hide asami_confused
+            show asami_smug
+
+            a "Whatever, my name is Asami, you should feel honoured to meet someone as cute as myself!"
+            b "You sure are bébé chat."
+            a "At least someone here is able to see my true worth!"
+            m "I guess I should introduce myself."
+            
+            hide asami_smug
+            hide bob_neutral
+            with Dissolve (0.5)
+
+            show masashi_neutral with Dissolve (0.5)
+
+            m "I'm Masashi Kamiya, but you can call me MC!"
+            m "Gaming is my life! And Wacc-Fuel is my blood!"
+            m "Trough fire and ice, I have fought together!"
+            m "For I am the storm that is aproaching!"
+            m "Provoking black clouds in isolation!"
+
+            hide masashi_neutral with Dissolve (0.5)
+
+            show bob_neutral with Dissolve (0.5)
+
+        #end of route split
+
+        b "Anyway, I gotta go take the sauce!"
+        b "See you later!"
+
+        hide bob_neutral with Dissolve (0.5)
+
+        show asami_neutral with Dissolve (0.5)
+
+        a "That guy sure was something."
+        a "Anyway, forget about where you live."
+        a "I'll just ask your friend Yomki!"
+        m "Please don't do that..."
+        a "Anyway, farewell!"
+        a "See you tommorow!"
+        m "Goodbye."
+
+        hide asami_neutral with Dissolve(0.5)
+
+        m "(Asami left.)"
+        m "Man, these days don't get any weirder."
+        m "Anyway, time to head home."
         
         jump Day3EventEnd
 

@@ -11,6 +11,11 @@ image asami_dumbass:
     ypos 1200 xpos 900
     zoom 0.55
 
+image asami_confused:
+    "char/asami_confused.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
 image asami_mad:
     "char/asami_mad.png"
     ypos 1200 xpos 900
