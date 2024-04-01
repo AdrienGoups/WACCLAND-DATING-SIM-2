@@ -1482,6 +1482,152 @@ label Day1EventEnd:
     m "Alright."
     m "Almighty Chungus!"
     m "I accept your D-D-D-D-D-DUEL!!!"
+    m "(The space arround us started to shift.)"
+
+    scene school_gym
+    show chungus
+    with Dissolve (1)
+
+    play music "bgm/chungus_battle1.mp3" fadeout (1)
+
+    m "(We were transported into the school gym.)"
+    c "The rules are simple-"
+    c "The one who balls the hardest wins."
+    c "Ready?"
+    m "Yeah!"
+
+    # zoom sfx
+
+    m "(As he said this, the chungus zoomed arround the court at lightning speed.)"
+    m "(Without even being able to process what was happening, the chungus had already jumped.)"
+    m "(I watched in horror as the chungus dunked the ball straight into the basket.)"
+
+    # Dunk sfx
+
+    c "One point, motherfucker."
+    c "A bit slow this one, don't you think?"
+    c "Thou can do better, Masashi Kamiya."
+    m "(I began to wonder if I even had a chance...)"
+    m "(Did he purposefully challenge me knowing that I never had a chance.)"
+    m "I..."
+    m "I refuse to go down this easily!"
+    m "(I begin to run straight to the ball, catching it in mid-air as it bounced on the floor.)"
+    m "(Although, when I turned I saw an imposing figure.)"
+    m "(Big chungus seemed even larger than usual.)"
+    m "(As I tried to outmaneuver him, Big Chungus managed to snatch the ball from me.)"
+    c "Looks like I get another point."
+
+    hide chungus with Dissolve (1)
+
+    m "(Big Chungus then bolted straight to the basket.)"
+    m "..."
+    m "(He jumps again...)"
+    m "(His paw hits the ball...)"
+
+    stop music fadeout 1
+
+    pause 1
+
+    m "(I expected to hear the sound of the ball bouncing on the floor...)"
+    m "(All hope was lost, yet...)"
+    m "(Instead of the sound of the ball, I heard footsteps.)"
+
+    pause 1
+
+    play music "bgm/you_say_run.mp3" fadeout (1)
+
+    # ball gets stopped sfx
+
+    m "(You see a figure catching the Chungus' dunk, milimiters before it passed the basket.)"
+    m "!!!"
+    m "Y-Yomki!!!"
+    m "My bro, my man, my dude!!!"
+
+    show yomki with Dissolve (1)
+
+    y "Yo MC, you should've told me you were ballin' bro."
+    y "You know I love balls."
+    m "Sorry, homie."
+
+    hide yomki
+    show yomki_smug
+
+    y "Alright, let's show this Chungus what real bros can do!"
+    k "Yeah bro!"
+
+    hide yomki_smug with Dissolve (0.5)
+
+    "As the two of you ball with big chungus, even more of your friends arrive."
+
+    show gorou_yell with Dissolve (0.5)
+
+    g "MC, Yomki! The phoenix's divine darkness shall forever be at your command!"
+    g "May your balls light up the way to the heavens!"
+
+    hide gorou_yell
+    show bob_neutral
+    with Dissolve(0.5)
+
+    b "Yo bébé chats! I believe in you guys!"
+    b "You're sure to win with all those GAINS!"
+
+    hide bob_neutral
+    show miyuki_unimpressed
+    with Dissolve(0.5)
+
+    m "The hell those three are doing???"
+    m "And why is there a big rabbit?"
+
+    hide miyuki_unimpressed
+    show izumi_neutral
+    with Dissolve(0.5)
+
+    i "Now! This is it!"
+    i "Now is the time to choose!"
+    i "Be maidenless and die without bitches, or live and fight for your maidens!"
+    i "Now is the time to shape your stories!"
+    i "Your fate is in your hands!"
+
+    hide izumi_neutral with Dissolve(0.5)
+
+    "Everyone's voices echo within you and your homie Yomki."
+    "Everyone's hopes and dreams rest within you!"
+    m "(With this newfound power, I jump forward, straight for the basket.)"
+
+    pause 0.5
+
+    y "MC, catch!"
+    m "(Yomki tosses me the ball.)"
+    m "With all our powers combined, our wills as one..."
+    m "We have the power to pierce even the heavens!"
+
+    m "(The palm of my hands hit the ball.)"
+    m "(The piercing sound echoes through the gym.)"
+    m "(Everyone is speechless.)"
+    m "(No one has ever balled this hard.)"
+    m "(No one...)"
+    m "(Not even big Chungus.)"
+
+    pause 1
+
+    show chungus with Dissolve (1)
+
+    c "!!!"
+    c "This power."
+    c "I was right all along."
+    c "Masashi Kamiya, you are the one."
+    c "You are destined for greatness."
+    c "The Chungus congratulates you, for you have outballed him."
+    c "Thou hast passed the trial."
+    c "May your L's be few, and your bitches many!"
+
+    scene white with Dissolve (0.5)
+
+    scene school_gym with Dissolve (0.5)
+
+    m "(The chungus then vanished in a flash of light.)"
+    m "(I have finished his trial.)"
+
 
     m "Uhhhhh tf do i cook??????"
     "but suddenly"
