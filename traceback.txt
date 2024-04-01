@@ -1,40 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 880, in script
-    play music (bgm/bro time.mp3) fadeout(1)
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-SyntaxError: invalid syntax (game/script.rpy, line 880)
+  File "game/script.rpy", line 1356, in script
+    hide asami_mad with Disolve(0.5)
+  File "game/script.rpy", line 1356, in <module>
+    hide asami_mad with Disolve(0.5)
+NameError: name 'Disolve' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 880, in script
-    play music (bgm/bro time.mp3) fadeout(1)
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 1968, in execute
-    self.call("execute")
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 1950, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\statements.py", line 349, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\python.py", line 1207, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\python.py", line 1144, in py_compile
-    raise e
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\python.py", line 1081, in py_compile
-    raise orig_e
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\python.py", line 1073, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/script.rpy, line 880)
+  File "game/script.rpy", line 1356, in script
+    hide asami_mad with Disolve(0.5)
+  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 1359, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 1356, in <module>
+    hide asami_mad with Disolve(0.5)
+NameError: name 'Disolve' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 WACCLAND DATING SIM 2: Electric Boogaloo 0.1
-Sun Mar 31 20:41:24 2024
+Sun Mar 31 23:11:46 2024

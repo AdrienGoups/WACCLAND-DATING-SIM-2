@@ -1353,7 +1353,7 @@ label Day1EventEnd:
             b "Continue stacking those GAINS!"
             m "Will do, Bob."
 
-            hide asami_mad with Disolve(0.5)
+            hide asami_mad with Dissolve (0.5)
 
         else:
             unk "Damn, who is this bébé chat!"
