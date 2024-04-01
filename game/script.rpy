@@ -898,7 +898,7 @@ label Day1EventEnd:
         m "(I start to walk towards the exit.)"
         m "(Altough while turning to get on the sidewalk, I notice someone I know.)"
 
-        show izumi_neutral with Dissolve(0.5)
+        show izumi_smoke with Dissolve(0.5)
 
         m "Mr. Izumi?"
         i "Ah, Kamiya, heading home?"
@@ -959,7 +959,7 @@ label Day1EventEnd:
         i "That's not relevant-"
         i "Either way, I gotta go."
 
-        hide izumi_neutral with Dissolve (0.5)
+        hide izumi_smoke with Dissolve (0.5)
 
         i "See you tommorow, Masashi-kun."
         m "...See you tommorow mr.Izumi."

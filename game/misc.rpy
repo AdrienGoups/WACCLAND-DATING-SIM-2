@@ -55,6 +55,26 @@ image miyuki_neutral:
     "char/miyuki_neutral.png"
     ypos 1200 xpos 900
     zoom 0.55
+
+image miyuki_happy:
+    "char/miyuki_happy.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image miyuki_mad:
+    "char/miyuki_mad.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image miyuki_smug:
+    "char/miyuki_smug.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image miyuki_unimpressed:
+    "char/miyuki_unimpressed.png"
+    ypos 1200 xpos 900
+    zoom 0.55
         
 image bob_neutral:
     "char/bob_neutral.png"
@@ -76,6 +96,16 @@ image yomki:
     ypos 1100 xpos 900
     zoom 0.55
 
+image yomki_mad:
+    "char/yomki_mad.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+
+image yomki_smug:
+    "char/yomki_smug.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+
 image gorou_neutral:
     "char/gorou_neutral.png"
     ypos 1100 xpos 900
@@ -86,8 +116,24 @@ image gorou_smug:
     ypos 1100 xpos 900
     zoom 0.55
 
+image gorou_yell:
+    "char/gorou_yell.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+
+image gorou_surprised:
+    "char/gorou_surprised.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+
 image izumi_neutral:
     "char/izumi_neutral.png"
+    ypos 1200
+    xpos 900
+    zoom 0.55
+
+image izumi_smoke:
+    "char/izumi_smoke.png"
     ypos 1200
     xpos 900
     zoom 0.55
