@@ -1,28 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1356, in script
-    hide asami_mad with Disolve(0.5)
-  File "game/script.rpy", line 1356, in <module>
-    hide asami_mad with Disolve(0.5)
-NameError: name 'Disolve' is not defined
+  File "game/script.rpy", line 1556, in script
+    k "Yeah bro!"
+Exception: Sayer 'k' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1356, in script
-    hide asami_mad with Disolve(0.5)
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 1359, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 1356, in <module>
-    hide asami_mad with Disolve(0.5)
-NameError: name 'Disolve' is not defined
+  File "game/script.rpy", line 1556, in script
+    k "Yeah bro!"
+  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'k' is not defined.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 WACCLAND DATING SIM 2: Electric Boogaloo 0.1
-Sun Mar 31 23:11:46 2024
+Mon Apr  1 13:00:15 2024

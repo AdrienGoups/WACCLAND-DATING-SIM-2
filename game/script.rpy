@@ -1508,7 +1508,7 @@ label Day1EventEnd:
     c "A bit slow this one, don't you think?"
     c "Thou can do better, Masashi Kamiya."
     m "(I began to wonder if I even had a chance...)"
-    m "(Did he purposefully challenge me knowing that I never had a chance.)"
+    m "(Did he purposefully challenge me knowing that I never had a chance?)"
     m "I..."
     m "I refuse to go down this easily!"
     m "(I begin to run straight to the ball, catching it in mid-air as it bounced on the floor.)"
@@ -1553,7 +1553,7 @@ label Day1EventEnd:
     show yomki_smug
 
     y "Alright, let's show this Chungus what real bros can do!"
-    k "Yeah bro!"
+    m "Yeah bro!"
 
     hide yomki_smug with Dissolve (0.5)
 
@@ -1627,6 +1627,7 @@ label Day1EventEnd:
 
     m "(The chungus then vanished in a flash of light.)"
     m "(I have finished his trial.)"
+    m "(As the dust settles, everyone who gathered in the gym begin to leave.)"
 
 
     m "Uhhhhh tf do i cook??????"
