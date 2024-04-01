@@ -1049,6 +1049,11 @@ label Day1EventEnd:
         m "...?"
         m "Huh?"
 
+        show gorou_neutral:
+            ease 1 xpos 900 ypos 1100
+
+        hide yomki with Dissolve(0.5)
+
         play music ("bgm/8.ogg") fadeout(1)
 
         g "I sincerely apologize, MY BEST FRIEND!"
@@ -1064,7 +1069,6 @@ label Day1EventEnd:
         g "Wait-"
         g "I never asked for your name..."
 
-        hide yomki
         hide gorou_neutral
         show masashi_neutral
         with Dissolve (0.5)
