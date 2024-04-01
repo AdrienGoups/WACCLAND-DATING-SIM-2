@@ -1701,7 +1701,7 @@ label Day1EventEnd:
     m "(But that's a story for another day!)"
     m "Roll credits!!!"
 
-    play music "bgm/main2.mp3" fadeout 2
+    play music "bgm/credits.mp3" fadeout 2
 
     "WACCLAND DaTING SIM 2: elecrtric boogaloo - Prologue: To ball, is to live."
     "Created by" " Aqua 'Rhadish' 'Goups' Hoshino"
