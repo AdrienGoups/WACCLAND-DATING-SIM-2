@@ -1602,15 +1602,13 @@ label Day1EventEnd:
     "Everyone's voices echo within you and your homie Yomki."
     "Everyone's hopes and dreams rest within you!"
     m "(With this newfound power, I jump forward, straight for the basket.)"
-
-    scene ballcg with Dissolve (1)
-
-    pause 0.5
-
     y "MC, catch!"
     m "(Yomki tosses me the ball.)"
 
     play sound ("sfx/catchball.mp3")
+    scene ballcg with Dissolve (1)
+
+    pause 0.5
 
     m "With all our powers combined, our wills as one..."
     m "We have the power to pierce even the heavens!"
