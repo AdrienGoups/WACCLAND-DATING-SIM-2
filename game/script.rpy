@@ -1606,8 +1606,8 @@ label Day1EventEnd:
     show miyuki_unimpressed
     with Dissolve(0.5)
 
-    m "The hell those three are doing???"
-    m "And why is there a big rabbit?"
+    mi "The hell those three doing???"
+    mi "And why is there a big rabbit?"
 
     hide miyuki_unimpressed
     show izumi_neutral
