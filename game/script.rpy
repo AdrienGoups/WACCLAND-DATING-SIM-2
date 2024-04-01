@@ -809,11 +809,13 @@ label Day1EventEnd:
     m "(No use thinking about this more than necessary.)"
     m "(I should just go to sleep...)"
 
-    scene black Dissolve(0.5)
+    scene black with Dissolve(0.5)
 
     "The next day..."
 
     scene residential with Dissolve(0.5)
+
+    play music ("bgm/2.ogg") fadeout (1)
 
     m "(Day 3 of my new school life, and it's not going very well...)"
     m "(Everyone I've met thus far has been either completely insane or kind of assholes.)"
@@ -833,11 +835,17 @@ label Day1EventEnd:
     m "I could hang out with Yomki like usual."
     m "Or just go home and game all evening..."
 
-    show asami_neutral with Dissolve
+    if Asami_Event_1:
+
+        show asami_neutral with Dissolve(0.5)
+
+    else:
+        show asami_judge with Dissolve(0.5)
+    #Route split finished
 
     m "Huh... why is she looking at me?"
 
-    if Asami_Event_1 == false:
+    if Asami_Event_1 == False:
         a "..."
         m "She's been quiet for the last few days."
         m "Should I try to apologize to her again?"
@@ -847,6 +855,7 @@ label Day1EventEnd:
         a "See you tommorow!"
     #Route split finished
 
+    m "..."
     m "(I guess I could try my chance talking with Asami too.)"
 
     menu:
@@ -855,14 +864,89 @@ label Day1EventEnd:
             jump IzumiEvent3
         "Hang out with Yomki again.":
             jump GorouEvent3
-        "Talk with Asami."
+        "Talk with Asami.":
             jump AsamiEvent3
 
     label IzumiEvent3:
 
         $ Izumi_Event_3 = True
 
-        "This is the Izumi day 3 event."
+        m "(I decide to go straight home.)"
+        m "(With these past few days being so weird, I merit a break of sorts.)"
+        m "(I take my bag and head straight towards the exit.)"
+
+        scene school with Dissolve(0.5)
+
+        m "(As usual, the road to exit the school is completely filled with students.)"
+        m "(Not surprising, who in their right mind would want to stay in hell?)"
+        m "(I start to walk towards the exit.)"
+        m "(Altough while turning to get on the sidewalk, I notice someone I know.)"
+
+        show izumi_neutral with Dissolve(0.5)
+
+        m "Mr. Izumi?"
+        i "Ah, Kamiya, heading home?"
+        m "Yeah."
+        i "Also you can drop the mister while outside school."
+        i "Puts some kind of distance between people when you use honorifics"
+        m "Well yeah... that's true."
+        m "Didn't know you smoked."
+        i "Huh, yeah, been smokin' for a quite a long time."
+        i "All 'cause of this one guy."
+        i "Always rambled on and on about how he much he despised lazy people."
+        i "He was always like: ''Those damn fools don't even bother doing anything with their lives.''"
+        i "Sure enough, the guy went on to become CEO of the largest company in the entire world."
+        i "I saw him a couple of years ago and he invited me for a drink."
+        i "He kept talking about buisness and stuff."
+        m "What was his name?"
+        i "Michel."
+        m "I'm pretty sure I heard that name before..."
+        m "Wait-"
+        m "THE Michel Popstonia studied here at Waccland's peak academy?!?"
+        i "Yep, That's right"
+        m "Doesn't seem like his attitude changed much."
+        i "Yeah."
+        i "I remember back in my days, we didn't even have phones."
+        i "Hell, we didn't even have electricity."
+        i "It was all just swords, and magic, and all."
+        m "Wait, wasn't electricity discovered in like 1800?"
+        i "1752."
+        i "Just an exaggeration by the way."
+        i "Me and my friends went on a long long journey."
+        i "We were on a quest to find and restore the balance of the seven crystals of the elements."
+        i "The one we called the lord of the seventh had created a dark crystal which destroyed the balance of the world."
+        i "So we defeated him and were hailed as the heroes of the land."
+        i "That's about it, I guess."
+        m "Huh...???"
+        m "(After this long monologue how could I not ask myself a thousand questions?)"
+        m "...uhhh... mr.Izumi...?"
+        i "You don't have to call me mister."
+        m "...Izumi, how often do you smoke?"
+        i "Not that much."
+        i "One day you'll understand how it feels like to be a living legend."
+        m "...Alright then, have you been playing WACC Quest XIII too much?"
+        i "Probably."
+        m "(Interesting, I didn't think he'd be the type to play games like that.)"
+        m "Then, are you one of us?"
+        i "''One of us...?''"
+        m "A gamer."
+        i "I guess you could call me that."
+        i "I've played pretty much all the classics from the 90's."
+        i "From WACC Fantasy, to the legend of WACC, to WACCLAND 64."
+        m "Damn-"
+        m "You're old."
+        i "You do know I'm 36?"
+        i "Wait, I think I've forgotten a couple of digits."
+        i "When you start getting as old as me, you start forgettin' things like that."
+        m "...?"
+        m "How old are you again?"
+        i "That's not relevant-"
+        i "Either way, I gotta go."
+        i "See you tommorow, Masashi-kun."
+        m "...See you tommorow mr.Izumi."
+        m "..."
+        m "(Well, that wasn't what I was expecting.)"
+        m "(I'm not sure yet if he's cool, ...or just kinda crazy.)"
 
         jump Day3EventEnd
     
@@ -880,11 +964,23 @@ label Day1EventEnd:
 
         "This is the Asami day 3 event."
 
+        if Asami_Event_1 == False:
+
+            $ Asami_Event_1 = True
+
+            "You had not completed the day 1 event with Asami."
+        else:
+            "You have completed the day 1 event with Asami."
+
+        "This is the continuation of the event."
+
         jump Day3EventEnd
 
     label Day3EventEnd:
 
     scene bedroom with Dissolve(0.5)
+
+    play music ("bgm/bedroom.mp3") fadeout (1)
 
     m "Uhhhhh tf do i cook??????"
     "but suddenly"

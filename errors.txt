@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 494: if statement expects a non-empty block.
-    if Asami_Event_1:
-                     ^
-
-File "game/script.rpy", line 502: expected statement.
-    else:
-        ^
+File "game/script.rpy", line 858: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Talk with Asami."
+                      ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sun Mar 31 11:05:40 2024
+Sun Mar 31 19:44:07 2024
