@@ -1325,18 +1325,18 @@ label Day1EventEnd:
         m "(Once again, this girl has pebbles instead of a brain)"
         a "So tell me-"
 
-        show asami_smug:
-            ease 1 xpos 900 ypos 1100
-
-        show bob_neutral with Dissolve(0.5)
+        show bob_neutral
+        
+        show bob_neutral:
+            ypos 1100 xpos 1400
+        with Dissolve(0.5)
 
         if Yomki_Event_2:
             b "Woah bébé chat, didn't know you had a girlfriend!"
             b "Must be 'cause of your GAINS!"
 
             hide asami_smug
-            show asami_mad:
-                xpos 900 ypos 1100
+            show asami_mad
             
             a "What?"
             a "This guy my boyfriend?"
@@ -1353,7 +1353,7 @@ label Day1EventEnd:
             b "Continue stacking those GAINS!"
             m "Will do, Bob."
         else:
-            b "Damn, who is this bébé chat!"
+            unk "Damn, who is this bébé chat!"
 
             hide asami_smug
             show asami_confused
@@ -1368,7 +1368,7 @@ label Day1EventEnd:
             hide asami_confused
             show asami_smug
 
-            a "Whatever, my name is Asami, you should feel honoured to meet someone as cute as myself!"
+            a "Whatever, my name is Asami, you should feel honored to meet someone as cute as myself!"
             b "You sure are bébé chat."
             a "At least someone here is able to see my true worth!"
             m "I guess I should introduce myself."
@@ -1381,7 +1381,7 @@ label Day1EventEnd:
 
             m "I'm Masashi Kamiya, but you can call me MC!"
             m "Gaming is my life! And Wacc-Fuel is my blood!"
-            m "Trough fire and ice, I have fought together!"
+            m "Trough fire and ice, I have fought forever!"
             m "For I am the storm that is aproaching!"
             m "Provoking black clouds in isolation!"
 

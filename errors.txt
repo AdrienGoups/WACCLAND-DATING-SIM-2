@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 858: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Talk with Asami."
-                      ^
+File "game/script.rpy", line 1328: show statement expects a non-empty block.
+    show bob_neutral with Dissolve(0.5):
+                                        ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sun Mar 31 19:44:07 2024
+Sun Mar 31 23:06:31 2024
