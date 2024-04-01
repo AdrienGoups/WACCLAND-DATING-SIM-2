@@ -663,7 +663,7 @@ label Day1EventEnd:
 
         m "(I then went to the vending machine to get a drink for me and Yomki.)"
 
-        show bob_neutral with Dissolve (1)
+        show bob_neutral with Dissolve (0.5)
 
         unk "Sup, bébé chat. You here to get gains as well?"
         m "Who the hell are you?"
@@ -675,7 +675,18 @@ label Day1EventEnd:
         unk "The Sauce. Don't you know what Sauce is?"
         b "Anyway, the name's Yasuhiro Bob, you can call me Bob, or bébé chat, I don't really care."
         m "(Sauce, does he mean like, steroids? Of course I don't take that.)"
-        m "Well, my name is Masashi Kamiya, you can call me MC."
+
+        hide bob_neutral with Dissolve (0.5)
+        show masashi_neutral
+        with Dissolve (0.5)
+
+        m "My name is Masashi Kamiya, but you can call me MC!"
+        m "Gaming is my life and Wacc-Fuel is my blood."
+        m "As darkness covers this land, I will become the light that banishes evil."
+
+        hide masashi_neutral 
+        show bob_neutral with Dissolve (0.5)
+
         b "Okay, bébé chat."
         m "I didn't say you could call me that."
         m "But to answer your question, no. Why would I take steroids."
@@ -1071,7 +1082,7 @@ label Day1EventEnd:
 
         m "My name is Masashi Kamiya, but you can call me MC!"
         m "Gaming is my life and Wacc-Fuel is my blood."
-        m "For over ten thousand years, I have protected this world from iminent destruction!"
+        m "Throughout Heaven and Earth, I alone am the Honored One which will guide the world to salvation!"
 
         hide masashi_neutral 
         show gorou_neutral
