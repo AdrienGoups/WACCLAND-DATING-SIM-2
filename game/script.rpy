@@ -1084,7 +1084,8 @@ label Day1EventEnd:
         m "I'm sorry for doubting you Gorou."
         m "You were one of my people after all."
 
-        #Gorou smug
+        hide gorou_neutral
+        show gorou_smug
 
         g "As they say in the lands between, those who play Waccland Chronicles are your friends."
         m "Facts Brother!!!"
@@ -1095,7 +1096,7 @@ label Day1EventEnd:
         g "Farewell!"
         m "Bye!"
 
-        hide gorou_neutral with Dissolve (0.5)
+        hide gorou_smug with Dissolve (0.5)
 
         m "I got this guy completely wrong..."
         m "Man."
