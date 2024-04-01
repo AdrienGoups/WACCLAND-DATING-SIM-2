@@ -1561,9 +1561,9 @@ label Day1EventEnd:
     m "(All hope was lost, yet...)"
     m "(Instead of the sound of the ball, I heard footsteps.)"
 
-    scene school_gym with Dissolve(1)
-
     pause 1
+
+    scene school_gym with Dissolve(1)
 
     play music "bgm/you_say_run.mp3" fadeout (1)
 
