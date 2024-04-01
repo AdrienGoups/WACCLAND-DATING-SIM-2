@@ -1616,7 +1616,7 @@ label Day1EventEnd:
 
     hide yomki_smug with Dissolve (0.5)
 
-    "As the two of you ball with big chungus, even more of your friends arrive."
+    "As the two of you ball with Big Chungus, even more of your friends arrive."
 
     show gorou_yell with Dissolve (0.5)
 
