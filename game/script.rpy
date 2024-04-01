@@ -899,7 +899,7 @@ label Day1EventEnd:
         i "He was always like: ''Those damn fools don't even bother doing anything with their lives.''"
         i "Sure enough, the guy went on to become CEO of the largest company in the entire world."
         i "I saw him a couple of years ago and he invited me for a drink."
-        i "He kept talking about buisness and stuff."
+        i "He kept talking about business and stuff."
         m "What was his name?"
         i "Michel."
         m "I'm pretty sure I heard that name before..."
