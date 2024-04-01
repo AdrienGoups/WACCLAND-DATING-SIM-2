@@ -944,6 +944,9 @@ label Day1EventEnd:
         m "How old are you again?"
         i "That's not relevant-"
         i "Either way, I gotta go."
+
+        hide izumi_neutral with Dissolve (0.5)
+
         i "See you tommorow, Masashi-kun."
         m "...See you tommorow mr.Izumi."
         m "..."
