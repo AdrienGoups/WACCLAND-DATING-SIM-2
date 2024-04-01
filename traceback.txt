@@ -1,24 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 1556, in script
-    k "Yeah bro!"
-Exception: Sayer 'k' is not defined.
+Compiling ATL code at game/script.rpy:1496
+  File "game/script.rpy", line 1494, in script
+    show chungus:
+Exception: Expression '0' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1556, in script
-    k "Yeah bro!"
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\adrien\Documents\renpy-6.99.14.1-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'k' is not defined.
+  File "game/script.rpy", line 1494, in script
+    show chungus:
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\ast.py", line 1113, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\ast.py", line 1076, in show_imspec
+    renpy.config.show(name,
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\exports.py", line 765, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\display\scenelists.py", line 474, in add
+    thing.visit_all(lambda d : None)
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\display\displayable.py", line 421, in visit_all
+    for d in self.visit():
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\atl.py", line 764, in visit
+    block = self.compile()
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\atl.py", line 671, in compile
+    block = self.atl.compile(self.context)
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\atl.py", line 873, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\atl.py", line 873, in <listcomp>
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\GAMU\renpy-6.99.14.1-sdk\renpy-6.99.14.1-sdk\renpy\atl.py", line 1237, in compile
+    raise Exception("Expression %r is not an ATL transform, and so cannot be included in an ATL interpolation." % expr)
+Exception: Expression '0' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.1.24030407
 WACCLAND DATING SIM 2: Electric Boogaloo 0.1
-Mon Apr  1 13:00:15 2024
+Mon Apr  1 17:43:38 2024

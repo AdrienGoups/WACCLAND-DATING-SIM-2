@@ -74,7 +74,7 @@ label start:
 
     # FR THIS TIME THIS IS THE start
 
-    "NOVEMBER 21, 20XX"
+    "NOVEMBER 21, 20XX."
     "The final day has arrived."
     "No one could have guessed what was coming."
     "But even then, we had to fight it..."
@@ -104,7 +104,7 @@ label start:
 
     show chungus with Dissolve (3)
 
-    c "It is nice to meet you, sussy boi."
+    c "It is nice to meet you, Sussy Boi."
     c "I am the being known as Big Chungus,"
     c "the god of this world."
     c "Masashi Kamiya... Thoust grand quest begins here."
@@ -120,7 +120,7 @@ label start:
     stop music
 
     m "Huh..."
-    m "A blinding light passes through the curtains straight into my face..."
+    m "(A blinding light passes through the curtains straight into my face...)"
     m "(I realize that I have overslept and that my alarm has been ringing for a good 15 minutes.)"
     m "Isn't 15 minutes a bit much?!"
     # nah i'd win
@@ -154,17 +154,17 @@ label start:
     m "(The school is now right in view. And still 15 minutes until the bell rings.)"
     m "(And now I'm standing at the doors of Waccland's Peak Academy.)"
     m "(First founded in 1869, this school was the gathering place for all the most brilliant minds.)"
-    m "(It's name derives from Kevin Waccland, the saviour of the world, inventor of Wa Ku Ho!)"
+    m "(It's name derives from Kevin Waccland, the saviour of the world, inventor of WA KU OH!)"
     m "(A place for such amazing people, named after the most amazing person.)"
     m "(Well, now it's just a normal high school that even normal people can go. That's how I got here.)"
-    m "Well I better go to my class before the bell rings"
+    m "Well I better go to my class before the bell rings."
 
     play sound ("sfx/vine boom.mp3")
     show saul with Dissolve (0.5)
     "Saul Goodman Jumpscare."
     hide saul with Dissolve (0.5)
 
-    m "(I follow the indications to my new class, class 1-C)"
+    m "(I follow the indications to my new class, class 1-C.)"
     scene classroom with Dissolve (1)
     m "As I enter the door, I quickly maneuver through the desks to arrive at my assigned desk, right beside the window in the second to last row."
     m "(I'm still sleepy... shouldn't have gamed all night...)"
@@ -191,16 +191,18 @@ label start:
     a "Well, I just arrived here, can't afford to be picky with friends!"
     a "And you were conveniently in the desk right in front of me!"
     a "My parents came here for work, and with that I arrive here with no one I know!"
-    a "Back home, I had like a hundred friends. Now I have to start back at 0. But I won't let that stop me!"
-    a "After all, I'm not a loser that talks to no one!"
+    a "Back home, I had like a hundred friends. Now, I have to start back at 0. But I won't let that stop me!"
+    a "After all, I'm not some kind of loser that talks to no one!"
     m "(What is she even talking about, I stopped listening 5 minutes ago...)"
     m "Sigh..."
 
     hide asami_smug
     show asami_mad
 
+    play music ("bgm/7.ogg") fadeout(1)
+
     a "Hey are you ignoring me!"
-    m "I sure am, now leave me alone."
+    m "I sure am. Now, leave me alone."
     a "That's not very polite! You're talking to such a cute girl and you don't even bother listening to a word she says!"
     m "I don't see the correlation between your points. I'm trying to sleep here."
     a "The audacity! Are you stupid or what?"
@@ -208,6 +210,8 @@ label start:
     a "Who even greets a stranger like that?"
     
     "Suddenly, the doors slams open."
+
+    play music ("bgm/2.ogg") fadeout(1)
 
     show asami_mad:
         ease 1 xpos 1600
@@ -280,10 +284,12 @@ label start:
         xpos 900
         ypos 140
 
+    play music ("bgm/7.ogg") fadeout(1)
+
     a "How dare you insinuate that I am this amoeba's girlfriend!"
     a "This guy's been ignoring me for the entire time while I talked about my life story."
     y "Can we skip dialogue here?"
-    m "Nah, bro. This isn't a visual novel, and if you skipped everything you wouldn't even have a game."
+    m "Nah, bro. This is a visual novel, if you skipped everything you wouldn't even have a game."
     y "I have no idea what's going on."
     a "Returning to the original subject, Kamiya-kun, I require an apology."
     m "Why should I need to apology, I didn't do anything. You're the one who's annoying me!"
@@ -297,9 +303,16 @@ label start:
         xpos 900
         ypos 140
 
+    stop music
+
     m "..."
     a "..."
+
+    play music ("bgm/8.ogg") fadeout(1)
+
     m "I'm sorry Asami, I shouldn't have ignored you. I was rude even though I barely knew you..."
+
+    stop music
     
     hide asami_unsure
     show asami_mad:
@@ -307,6 +320,8 @@ label start:
         ypos 140
     
     a "It's too late now! We'll never be friends! I'm done talking to you!"
+
+    play music ("bgm/2.ogg") fadeout(1)
     
     hide asami_mad with Dissolve (1)
 
@@ -518,7 +533,7 @@ label Day1EventEnd:
 
     scene classroom with Dissolve (1)
 
-    "Waccland's peak academy, Place Japan, Hour: 7:58"
+    "Waccland's Peak Academy, Place Japan, Hour: 7:58"
 
     m "(I arrive in class and sit at my desk.)"
     m "(An annoying face is staring at me right behind me.)"
@@ -617,7 +632,7 @@ label Day1EventEnd:
 
     unk "What a waste of time..."
     m "(While quickly glancing at her bag, I noticed a pin on it.)"
-    m "(It's a pin of WA-KU-Oh!, my favourite anime!)"
+    m "(It's a pin of WA-KU-OH!, my favourite anime!)"
     m "(Could perhaps this girl be one our kind???)"
     m "(Yomki noticed me staring at her, which he quickly whispered to me.)"
 
@@ -944,7 +959,7 @@ label Day1EventEnd:
         i "Michel."
         m "I'm pretty sure I heard that name before..."
         m "Wait-"
-        m "THE Michel Popstonia studied here at Waccland's peak academy?!?"
+        m "THE Michel Popstonia studied here at Waccland's Peak Academy?!?"
         i "Yep, That's right."
         m "Doesn't seem like his attitude changed much."
         i "Yeah."
@@ -956,12 +971,12 @@ label Day1EventEnd:
         i "Just an exaggeration by the way."
         i "Me and my friends went on a long long journey."
         i "We were on a quest to find and restore the balance of the seven crystals of the elements."
-        i "The one we called the lord of the seventh had created a dark crystal which destroyed the balance of the world."
+        i "The one we called the Lord of the Seventh had created a dark crystal which destroyed the balance of the world."
         i "So we defeated him and were hailed as the heroes of the land."
         i "That's about it, I guess."
         m "Huh...???"
         m "(After this long monologue how could I not ask myself a thousand questions?)"
-        m "...uhhh... Mr. Izumi...?"
+        m "...Uhhh... Mr. Izumi...?"
         i "You don't have to call me mister."
         m "...Naoki, how often do you smoke?"
         i "Not that much."
@@ -1463,7 +1478,7 @@ label Day1EventEnd:
     m "(With the coming of the 4th day, it feels like I should be getting used to this new daily routine, yet...)"
     m "(With all these bizzare events, I haven't had the time to get accustomed to my new surroundings.)"
     m "(Altough today feels different... somehow...)"
-    m "(Well, it's not use worrying about it, these past few days have only been a series of a bunch of weird stuff.)"
+    m "(Well, it's no use worrying about it, these past few days have only been a series of a bunch of weird stuff.)"
     m "(It's normal I'd be worried about it.)"
 
     scene school with Dissolve (0.5)
@@ -1476,7 +1491,10 @@ label Day1EventEnd:
 
     play music ("bgm/chungus_confrontation.mp3") fadeout (1)
 
-    show chungus with Dissolve(1)
+    show chungus:
+        ypos -1000 xpos 450
+        ease 0.2 ypos 150
+    play sound ("sfx/explosion4.ogg") volume 0.2
 
     m "(Like a meteor falling from the sky, HE fell right in front of me.)"
 
@@ -1488,9 +1506,9 @@ label Day1EventEnd:
 
     m "Who... are you again...?"
     c "Thy greatest Chungus is gracing thyself with his presence and thou doth not even remember him?"
-    c "I, am Big Chungus, the greatest and only one true Chungus!"
-    c "The god of this world, of this land."
-    c "Brave warrior of the maidens... I challenge thou to the dunktastic duel of WACC AND LAND!"
+    c "I, am Big Chungus, the greatest and the one and only true Chungus!"
+    c "The god of this world, of this wacc, of this land."
+    c "Brave warrior of the maidens... I challenge thou to the Dunktastic Duel of WACC AND LAND!"
     c "Thou hast no other choices!"
     c "Face me OR thou shall never feel the touch of a woman ever again!"
 
