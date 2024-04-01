@@ -136,6 +136,9 @@ image gym:
     "bg/gym.png"
     zoom 1.5
 
+image school:
+    "bg/school.png"
+
 image saul:
     "saul.png"
 
