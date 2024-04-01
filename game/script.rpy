@@ -1625,6 +1625,8 @@ label Day1EventEnd:
 
     scene school_gym with Dissolve (0.5)
 
+    play music "bgm/8.ogg"
+
     m "(The chungus then vanished in a flash of light.)"
     m "(I have finished his trial.)"
     m "(As the dust settles, everyone who gathered in the gym begin to leave.)"
@@ -1637,7 +1639,7 @@ label Day1EventEnd:
     m "(Me and Yomki proceed to have the manliest handshake ever.)"
     y "*Kisses you on the cheek* homie."
     m "Huh? What was that for?"
-    y "No homo bro, don't worry about it."
+    y "Don't worry about it, No homo bro."
     m "Sure bro."
 
     hide yomki_smug with Dissolve(0.5)
