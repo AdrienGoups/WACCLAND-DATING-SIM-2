@@ -1,4 +1,11 @@
-﻿# The script of the game goes in this file.
+﻿label splashscreen:
+    scene black
+
+    "The Time has Cometh, for the peakest of the peak."
+    "Now Sit back and get your ass blown away by peak fiction."
+    return
+
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -82,8 +89,8 @@ label start:
     "The land was scorched to the ground..."
     "They had come, the ones who are only known as the *REDACTED FOR SPOILERS*..."
 
-    unk "MC, the only way you can save this world is to ############"
-    unk "I will ######### from ##########"
+    unk "MC, the only way you can save this world is to ############."
+    unk "I will ######### from ##########."
     unk "########### you have one mission. One of the greatest importance..."
     unk "Go get bitches. At any cost, no matter if it's one or a thousand... You must get a Girlfriend!"
     m "I understand..."
