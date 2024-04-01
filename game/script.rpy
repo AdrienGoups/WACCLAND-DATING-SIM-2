@@ -1629,44 +1629,91 @@ label Day1EventEnd:
     m "(I have finished his trial.)"
     m "(As the dust settles, everyone who gathered in the gym begin to leave.)"
 
+    show yomki_smug with Dissolve(0.5)
 
-    m "Uhhhhh tf do i cook??????"
-    "but suddenly"
+    m "Yomki, I couldn't have done it without you bro!"
+    y "Together, we can pierce even the heavens bro!"
 
-    play sound "sfx/vine boom.mp3"
+    m "(Me and Yomki proceed to have the manliest handshake ever.)"
+    y "*Kisses you on the cheek* homie."
+    m "Huh? What was that for?"
+    y "No homo bro, don't worry about it."
+    m "Sure bro."
 
-    show saul with dissolve
+    hide yomki_smug with Dissolve(0.5)
 
-    "Saul Goodman Jumpscare"
-    hide saul
+    m "(And with that, the only ones left were me, Yomki...)"
+    m "(And her...)"
 
-    stop music fadeout (3)
+    show asami_confused with Dissolve(0.5)
 
-    "You feel a strong aura approaching."
-    "Someone enters the classroom."
-    "HE approaches YOU."
+    a "Kamiya..."
+    a "I-I..."
+    a "I was wrong about you..."
+    a "I didn't know you were able to ball that hard."
+    a "I thought you were a just a loser who never left his room..."
+    a "Now..."
 
-    show billy with Dissolve (2):
-        xalign 0.7
-        ypos 25
-    play music ("bgm/alphen.mp3") fadeout (1)
+    pause 2
 
-    "Billy" "YO ITS ME BILLY WACCLAND SMP IV HERE TO TELL YOU TO GET BITCHES LOSER!!!!!!!!"
-    "Billy" "COCK AMIRITE FELLAS!!!"
-    "Billy" "So basically, this is YOUR Waccland DaTING SIM 2: Electric Boogaloo, now go now."
-    "With Wacc and land."
-    hide billy with Dissolve (1)
-    "YOu suddenly remember Big CHungus'S words."
-    m "NO WAY I NEED TO COOK!!!"
-    m "BE MY GIRLFRIEND ASAMI!!!"
-    a "Fuck no! WTF!"
-    y "Damn, such a rizzler."
-    m "(I...I-I.... failed....?)"
-    m "(My sigma rizz failed me...??????)"
-    m "THIS GAME SUCKS!"
-    m "Fuck this shit I'm OUT!"
-    "You then jump off from the window and die."
-    play sound "sfx/vine boom.mp3"
+    hide asami_confused
+    show asami_mad
+
+    a "Nah, you're still just some loser!"
+    a "That bunny guy didn't even break a sweat!"
+    a "Look at you two, you're completely drenched in sweat!"
+
+    hide asami_mad
+    show asami_judge
+
+    a "I better leave before I'm late to class."
+
+    hide asami_judge with Dissolve(0.5)
+
+    m "(Asami left the room very quickly...)"
+    m "(Seriously, what's up with her?)"
+
+    show yomki with Dissolve(0.5)
+
+    y "Anyway, wanna hit the Waccdonald's MC?"
+    m "Hell yeah brother!"
+
+    hide yomki with Dissolve(0.5)
+
+    m "(As the both of us left the gym, I see the figure of a girl.)"
+
+    show usui_neutral with Dissolve(0.5)
+
+    hide usui_neutral with Dissolve(0.5)
+
+    m "(Altough she leaves as soon as I looked at her...)"
+    m "..."
+    y "Something bro?"
+    m "Nah, just my imagination."
+
+    scene black with Dissolve(2)
+
+    m "(And with that wrapped up, me and Yomki skipped school to go to the Waccdonald's.)"
+    m "(And thus concludes the first chapter of my new life.)"
+    m "(At this time, I was blissfully unaware of what horrors would befall me...)"
+    m "(But that's a story for another day!)"
+    m "Roll credits!!!"
+
+    play music "bgm/main2.mp3" fadeout 2
+
+    "WACCLAND DaTING SIM 2: elecrtric boogaloo - Prologue: To ball, is to live."
+    "Created by" " Aqua 'Rhadish' 'Goups' Hoshino"
+    "Created by" "Ruby 'Lean' 'Lédouzy' Hoshino AKA 'Dark Goups'"
+    "Character art by" "Rhadish"
+    "Background art by" "stolen assets from Doki Doki Literature Club and other various non-copyright free sources online."
+    "Music by" "stolen from Doki Doki Literature Club and other various video games or animes."
+    "Script written by" "Lédouzy and Rhadish."
+    "Concept by" "Rhadish"
+    "Special thanks" "Gabriel 'Bob' Théroux"
+    "Special thanks" "Yomki 'Yomki' Yomki"
+    "Special thanks" "Manx 'Oof Slayer' 'OddWerty05' The Soudeux"
+    "Special thanks" "And... NOT YOU! FUCK YOU! KEEP YOURSELF SAFE."
+
     "The end."
 
     # This ends the game.
