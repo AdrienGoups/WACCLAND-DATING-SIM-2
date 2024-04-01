@@ -151,6 +151,12 @@ label start:
     m "(A place for such amazing people, named after the most amazing person.)"
     m "(Well, now it's just a normal high school that even normal people can go. That's how I got here.)"
     m "Well I better go to my class before the bell rings"
+
+    play sound ("sfx/vine boom.mp3")
+    show saul with Dissolve (0.5)
+    "Saul Goodman Jumpscare."
+    hide saul with Dissolve (0.5)
+
     m "(I follow the indications to my new class, class 1-C)"
     scene classroom with Dissolve (1)
     m "As I enter the door, I quickly maneuver through the desks to arrive at my assigned desk, right beside the window in the second to last row."
@@ -1502,7 +1508,10 @@ label Day1EventEnd:
     m "(Without even being able to process what was happening, the chungus had already jumped.)"
     m "(I watched in horror as the chungus dunked the ball straight into the basket.)"
 
-    # Dunk sfx
+    play sound ("sfx/ball i guess.mp3")
+    queue sound ("sfx/explosion4.ogg") volume (0.5)
+    pause 1
+    play sound2 ("sfx/metal pipe.mp3") volume (0.1) fadeout (3)
 
     c "One point, motherducker."
     c "A bit slow this one, don't you think?"
@@ -1536,7 +1545,7 @@ label Day1EventEnd:
 
     play music "bgm/you_say_run.mp3" fadeout (1)
 
-    # ball gets stopped sfx
+    play sound ("sfx/catchball.mp3")
 
     m "(You see a figure catching the Chungus' dunk, milimiters before it passed the basket.)"
     m "!!!"
@@ -1598,10 +1607,19 @@ label Day1EventEnd:
 
     y "MC, catch!"
     m "(Yomki tosses me the ball.)"
+
+    play sound ("sfx/catchball.mp3")
+
     m "With all our powers combined, our wills as one..."
     m "We have the power to pierce even the heavens!"
 
     m "(The palm of my hands hit the ball.)"
+
+    play sound ("sfx/ball i guess.mp3")
+    queue sound ("sfx/explosion4.ogg") volume (0.5)
+    pause 1
+    play sound2 ("sfx/metal pipe.mp3") volume (0.1) fadeout (3)
+
     m "(The piercing sound echoes through the gym.)"
     m "(Everyone is speechless.)"
     m "(No one has ever balled this hard.)"
@@ -1705,7 +1723,7 @@ label Day1EventEnd:
 
     "WACCLAND DaTING SIM 2: elecrtric boogaloo - Prologue: To ball, is to live."
     "Created by" " Aqua 'Rhadish' 'Goups' Hoshino"
-    "Created by" "Ruby 'Lean' 'Lédouzy' Hoshino AKA 'Dark Goups'"
+    "Created by" "Joker 'Lean' 'Lédouzy' Persona5 AKA 'The real Goups'"
     "Character art by" "Rhadish"
     "Background art by" "stolen assets from Doki Doki Literature Club and other various non-copyright free sources online."
     "Music by" "stolen from Doki Doki Literature Club and other various video games or animes."
