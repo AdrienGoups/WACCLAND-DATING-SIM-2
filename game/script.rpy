@@ -1603,6 +1603,8 @@ label Day1EventEnd:
     "Everyone's hopes and dreams rest within you!"
     m "(With this newfound power, I jump forward, straight for the basket.)"
 
+    scene ballcg with Dissolve (1)
+
     pause 0.5
 
     y "MC, catch!"
@@ -1625,6 +1627,8 @@ label Day1EventEnd:
     m "(No one has ever balled this hard.)"
     m "(No one...)"
     m "(Not even big Chungus.)"
+
+    scene school_gym with Dissolve (1)
 
     pause 1
 
