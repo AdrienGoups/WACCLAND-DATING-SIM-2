@@ -1492,8 +1492,8 @@ label Day1EventEnd:
     play music ("bgm/chungus_confrontation.mp3") fadeout (1)
 
     show chungus:
-        ypos -1000 xpos 450
-        ease 0.2 ypos 150
+        ypos -1000 xpos 515
+        ease 0.2 ypos 190
     play sound ("sfx/explosion4.ogg") volume 0.2
 
     m "(Like a meteor falling from the sky, HE fell right in front of me.)"
