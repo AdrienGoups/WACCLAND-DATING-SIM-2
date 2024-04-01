@@ -272,7 +272,7 @@ label start:
     a "This guy's been ignoring me for the entire time while I talked about my life story."
     y "Can we skip dialogue here?"
     m "Nah, bro. This isn't a visual novel, and if you skipped everything you wouldn't even have a game."
-    y "I have no idea whatMs going on."
+    y "I have no idea what's going on."
     a "Returning to the original subject, Kamiya-kun, I require an apology."
     m "Why should I need to apology, I didn't do anything. You're the one who's annoying me!"
     a "'Didn't do anything', You ignored me and then you call me annoying!"
@@ -999,10 +999,11 @@ label Day1EventEnd:
 
         stop music fadeout (1)
 
-        #Edgy music here
-
         unk "..."
         unk "I..."
+
+        play music ("bgm/edge.mp3") fadeout(1)
+
         unk "I am-"
         unk "The prince of darkness himself."
         unk "The owner of the black throne, the one they call the ultimate despair!"
