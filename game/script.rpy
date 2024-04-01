@@ -171,7 +171,6 @@ label start:
     unk "What's with that reaction! Very well, I shall introduce myself."
 
     show asami_smug
-    # change to smug when it will be available
     hide asami_neutral
 
     a "The name's Nakamura Asami! You better remember it, for I am the one who shall soon rule this world!!!"
