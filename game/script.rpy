@@ -877,6 +877,8 @@ label Day1EventEnd:
 
         scene school with Dissolve(0.5)
 
+        play music ("bgm/8.ogg") fadeout(1)
+
         m "(As usual, the road to exit the school is completely filled with students.)"
         m "(Not surprising, who in their right mind would want to stay in hell?)"
         m "(I start to walk towards the exit.)"
