@@ -1423,6 +1423,66 @@ label Day1EventEnd:
 
     play music ("bgm/bedroom.mp3") fadeout (1)
 
+    m "..."
+    m "(The faint glimmer of sunlight left pierces the curtains of my rooms.)"
+    m "(As I lay down on my bed, I begin to ponder about all these strange events that have followed me for 3 days now.)"
+    m "(It somehow feels all intentional, like a mastermind is actively pulling the strings.)"
+    m "(Yet, a part of me doesn't want me to accept this idea.)"
+    m "(With these questions in my mind, I slowly go through the rest of the day without thinking about it much more.)"
+
+    scene residential with Dissolve (0.5)
+
+    play music ("bgm/2.ogg") fadeout (1)
+
+    m "(With the coming of the 4th day, it feels like I should be getting used to this new daily routine, yet...)"
+    m "(With all these bizzare events, I haven't had the time to get accustomed to my new surroundings.)"
+    m "(Altough today feels different... somehow...)"
+    m "(Well, it's not use worrying about it, these past few days have only been a series of a bunch of weird stuff.)"
+    m "(It's normal I'd be worried about it.)"
+
+    scene school with Dissolve (0.5)
+
+    stop music fadeout 2
+
+    m "(As I make my way to the school, the feelings of unease I felt earlier begin to intensify.)"
+    m "(Without leaving a second for me to wonder what could be the cause...)"
+    m "(It aproaches ME)"
+
+    play music ("bgm/chungus_confrontation.mp3") fadeout (1)
+
+    show chungus with Dissolve(1)
+
+    m "(Like a meteor falling from the sky, HE fell right in front of me.)"
+
+    pause 0.5
+
+    c "Missed me bitches?"
+
+    pause 1
+
+    m "Who... are you again...?"
+    c "Thy greatest Chungus is gracing thyself with his presence and thou doth not even remember him?"
+    c "I, am Big Chungus, the greatest and only one true Chungus!"
+    c "The god of this world, of this land."
+    c "Brave warrior of the maidens... I challenge thou to the dunktastic duel of WACC AND LAND!"
+    c "Thou hast no other choices!"
+    c "Face me OR thou shall never feel the touch of a woman ever again!"
+
+    pause 1
+
+    m "..."
+    m "(What the hell is this rabbit even saying?)"
+    m "(Dunktastic duel of WACC AND LAND?)"
+    m "(And, could I really defeat a god?)"
+    m "(Altough, my hesitation is quickly dispelled by the thoughts of my friends.)"
+    m "(They're here for me.)"
+
+    pause 0.5
+
+    m "Alright."
+    m "Almighty Chungus!"
+    m "I accept your D-D-D-D-D-DUEL!!!"
+
     m "Uhhhhh tf do i cook??????"
     "but suddenly"
 
