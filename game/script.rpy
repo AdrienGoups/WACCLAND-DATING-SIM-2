@@ -141,6 +141,9 @@ label start:
     m "I should probably hurry up."
     m "(I bolt towards the school quickly dodging the cars as I pass through crosswalks on my way there.)"
     m "(A set of stairs separate me from the entrance to the school.)"
+
+    scene school with Dissolve (1)
+
     m "(The school is now right in view. And still 15 minutes until the bell rings.)"
     m "(And now I'm standing at the doors of Waccland's Peak Academy.)"
     m "(First founded in 1869, this school was the gathering place for all the most brilliant minds.)"
