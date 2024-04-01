@@ -631,9 +631,10 @@ label Day1EventEnd:
     m "Nah, bro, I saw that she had a WA-KU-OH! pin. Only real ones watch that shit."
     y "Hmmm... IDK then bro..."
 
-    hide miyuki_neutral
+    show miyuki_mad
     show miyuki_mad:
         xpos 1400 ypos 1200
+    hide miyuki_neutral
 
     unk "What are you two exactly staring at...?"
     m "Uh, nothing."
@@ -650,6 +651,7 @@ label Day1EventEnd:
     m "(I could do what Yomki said, but I'm also intrigued by that girl...)"
 
     menu:
+        "What will you do?"
 
         "Hit the gym with your bro Yomki.":
             jump YomkiEvent2
@@ -896,6 +898,7 @@ label Day1EventEnd:
     m "(I guess I could try my chance talking with Asami too.)"
 
     menu:
+        "What will you do?"
 
         "Go straight home.":
             jump IzumiEvent3
@@ -927,7 +930,7 @@ label Day1EventEnd:
         i "Ah, Kamiya, heading home?"
         m "Yeah."
         i "Also you can drop the mister while outside school."
-        i "Puts some kind of distance between people when you use honorifics"
+        i "Puts some kind of distance between people when you use honorifics."
         m "Well yeah... that's true."
         m "Didn't know you smoked."
         i "Huh, yeah, been smokin' for a quite a long time."
@@ -942,7 +945,7 @@ label Day1EventEnd:
         m "I'm pretty sure I heard that name before..."
         m "Wait-"
         m "THE Michel Popstonia studied here at Waccland's peak academy?!?"
-        i "Yep, That's right"
+        i "Yep, That's right."
         m "Doesn't seem like his attitude changed much."
         i "Yeah."
         i "I remember back in my days, we didn't even have phones."
@@ -958,7 +961,7 @@ label Day1EventEnd:
         i "That's about it, I guess."
         m "Huh...???"
         m "(After this long monologue how could I not ask myself a thousand questions?)"
-        m "...uhhh... mr.Izumi...?"
+        m "...uhhh... Mr. Izumi...?"
         i "You don't have to call me mister."
         m "...Naoki, how often do you smoke?"
         i "Not that much."
@@ -985,7 +988,7 @@ label Day1EventEnd:
         hide izumi_smoke with Dissolve (0.5)
 
         i "See you tommorow, Masashi-kun."
-        m "...See you tommorow mr.Izumi."
+        m "...See you tommorow Mr. Izumi."
         m "..."
         m "(Well, that wasn't what I was expecting.)"
         m "(I'm not sure yet if he's cool, ...or just kinda crazy.)"
@@ -1269,7 +1272,7 @@ label Day1EventEnd:
         a "But, unfortunately for you, you have no choice!"
         m "*Sigh*"
         m "(At this rate it's going to be more annoying if I don't give her my username.)"
-        m "my username is MC_Kun_420"
+        m "My username is MC_Kun_420."
 
         hide asami_neutral
         show asami_judge
@@ -1345,7 +1348,7 @@ label Day1EventEnd:
         show asami_smug
 
         a "I just felt like asking."
-        m "(Once again, this girl has pebbles instead of a brain)"
+        m "(Once again, this girl has pebbles instead of a brain.)"
         a "So tell me-"
 
         show bob_neutral
@@ -1469,7 +1472,7 @@ label Day1EventEnd:
 
     m "(As I make my way to the school, the feelings of unease I felt earlier begin to intensify.)"
     m "(Without leaving a second for me to wonder what could be the cause...)"
-    m "(It aproaches ME)"
+    m "(It aproaches ME.)"
 
     play music ("bgm/chungus_confrontation.mp3") fadeout (1)
 
@@ -1684,7 +1687,6 @@ label Day1EventEnd:
 
     m "Yomki, I couldn't have done it without you bro!"
     y "Together, we can pierce even the heavens bro!"
-
     m "(Me and Yomki proceed to have the manliest handshake ever.)"
     y "*Kisses you on the cheek* homie."
     m "Huh? What was that for?"
