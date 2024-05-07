@@ -31,8 +31,8 @@ label start:
     $ Yomki_Event_2 = False
     $ Miyuki_Event_2 = False
     $ Izumi_Event_3 = False
-    $ Gorou_Event_3 = False
     $ Asami_Event_3 = False
+    $ Gorou_Event_4 = False
 
     play music "bgm/chungus.mp3" fadeout (1.5)
 
@@ -886,8 +886,8 @@ label Day1EventEnd:
 
     m "Guess the day's over."
     m "What should I do next."
-    m "I could hang out with Yomki like usual."
-    m "Or just go home and game all evening..."
+    m "Don't feel like hanging out with Yomki today."
+    m "I should just go home and game all evening."
 
     if Asami_Event_1:
 
@@ -917,8 +917,6 @@ label Day1EventEnd:
 
         "Go straight home.":
             jump IzumiEvent3
-        "Hang out with Yomki again.":
-            jump GorouEvent3
         "Talk with Asami.":
             jump AsamiEvent3
 
@@ -1007,168 +1005,6 @@ label Day1EventEnd:
         m "..."
         m "(Well, that wasn't what I was expecting.)"
         m "(I'm not sure yet if he's cool, ...or just kinda crazy.)"
-
-        jump Day3EventEnd
-    
-    label GorouEvent3:
-
-        $ Gorou_Event_3 = True
-
-        m "(I guess I'll hang out with Yomki again.)"
-        m "(He IS my best friend after all.)"
-
-        scene club with Dissolve (0.5)
-
-        play music ("bgm/5.ogg") fadeout(1)
-
-        m "Hey, Yomki! You here?"
-
-        show yomki with Dissolve (0.5)
-
-        y "Yeah bro, I'm here."
-        y "Was just talking with one of my homies."
-
-        show yomki:
-            ease 1 xpos 1400 ypos 1100
-
-        show gorou_neutral with Dissolve (0.5)
-
-        y "He's pretty cool, no cap."
-
-        hide yomki with Dissolve (0.5)
-
-        stop music fadeout (1)
-
-        unk "..."
-        unk "I..."
-
-        play music ("bgm/edge.mp3") fadeout(1)
-
-        unk "I am-"
-        unk "The prince of darkness himself."
-        unk "The owner of the black throne, the one they call the ultimate despair!"
-        unk "I am..."
-
-        show gorou_neutral:
-            ease 1 xpos 1400 ypos 1100
-
-        show yomki with Dissolve (0.5)
-        
-        y "His name is Furukawa Gorou."
-
-        play music ("bgm/7.ogg") fadeout(1)
-
-        g "..."
-        g "C'mon, you ruined my introduction!"
-        m "..."
-        m "(Are you kidding me?)"
-        m "(Yet another mentally ill student?)"
-        g "Like I said, I am the one they call the prince of darkness."
-        g "Common mortals such as you should not come too close to me."
-        m "Uhhh..."
-        m "I have a question."
-        m "Are you stupid?"
-        g "W-what?!?"
-        g "You dare insult me?"
-        g "My power of darkness shall rend you apart."
-        g "There shall be nothing left of your corpse."
-        g "As the wind howls, the shadows within still unsatisfied."
-        m "Can't you just cut the bullshit?"
-        m "Stop acting like a fucking kid, you're a high schooler."
-        g "What did you just say-"
-        g "...hahaha..."
-        g "HAHAHAHAHAHA!!!"
-        g "No one..."
-        g "No one has ever been so foolish as to challenge me!"
-        m "Well sure makes sense, why would anyone want to talk with you."
-        m "You're the kind of guy who never even spoke to a woman before."
-        m "The world doesn't revolve arround you dumbass."
-        y "Yo MC! Not cool bro. That's going too far."
-        g "Indeed, your insolence knows no limit."
-        g "but of course-"
-        g "You have not been chosen by the throne of darkness to stand above heaven and earth."
-        m "Yeah, 'cause my father didn't leave for milk when I was a kid."
-        y "Guys!"
-        y "That's enough!"
-        g "No!"
-        g "This man has insulted me and my whole lineage!"
-        y "Wait, I know what to do."
-
-        stop music fadeout (1)
-
-        "Yomki whispers something into Gorou's ears."
-
-        g "!!!"
-        g "Yomki!"
-        g "Why didn't you tell me earlier that this guy played Waccland chronicles!!!"
-        m "...?"
-        m "Huh?"
-
-        show gorou_neutral:
-            ease 1 xpos 900 ypos 1100
-
-        hide yomki with Dissolve(0.5)
-
-        play music ("bgm/8.ogg") fadeout(1)
-
-        g "I sincerely apologize, MY BEST FRIEND!"
-        g "It seems I was mistaken about you!"
-        g "You are not my enemy."
-        g "I have seen the errors of my way."
-        g "How could I forget the words of wisdom my master left me-"
-        g "''Nobody has any enemies, not you, not me.''"
-        g "I don't have any enemies."
-        g "I thank you MY BEST FRIEND, for teaching me this valuable lesson!"
-        m "No need to thank me, MY FRIEND."
-        g "..."
-        g "Wait-"
-        g "I never asked for your name..."
-
-        hide gorou_neutral
-        show masashi_neutral
-        with Dissolve (0.5)
-
-        m "My name is Masashi Kamiya, but you can call me MC!"
-        m "Gaming is my life and Wacc-Fuel is my blood."
-        m "Throughout Heaven and Earth, I alone am the Honored One which will guide the world to salvation!"
-
-        hide masashi_neutral 
-        show gorou_neutral
-        with Dissolve (0.5)
-
-        m "I'm sorry for doubting you Gorou."
-        m "You were one of my people after all."
-
-        hide gorou_neutral
-        show gorou_smug
-
-        g "As they say in the lands between, those who play Waccland Chronicles are your friends."
-        m "Facts Brother!!!"
-        m "Spit Your shit indeed!"
-        m "(Me and Gorou then proceed to have the nerdiest handshake ever.)"
-        g "It was nice to meet you MC, MY FRIEND."
-        g "Unfortunately, I must go now, for my untouched game needs some playing!"
-        g "Farewell!"
-        m "Bye!"
-
-        hide gorou_smug with Dissolve (0.5)
-
-        m "I got this guy completely wrong..."
-        m "Man."
-
-        show yomki with Dissolve (0.5)
-
-        y "Told you he was epic, bro!"
-        m "You never dissapoint, bro."
-        m "Alright, wanna walk home?"
-        y "Sure thing, bro."
-
-        scene black with Dissolve (0.5)
-
-        m "(While walking home, me and Yomki continue talking about our countless playtroughs of Dark Souls XX.)"
-        m "(We talked about all the secrets and hidden items we found.)"
-        m "(Truly, Michael Zaki never misses.)"
-        m "(Altough the time for us to part ways soon came.)"
 
         jump Day3EventEnd
 
@@ -1460,13 +1296,199 @@ label Day1EventEnd:
 
     label Day3EventEnd:
 
+    scene bedroom with Dissolve (0.5)
+
+    play music ("bgm/bedroom.mp3") fadeout (1)
+
+    m "Today went about like I expected it to."
+    m "But that doesn't really matter right now because I have some homework to do."
+
+    scene residential with Dissolve (0.5)
+
+    play music ("bgm/2.ogg") fadeout (1)
+
+    m "(Yet another boring day.)"
+    m "(Well, I just have to endure 3 more years of this and I'll be done with high school.)"
+
+    scene classroom with Dissolve (0.5)
+
+    "Ding dong bing bong"
+
+    m "(Man, today was really boring...)"
+
+    jump GorouEvent4
+
+    label GorouEvent4:
+
+        $ Gorou_Event_4 = True
+
+        m "(I guess I'll hang out with Yomki again.)"
+        m "(He IS my best friend after all.)"
+
+        scene club with Dissolve (0.5)
+
+        play music ("bgm/5.ogg") fadeout(1)
+
+        m "Hey, Yomki! You here?"
+
+        show yomki with Dissolve (0.5)
+
+        y "Yeah bro, I'm here."
+        y "Was just talking with one of my homies."
+
+        show yomki:
+            ease 1 xpos 1400 ypos 1100
+
+        show gorou_neutral with Dissolve (0.5)
+
+        y "He's pretty cool, no cap."
+
+        hide yomki with Dissolve (0.5)
+
+        stop music fadeout (1)
+
+        unk "..."
+        unk "I..."
+
+        play music ("bgm/edge.mp3") fadeout(1)
+
+        unk "I am-"
+        unk "The prince of darkness himself."
+        unk "The owner of the black throne, the one they call the ultimate despair!"
+        unk "I am..."
+
+        show gorou_neutral:
+            ease 1 xpos 1400 ypos 1100
+
+        show yomki with Dissolve (0.5)
+        
+        y "His name is Furukawa Gorou."
+
+        play music ("bgm/7.ogg") fadeout(1)
+
+        g "..."
+        g "C'mon, you ruined my introduction!"
+        m "..."
+        m "(Are you kidding me?)"
+        m "(Yet another mentally ill student?)"
+        g "Like I said, I am the one they call the prince of darkness."
+        g "Common mortals such as you should not come too close to me."
+        m "Uhhh..."
+        m "I have a question."
+        m "Are you stupid?"
+        g "W-what?!?"
+        g "You dare insult me?"
+        g "My power of darkness shall rend you apart."
+        g "There shall be nothing left of your corpse."
+        g "As the wind howls, the shadows within still unsatisfied."
+        m "Can't you just cut the bullshit?"
+        m "Stop acting like a fucking kid, you're a high schooler."
+        g "What did you just say-"
+        g "...hahaha..."
+        g "HAHAHAHAHAHA!!!"
+        g "No one..."
+        g "No one has ever been so foolish as to challenge me!"
+        m "Well sure makes sense, why would anyone want to talk with you."
+        m "You're the kind of guy who never even spoke to a woman before."
+        m "The world doesn't revolve arround you dumbass."
+        y "Yo MC! Not cool bro. That's going too far."
+        g "Indeed, your insolence knows no limit."
+        g "but of course-"
+        g "You have not been chosen by the throne of darkness to stand above heaven and earth."
+        m "Yeah, 'cause my father didn't leave for milk when I was a kid."
+        y "Guys!"
+        y "That's enough!"
+        g "No!"
+        g "This man has insulted me and my whole lineage!"
+        y "Wait, I know what to do."
+
+        stop music fadeout (1)
+
+        "Yomki whispers something into Gorou's ears."
+
+        g "!!!"
+        g "Yomki!"
+        g "Why didn't you tell me earlier that this guy played Waccland chronicles!!!"
+        m "...?"
+        m "Huh?"
+
+        show gorou_neutral:
+            ease 1 xpos 900 ypos 1100
+
+        hide yomki with Dissolve(0.5)
+
+        play music ("bgm/8.ogg") fadeout(1)
+
+        g "I sincerely apologize, MY BEST FRIEND!"
+        g "It seems I was mistaken about you!"
+        g "You are not my enemy."
+        g "I have seen the errors of my way."
+        g "How could I forget the words of wisdom my master left me-"
+        g "''Nobody has any enemies, not you, not me.''"
+        g "I don't have any enemies."
+        g "I thank you MY BEST FRIEND, for teaching me this valuable lesson!"
+        m "No need to thank me, MY FRIEND."
+        g "..."
+        g "Wait-"
+        g "I never asked for your name..."
+
+        hide gorou_neutral
+        show masashi_neutral
+        with Dissolve (0.5)
+
+        m "My name is Masashi Kamiya, but you can call me MC!"
+        m "Gaming is my life and Wacc-Fuel is my blood."
+        m "Throughout Heaven and Earth, I alone am the Honored One which will guide the world to salvation!"
+
+        hide masashi_neutral 
+        show gorou_neutral
+        with Dissolve (0.5)
+
+        m "I'm sorry for doubting you Gorou."
+        m "You were one of my people after all."
+
+        hide gorou_neutral
+        show gorou_smug
+
+        g "As they say in the lands between, those who play Waccland Chronicles are your friends."
+        m "Facts Brother!!!"
+        m "Spit Your shit indeed!"
+        m "(Me and Gorou then proceed to have the nerdiest handshake ever.)"
+        g "It was nice to meet you MC, MY FRIEND."
+        g "Unfortunately, I must go now, for my untouched game needs some playing!"
+        g "Farewell!"
+        m "Bye!"
+
+        hide gorou_smug with Dissolve (0.5)
+
+        m "I got this guy completely wrong..."
+        m "Man."
+
+        show yomki with Dissolve (0.5)
+
+        y "Told you he was epic, bro!"
+        m "You never dissapoint, bro."
+        m "Alright, wanna walk home?"
+        y "Sure thing, bro."
+
+        scene black with Dissolve (0.5)
+
+        m "(While walking home, me and Yomki continue talking about our countless playtroughs of Dark Souls XX.)"
+        m "(We talked about all the secrets and hidden items we found.)"
+        m "(Truly, Michael Zaki never misses.)"
+        m "(Altough the time for us to part ways soon came.)"
+
+        jump Day4EventEnd
+    
+    label Day4EventEnd:
+
     scene bedroom with Dissolve(0.5)
 
     play music ("bgm/bedroom.mp3") fadeout (1)
 
     m "..."
     m "(The faint glimmer of sunlight left pierces the curtains of my rooms.)"
-    m "(As I lay down on my bed, I begin to ponder about all these strange events that have followed me for 3 days now.)"
+    m "(As I lay down on my bed, I begin to ponder about all these strange events that have followed me for 4 days now.)"
     m "(It somehow feels all intentional, like a mastermind is actively pulling the strings.)"
     m "(Yet, a part of me doesn't want me to accept this idea.)"
     m "(With these questions in my mind, I slowly go through the rest of the day without thinking about it much more.)"
@@ -1475,7 +1497,7 @@ label Day1EventEnd:
 
     play music ("bgm/2.ogg") fadeout (1)
 
-    m "(With the coming of the 4th day, it feels like I should be getting used to this new daily routine, yet...)"
+    m "(With the coming of the 5th day, it feels like I should be getting used to this new daily routine, yet...)"
     m "(With all these bizzare events, I haven't had the time to get accustomed to my new surroundings.)"
     m "(Altough today feels different... somehow...)"
     m "(Well, it's no use worrying about it, these past few days have only been a series of a bunch of weird stuff.)"
