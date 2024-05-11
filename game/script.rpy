@@ -2137,6 +2137,22 @@ label Day1EventEnd:
 
     m "lore"
 
+    m "Uhhhhh tf do i cook??????"
+    "but suddenly"
+
+    play sound "sfx/vine boom.mp3"
+
+    show saul with dissolve
+
+    "Saul Goodman Jumpscare"
+    hide saul
+
+    stop music fadeout (3)
+
+    "You feel a strong aura approaching."
+    "Someone enters the classroom."
+    "HE approaches YOU."
+
     show billy with Dissolve (2):
         xalign 0.7
         ypos 25
