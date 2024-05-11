@@ -2137,6 +2137,29 @@ label Day1EventEnd:
 
     m "lore"
 
+    show billy with Dissolve (2):
+        xalign 0.7
+        ypos 25
+    play music ("bgm/alphen.mp3") fadeout (1)
+
+    "Billy" "YO ITS ME BILLY WACCLAND SMP IV HERE TO TELL YOU TO GET BITCHES LOSER!!!!!!!!"
+    "Billy" "COCK AMIRITE FELLAS!!!"
+    "Billy" "So basically, this is YOUR Waccland DaTING SIM 2: Electric Boogaloo, now go now."
+    "With Wacc and land."
+    hide billy with Dissolve (1)
+    "YOu suddenly remember Big CHungus'S words."
+    m "NO WAY I NEED TO COOK!!!"
+    m "BE MY GIRLFRIEND ASAMI!!!"
+    a "Fuck no! WTF!"
+    y "Damn, such a rizzler."
+    m "(I...I-I.... failed....?)"
+    m "(My skibidi sigma rizz failed me...??????)"
+    m "THIS GAME SUCKS!"
+    m "Fuck this shit I'm OUT!"
+    "You then jump off from the window and die."
+    play sound "sfx/vine boom.mp3"
+    "The end."
+
     # m "Roll credits!!!"
 
     # play music "bgm/credits.mp3" fadeout 2
