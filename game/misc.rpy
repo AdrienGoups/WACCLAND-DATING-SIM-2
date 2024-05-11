@@ -1,5 +1,4 @@
-# Ren'Py automatically loads all script files ending with .rpy. To use this
-# file, define a label and jump to it from another file.
+# ASAMI
 
 image asami_neutral:
     "char/asami_neutral.png"
@@ -50,6 +49,50 @@ image asami_intrigued:
     "char/asami_intrigued.png"
     ypos 1200 xpos 900
     zoom 0.55
+
+# MOMOKA
+
+image momoka_neutral:
+    "char/momoka_neutral.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image momoka_cat:
+    "char/momoka_cat.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image momoka_confused:
+    "char/momoka_confused.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image momoka_happy:
+    "char/momoka_happy.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image momoka_intrigued:
+    "char/momoka_intrigued.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image momoka_panick:
+    "char/momoka_panick.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image momoka_serious:
+    "char/momoka_serious.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+image momoka_surprised:
+    "char/momoka_surprised.png"
+    ypos 1200 xpos 900
+    zoom 0.55
+
+# MIYUKI
         
 image miyuki_neutral:
     "char/miyuki_neutral.png"

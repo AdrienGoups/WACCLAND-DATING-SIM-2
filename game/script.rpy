@@ -20,6 +20,7 @@ define i = Character("Mr. Izumi")
 define y = Character("Yomki")
 define mi = Character("Miyuki")
 define g = Character("Gorou")
+define mo = Character("Momoka")
 define unk = Character("???")
 
 # The game starts here.
@@ -292,7 +293,7 @@ label start:
     m "Nah, bro. This is a visual novel, if you skipped everything you wouldn't even have a game."
     y "I have no idea what's going on."
     a "Returning to the original subject, Kamiya-kun, I require an apology."
-    m "Why should I need to apology, I didn't do anything. You're the one who's annoying me!"
+    m "Why should I need to apologize, I didn't do anything. You're the one who's annoying me!"
     a "'Didn't do anything', You ignored me and then you call me annoying!"
     y "Guys, does it even matter?"
     y "You are not enemies... Nobody here has any enemies."
@@ -475,9 +476,23 @@ label AsamiEvent1:
     m "(Man, I already regret my choice.)"
     m "(I may have accidently ruined my entire year.)"
     m "(Too late to go back.)"
+
+    show asami_judge
+    hide asami_happy
+
+    a "What? Why are you looking at me like that?"
+    a "You aren't happy to be friends with me?"
+    m "Take a guess."
+    a "..."
+
+    show asami_unsure
+    hide asami_judge
+
+    pause 0.5
+    
     m "(Asami then grabbed her bag that she put on the floor when I interrupted her.)"
 
-    hide asami_happy with Dissolve (0.5)
+    hide asami_unsure with Dissolve (0.5)
 
     m "(She left without saying anything else.)"
     m "(So, here I am... left alone wondering what to do now.)"
@@ -552,6 +567,13 @@ label Day1EventEnd:
         hide asami_happy
         
         a "*Sigh* You just can't appreciate the good things in life can you?"
+        a "Altough... I guess..."
+
+        pause 0.5
+
+        a "Forget about that last part."
+        a "I was just thinking out loud"
+        m "...Okay?"
 
         hide asami_judge with Dissolve (0.5)
 
@@ -826,10 +848,17 @@ label Day1EventEnd:
         hide miyuki_unimpressed
 
         mi "My name is Mochizuki Miyuki. Do you have anything else to say? I'm quite busy after all."
-        m "(If she's so busy, then why is she alone on the rooftop?)"
+        mi "I got club practice to do."
+        m "(If she has practice to do, then why is she alone on the rooftop?)"
         m "(Whatever, I got what I asked for, time to leave.)"
-        m "Then goodbye, Mochizuki-san."
+        m "Then goodbye, Miyuki."
         m "(I quickly leave before the embarassment of revealing myself to a fake fan kills me.)"
+
+        scene black with Dissolve(1)
+
+        mi "Guess I should remove the pin before I get annoyed by any more fans."
+        mi "But... It looked cool..."
+        mi "I don't really want to throw it away."
 
         scene corridor with Dissolve (1)
 
@@ -1063,6 +1092,19 @@ label Day1EventEnd:
             m "(I may have accidently ruined my entire year.)"
             m "(Too late to go back.)"
 
+            show asami_judge
+            hide asami_happy
+
+            a "What? Why are you looking at me like that?"
+            a "You aren't happy to be friends with me?"
+            m "Take a guess."
+            a "..."
+
+            show asami_unsure
+            hide asami_judge
+
+            pause 0.5
+
             play music "bgm/3.ogg" fadeout (1)
 
             show asami_neutral
@@ -1093,6 +1135,8 @@ label Day1EventEnd:
             show asami_confused
 
             a "What?"
+
+            pause 1
 
             hide asami_confused
             show asami_neutral
@@ -1136,7 +1180,7 @@ label Day1EventEnd:
 
         m "By the way, while we're at it."
         m "Do you want to hang out today?"
-        a "Yeah, got nothing else planned."
+        a "Yeah why not, got nothing else planned."
 
         hide asami_neutral
         show asami_smug
@@ -1218,7 +1262,7 @@ label Day1EventEnd:
             a "What?"
             a "This guy my boyfriend?"
             a "You must have hit your head really hard!"
-            a "Who the hell do you think you are to assume that me, such a cute girl, would have this loser as a boyfriend!"
+            a "Who the hell do you think you are to assume that me, such a cute girl, would have this guy as a boyfriend!"
             b "I don't know man, you two seemed pretty close."
             a "Like I said, he is just my friend!"
             b "Woah, no need to be so defensive, you should take some Sauce!"
@@ -1226,6 +1270,8 @@ label Day1EventEnd:
             a "Okay."
             a "But, I better not see you calling me this guy's boyfriend again!"
             b "Yeah, no problem bébé chat."
+            b "By the way, my name is Yasuhiro Bob, nice to meet you."
+            a "Nice to meet you too... I guess."
             b "Anyway, MC, don't give up."
             b "Continue stacking those GAINS!"
             m "Will do, Bob."
@@ -1243,13 +1289,13 @@ label Day1EventEnd:
             m "Uhh... I don't know."
             b "The name's Yasuhiro Bob, nice to meet you two."
             m "Uhhh... who the hell just walks up to someone and calls them ''bébé chat''?"
-            b "I don't see the problem, we are all bébé chats after all."
+            b "I don't see the problem, we are all bébés chats after all."
 
             hide asami_confused
             show asami_smug
 
             a "Whatever, my name is Asami, you should feel honored to meet someone as cute as myself!"
-            b "You sure are bébé chat."
+            b "You sure are, bébé chat."
             a "At least someone here is able to see my true worth!"
             m "I guess I should introduce myself."
             
@@ -1282,6 +1328,10 @@ label Day1EventEnd:
         a "Anyway, forget about where you live."
         a "I'll just ask your friend Yomki!"
         m "Please don't do that..."
+        a "..."
+
+        pause 0.5
+
         a "Anyway, farewell!"
         a "See you tommorow!"
         m "Goodbye."
@@ -1749,22 +1799,40 @@ label Day1EventEnd:
 
     pause 2
 
-    hide asami_confused
-    show asami_mad
+    if Asami_Event_1:
+        hide asami_confused
+        show asami_neutral
 
-    a "Nah, you're still just some loser!"
-    a "That bunny guy didn't even break a sweat!"
-    a "Look at you two, you're completely drenched in sweat!"
+        a "Okay, enough joking arround."
+        a "I won't pretend to be all impressed by that and suddenly change my opinion of you."
+        a "But that was some nice balling."
+        a "Good job you too."
+        a "Anyway, I better leave before I'm late to class."
 
-    hide asami_mad
-    show asami_judge
+        hide asami_neutral with Dissolve(0.5)
 
-    a "I better leave before I'm late to class."
+        m "(Asami left the room.)"
+        m "(Not exactly the reaction I was expecting.)"
+        m "(I thought she'd say something like: Nah, you're still just some loser! That bunny guy didn't even break a sweat!)"
+        m "(I really don't get this girl.)"
 
-    hide asami_judge with Dissolve(0.5)
+    else:
+        hide asami_confused
+        show asami_mad
 
-    m "(Asami left the room very quickly...)"
-    m "(Seriously, what's up with her?)"
+        a "Nah, you're still just some loser!"
+        a "That bunny guy didn't even break a sweat!"
+        a "Look at you two, you're completely drenched in sweat!"
+
+        hide asami_mad
+        show asami_judge
+
+        a "I better leave before I'm late to class."
+
+        hide asami_judge with Dissolve(0.5)
+
+        m "(Asami left the room very quickly...)"
+        m "(Seriously, what's up with her?)"
 
     show yomki with Dissolve(0.5)
 
@@ -1790,24 +1858,303 @@ label Day1EventEnd:
     m "(And thus concludes the first chapter of my new life.)"
     m "(At this time, I was blissfully unaware of what horrors would befall me...)"
     m "(But that's a story for another day!)"
-    m "Roll credits!!!"
 
-    play music "bgm/credits.mp3" fadeout 2
+    pause 2
 
-    "WACCLAND DaTING SIM 2: elecrtric boogaloo - Prologue: To ball, is to live."
-    "Created by" " Aqua 'Rhadish' 'Goups' Hoshino"
-    "Created by" "Joker 'Lean' 'Lédouzy' Persona5 AKA 'The real Goups'"
-    "Character art by" "Rhadish"
-    "Background art by" "stolen assets from Doki Doki Literature Club and other various non-copyright free sources online."
-    "Music by" "stolen from Doki Doki Literature Club and other various video games or animes."
-    "Script written by" "Lédouzy and Rhadish."
-    "Concept by" "Rhadish"
-    "Special thanks" "Gabriel 'Bob' Théroux"
-    "Special thanks" "Yomki 'Yomki' Yomki"
-    "Special thanks" "Manx 'Oof Slayer' 'OddWerty05' The Soudeux"
-    "Special thanks" "And... NOT YOU! FUCK YOU! KEEP YOURSELF SAFE."
+    m "(AND THAT DAY IS NOW!)"
 
-    "The end."
+    "CHAPTER 1: Murder at the school trip?!?"
+
+    scene bedroom
+
+    play sound "sfx/explosion4.ogg"
+
+    play music "bgm/bedroom.mp3"
+
+    pause 2
+
+    m "Man, that dream was weird."
+    m "That huge bunny was crazy fast."
+    m "Wait, was it really a dream?"
+    m "..."
+
+    pause 100
+
+    m "I really don't know."
+    m "Guess, I'll just talk to Yomki about this ''dream''"
+
+    scene club with Dissolve(0.5)
+
+    play music "bgm/2.ogg" fadeout 1
+
+    m "(Classes haven't started yet so I decided to go see Yomki.)"
+    m "(Weird...)"
+    m "(He isn't there yet.)"
+
+    show gorou_smug with Dissolve(0.5)
+
+    g "Could it be...? MC! My bro, my man, my dude!"
+    m "Yo Gorou, what's up?"
+
+    hide gorou_smug
+    show gorou_neutral
+
+    g "I had a strange dream."
+    g "A storm was brewing, thunder roaring..."
+    g "A man took a leap of fate-"
+    m "Was there a big fat bunny?"
+    g "..."
+    g "Well..."
+    g "Yeah."
+    m "So... was this really a dream?"
+    g "What are you insinuating MC?"
+    m "I think-"
+
+    show gorou_neutral:
+            ease 1 xpos 1400 ypos 1100
+    
+    show yomki with Dissolve(0.5)
+
+    y "Top of the mornin'"
+    y "No way?!?"
+    y "Gorou and MC talking together?!?"
+    y "Didn't know you two were dating?!?"
+
+    pause 2
+
+    m "..."
+    g "..."
+    y "I ain't judging you bro."
+    m "Huh... Yomki."
+    m "You know I'm not gay bro."
+    m "It's not that I don't like men, I just like girls too much"
+    y "Fair."
+
+    pause 1
+
+    y "Anyway, you guys were talking about friday?"
+    y "That Big Chungus guy was strong."
+    m "So, it wasn't a dream after all."
+    g "...That's weird."
+    m "I guess I'll go ask some other students."
+    g "Okay."
+    g "I'll go check in our class"
+
+    hide yomki
+    hide gorou_neutral
+    with Dissolve(0.5)
+
+    m "I don't know anyone in this class so I guess I'll just ask the students in my class."
+
+    scene classroom with Dissolve(0.5)
+
+    m "Okay, this girl isn't talking with anyone."
+
+    show momoka_neutral with Dissolve(0.5)
+
+    m "Hey."
+    mo "..."
+    
+    hide momoka_neutral
+    show momoka_surprised
+
+    mo "Ah-"
+
+    hide momoka_surprised
+    show momoka_intrigued
+
+    mo "Do you need something...?"
+    m "Do you remember seeing a big bunny last friday?"
+    mo "That's a weird question, but let me think..."
+    
+    pause 1
+
+    mo "I don't remember seeing one..."
+    m "Okay."
+
+    hide momoka_intrigued with Dissolve(0.5)
+
+    m "(Guess, I should've expected that...)"
+    m "(Not every student would come see that.)"
+    m "(Well, I should ask someone else just to be sure.)"
+
+    show momoka_panick with Dissolve(0.5)
+
+    mo "Wait-"
+    mo "You're friends with Gorou, right?"
+    m "Huh, yeah?"
+
+    hide momoka_panick
+    show momoka_neutral
+
+    mo "Could you tell him that he forgot his Waccland Switch at my house."
+
+    pause 0.5
+
+    m "Wait..."
+    m "Gorou has a girlfriend?!?"
+
+    hide momoka_neutral
+    show momoka_panick
+
+    mo "W-What?!?"
+    mo "I-I'm not his girlfriend..."
+
+    show momoka_confused
+    hide momoka_panick
+
+    mo "He's my childhood friend."
+    m "I was just joking."
+    mo "Y-yeah... I guess."
+    m "Still surprised Gorou has female friends."
+
+    hide momoka_confused
+    show momoka_serious
+
+    mo "I mean... I'm his only female friend..."
+    mo "He's kind of... you know-"
+    m "Weird?"
+    mo "Yeah."
+    mo "It's kind of rare for him to make friends because of that."
+    mo "Most people will just assume he's stupid and make fun of him."
+    m "(I probably shouldn't say anything.)"
+
+    hide momoka_serious
+    show momoka_surprised
+
+    mo "But you know, he knows full well that what he's saying is dumb."
+    mo "He's doing it on purpose."
+    mo "But most people just think he's delusional."
+    mo "He's a really nice person if you ge-"
+
+    hide momoka_surprised
+    show momoka_neutral
+
+    m "Alright, I've heard enough..."
+    m "I have something to do."
+    m "See you later."
+    mo "Sorry for getting carried away..."
+    mo "By the way, my name is Arima Momoka, nice to meet you."
+
+    hide momoka_neutral with Dissolve(0.5)
+
+    show masashi_neutral with Dissolve (0.5)
+
+    m "I'm Masashi Kamiya, but you can call me MC!"
+    m "Gaming is my life! And Wacc-Fuel is my blood!"
+    m "Even if I lose it all, outside the walls, I will never look away."
+    m "Because I am freedom itself!"
+
+    hide masashi_neutral with Dissolve (0.5)
+
+    show momoka_neutral with Dissolve(0.5)
+
+    mo "I think I see how you became friends with Gorou!"
+    mo "You two are pretty similar!"
+    m "(I WILL not say anything.)"
+    m "I really need to go though."
+    m "Goodbye."
+    mo "Bye."
+
+    scene corridor with Dissolve(0.5)
+
+    m "Not much time left before the bell rings."
+    m "I should report back."
+
+    scene club with Dissolve(0.5)
+
+    show yomki
+    show gorou_neutral
+    show gorou_neutral:
+        xpos 1400 ypos 1100
+    with Dissolve(0.5)
+
+    m "Okay."
+    m "Only had time to ask one person."
+    m "Didn't see anything."
+    m "Also Gorou, she said you forgot your Waccland switch at her house."
+    g "Wait- you asked Momoka?"
+    g "I'll go retrieve it after class."
+    y "..."
+
+    pause 1
+
+    y "What?"
+    y "Gorou, you have a girlfriend?!?"
+    
+    pause 1
+
+    g "..."
+
+    hide gorou_neutral
+    show gorou_surprised
+    show gorou_surprised:
+        xpos 1400 ypos 1100
+    
+    g "W-W-What?!?"
+    g "W-Why would you s-say this?!?"
+
+    hide gorou_surprised
+    show gorou_yell
+    show gorou_yell:
+        xpos 1400 ypos 1100
+
+    g "I, will never have a girlfriend!"
+    g "The darkness deep within me is far too deep for a mere mortal to tolerate!"
+    y "I was just joking bro."
+
+    hide gorou_yell
+    show gorou_neutral
+    show gorou_neutral:
+        xpos 1400 ypos 1100
+    
+    g "Uhh, ok..."
+    y "Either way, me and Gorou asked some people in our class."
+    g "None of them remembers the incident."
+    m "That's... weird."
+    y "Yeah fam."
+    y "It's like our school was subject to mass hallucinations."
+    y "What kind of illicit substances could cause this."
+    m "..."
+
+    pause 1
+
+    m "Probably just be a coincidence!"
+    g "By the way, what were we talking about?"
+    y "Last friday bro, me and MC balled so hard!"
+    y "How could you not remember!"
+    g "Kind of weird how it attracted so many people."
+    m "Yeah."
+
+    "Ding dong bing bong."
+
+    m "Time to go to class."
+    m "See you guys later."
+    g "Farewell."
+    y "See you bro."
+
+    scene black with Dissolve(0.5)
+
+    m "lore"
+
+    # m "Roll credits!!!"
+
+    # play music "bgm/credits.mp3" fadeout 2
+
+    # "WACCLAND DaTING SIM 2: elecrtric boogaloo - Prologue: To ball, is to live."
+    # "Created by" " Aqua 'Rhadish' 'Goups' Hoshino"
+    # "Created by" "Joker 'Lean' 'Lédouzy' Persona5 AKA 'The real Goups'"
+    # "Character art by" "Rhadish"
+    # "Background art by" "stolen assets from Doki Doki Literature Club and other various non-copyright free sources online."
+    # "Music by" "stolen from Doki Doki Literature Club and other various video games or animes."
+    # "Script written by" "Lédouzy and Rhadish."
+    # "Concept by" "Rhadish"
+    # "Special thanks" "Gabriel 'Bob' Théroux"
+    # "Special thanks" "Yomki 'Yomki' Yomki"
+    # "Special thanks" "Manx 'Oof Slayer' 'OddWerty05' The Soudeux"
+    # "Special thanks" "And... NOT YOU! FUCK YOU! KEEP YOURSELF SAFE."
+
+    # "The end."
 
     # This ends the game.
 

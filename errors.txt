@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1513: expected end of line
-    play sound2 ("sfx/metal pipe.mp3") volume (0.1) pause 0.1
-                                                    ^
+File "game/script.rpy", line 1913: show statement expects a non-empty block.
+    show yomki with Dissolve(0.5):
+                                  ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Apr  1 14:37:39 2024
+Sat May 11 15:53:10 2024
