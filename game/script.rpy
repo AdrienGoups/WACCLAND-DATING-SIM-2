@@ -2030,10 +2030,11 @@ label Day1EventEnd:
     hide momoka_surprised
     show momoka_neutral
 
-    m "Alright, I've heard enough..."
-    m "I have something to do."
+    m "Alright... I've heard enough..."
+    mo "Sorry for rambling..."
+    m "Don't worry about that."
+    m "It's just that I have something to do before the bell rings."
     m "See you later."
-    mo "Sorry for getting carried away..."
     mo "By the way, my name is Arima Momoka, nice to meet you."
 
     hide momoka_neutral with Dissolve(0.5)
