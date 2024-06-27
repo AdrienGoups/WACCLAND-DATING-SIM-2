@@ -1944,167 +1944,167 @@ label Day1EventEnd:
     hide gorou_neutral
     with Dissolve(0.5)
 
-    m "I don't know anyone in this class so I guess I'll just ask the students in my class."
+    # m "I don't know anyone in this class so I guess I'll just ask the students in my class."
 
-    scene classroom with Dissolve(0.5)
+    # scene classroom with Dissolve(0.5)
 
-    m "Okay, this girl isn't talking with anyone."
+    # m "Okay, this girl isn't talking with anyone."
 
-    show momoka_neutral with Dissolve(0.5)
+    # show momoka_neutral with Dissolve(0.5)
 
-    m "Hey."
-    mo "..."
+    # m "Hey."
+    # mo "..."
     
-    hide momoka_neutral
-    show momoka_surprised
+    # hide momoka_neutral
+    # show momoka_surprised
 
-    mo "Ah-"
+    # mo "Ah-"
 
-    hide momoka_surprised
-    show momoka_intrigued
+    # hide momoka_surprised
+    # show momoka_intrigued
 
-    mo "Do you need something...?"
-    m "Do you remember seeing a big bunny last friday?"
-    mo "That's a weird question, but let me think..."
+    # mo "Do you need something...?"
+    # m "Do you remember seeing a big bunny last friday?"
+    # mo "That's a weird question, but let me think..."
     
-    pause 1
+    # pause 1
 
-    mo "I don't remember seeing one..."
-    m "Okay."
+    # mo "I don't remember seeing one..."
+    # m "Okay."
 
-    hide momoka_intrigued with Dissolve(0.5)
+    # hide momoka_intrigued with Dissolve(0.5)
 
-    m "(Guess, I should've expected that...)"
-    m "(Not every student would come see that.)"
-    m "(Well, I should ask someone else just to be sure.)"
+    # m "(Guess, I should've expected that...)"
+    # m "(Not every student would come see that.)"
+    # m "(Well, I should ask someone else just to be sure.)"
 
-    show momoka_panick with Dissolve(0.5)
+    # show momoka_panick with Dissolve(0.5)
 
-    mo "Wait-"
-    mo "You're friends with Gorou, right?"
-    m "Huh, yeah?"
+    # mo "Wait-"
+    # mo "You're friends with Gorou, right?"
+    # m "Huh, yeah?"
 
-    hide momoka_panick
-    show momoka_neutral
+    # hide momoka_panick
+    # show momoka_neutral
 
-    mo "Could you tell him that he forgot his Waccland Switch at my house."
+    # mo "Could you tell him that he forgot his Waccland Switch at my house."
 
-    pause 0.5
+    # pause 0.5
 
-    m "Wait..."
-    m "Gorou has a girlfriend?!?"
+    # m "Wait..."
+    # m "Gorou has a girlfriend?!?"
 
-    hide momoka_neutral
-    show momoka_panick
+    # hide momoka_neutral
+    # show momoka_panick
 
-    mo "W-What?!?"
-    mo "I-I'm not his girlfriend..."
+    # mo "W-What?!?"
+    # mo "I-I'm not his girlfriend..."
 
-    show momoka_confused
-    hide momoka_panick
+    # show momoka_confused
+    # hide momoka_panick
 
-    mo "He's my childhood friend."
-    m "I was just joking."
-    mo "Y-yeah... I guess."
-    m "Still surprised Gorou has female friends."
+    # mo "He's my childhood friend."
+    # m "I was just joking."
+    # mo "Y-yeah... I guess."
+    # m "Still surprised Gorou has female friends."
 
-    hide momoka_confused
-    show momoka_serious
+    # hide momoka_confused
+    # show momoka_serious
 
-    mo "I mean... I'm his only female friend..."
-    mo "He's kind of... you know-"
-    m "Weird?"
-    mo "Yeah."
-    mo "It's kind of rare for him to make friends because of that."
-    mo "Most people will just assume he's stupid and make fun of him."
-    m "(I probably shouldn't say anything.)"
+    # mo "I mean... I'm his only female friend..."
+    # mo "He's kind of... you know-"
+    # m "Weird?"
+    # mo "Yeah."
+    # mo "It's kind of rare for him to make friends because of that."
+    # mo "Most people will just assume he's stupid and make fun of him."
+    # m "(I probably shouldn't say anything.)"
 
-    hide momoka_serious
-    show momoka_surprised
+    # hide momoka_serious
+    # show momoka_surprised
 
-    mo "But you know, he knows full well that what he's saying is dumb."
-    mo "He's doing it on purpose."
-    mo "But most people just think he's delusional."
-    mo "He's a really nice person if you ge-"
+    # mo "But you know, he knows full well that what he's saying is dumb."
+    # mo "He's doing it on purpose."
+    # mo "But most people just think he's delusional."
+    # mo "He's a really nice person if you ge-"
 
-    hide momoka_surprised
-    show momoka_neutral
+    # hide momoka_surprised
+    # show momoka_neutral
 
-    m "Alright... I've heard enough..."
-    mo "Sorry for rambling..."
-    m "Don't worry about that."
-    m "It's just that I have something to do before the bell rings."
-    m "See you later."
-    mo "By the way, my name is Arima Momoka, nice to meet you."
+    # m "Alright... I've heard enough..."
+    # mo "Sorry for rambling..."
+    # m "Don't worry about that."
+    # m "It's just that I have something to do before the bell rings."
+    # m "See you later."
+    # mo "By the way, my name is Arima Momoka, nice to meet you."
 
-    hide momoka_neutral with Dissolve(0.5)
+    # hide momoka_neutral with Dissolve(0.5)
 
-    show masashi_neutral with Dissolve (0.5)
+    # show masashi_neutral with Dissolve (0.5)
 
-    m "I'm Masashi Kamiya, but you can call me MC!"
-    m "Gaming is my life! And Wacc-Fuel is my blood!"
-    m "Even if I lose it all, outside the walls, I will never look away."
-    m "Because I am freedom itself!"
+    # m "I'm Masashi Kamiya, but you can call me MC!"
+    # m "Gaming is my life! And Wacc-Fuel is my blood!"
+    # m "Even if I lose it all, outside the walls, I will never look away."
+    # m "Because I am freedom itself!"
 
-    hide masashi_neutral with Dissolve (0.5)
+    # hide masashi_neutral with Dissolve (0.5)
 
-    show momoka_neutral with Dissolve(0.5)
+    # show momoka_neutral with Dissolve(0.5)
 
-    mo "I think I see how you became friends with Gorou!"
-    mo "You two are pretty similar!"
-    m "(I WILL not say anything.)"
-    m "I really need to go though."
-    m "Goodbye."
-    mo "Bye."
+    # mo "I think I see how you became friends with Gorou!"
+    # mo "You two are pretty similar!"
+    # m "(I WILL not say anything.)"
+    # m "I really need to go though."
+    # m "Goodbye."
+    # mo "Bye."
 
-    scene corridor with Dissolve(0.5)
+    # scene corridor with Dissolve(0.5)
 
-    m "Not much time left before the bell rings."
-    m "I should report back."
+    # m "Not much time left before the bell rings."
+    # m "I should report back."
 
-    scene club with Dissolve(0.5)
+    # scene club with Dissolve(0.5)
 
-    show yomki
-    show gorou_neutral
-    show gorou_neutral:
-        xpos 1400 ypos 1100
-    with Dissolve(0.5)
+    # show yomki
+    # show gorou_neutral
+    # show gorou_neutral:
+    #     xpos 1400 ypos 1100
+    # with Dissolve(0.5)
 
-    m "Okay."
-    m "Only had time to ask one person."
-    m "Didn't see anything."
-    m "Also Gorou, she said you forgot your Waccland switch at her house."
-    g "Wait- you asked Momoka?"
-    g "I'll go retrieve it after class."
-    y "..."
+    # m "Okay."
+    # m "Only had time to ask one person."
+    # m "Didn't see anything."
+    # m "Also Gorou, she said you forgot your Waccland switch at her house."
+    # g "Wait- you asked Momoka?"
+    # g "I'll go retrieve it after class."
+    # y "..."
 
-    pause 1
+    # pause 1
 
-    y "What?"
-    y "Gorou, you have a girlfriend?!?"
+    # y "What?"
+    # y "Gorou, you have a girlfriend?!?"
     
-    pause 1
+    # pause 1
 
-    g "..."
+    # g "..."
 
-    hide gorou_neutral
-    show gorou_surprised
-    show gorou_surprised:
-        xpos 1400 ypos 1100
+    # hide gorou_neutral
+    # show gorou_surprised
+    # show gorou_surprised:
+    #     xpos 1400 ypos 1100
     
-    g "W-W-What?!?"
-    g "W-Why would you s-say this?!?"
+    # g "W-W-What?!?"
+    # g "W-Why would you s-say this?!?"
 
-    hide gorou_surprised
-    show gorou_yell
-    show gorou_yell:
-        xpos 1400 ypos 1100
+    # hide gorou_surprised
+    # show gorou_yell
+    # show gorou_yell:
+    #     xpos 1400 ypos 1100
 
-    g "I, will never have a girlfriend!"
-    g "The darkness deep within me is far too deep for a mere mortal to tolerate!"
-    y "I was just joking bro."
+    # g "I, will never have a girlfriend!"
+    # g "The darkness deep within me is far too deep for a mere mortal to tolerate!"
+    # y "I was just joking bro."
 
-    hide gorou_yell
+    # hide gorou_yell
     show gorou_neutral
     show gorou_neutral:
         xpos 1400 ypos 1100
