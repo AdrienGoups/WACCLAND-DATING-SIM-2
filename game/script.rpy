@@ -1873,23 +1873,29 @@ label Day1EventEnd:
 
     pause 2
 
-    m "Man, that dream was weird."
+    m "(Yesterday came and went fast, and soon I woke up in my bed like usual...)"
+    m "(Although I had a very weird dream...)"
+    m "That dream sure was weird..."
     m "That huge bunny was crazy fast."
-    m "Wait, was it really a dream?"
+    m "..."
+    m "(In my dream... I was balling with this huge bunny, yet... it was a bit too clear)"
+    m "(was it really a dream...?)"
     m "..."
 
     pause 100
 
     m "I really don't know."
-    m "Guess, I'll just talk to Yomki about this ''dream''"
+    m "...Probably just a dream."
+    m "Woke up earlier than usual though..."
+    m "Guess I'll just go to school earlier."
 
     scene club with Dissolve(0.5)
 
     play music "bgm/2.ogg" fadeout 1
 
-    m "(Classes haven't started yet so I decided to go see Yomki.)"
-    m "(Weird...)"
-    m "(He isn't there yet.)"
+    m "(I made my way to school, and arrived 30 minutes early.)"
+    m "(Classes haven't started yet, and I don't know what else to do, so might as well wait for Yomki.)"
+    m "(I waited a couple minutes before a familiar figured popped up.)"
 
     show gorou_smug with Dissolve(0.5)
 
@@ -1906,7 +1912,8 @@ label Day1EventEnd:
     g "..."
     g "Well..."
     g "Yeah."
-    m "So... was this really a dream?"
+    m "I have an hypothesis..."
+    m "What if... this wasn't actually a dream...?"
     g "What are you insinuating MC?"
     m "I think-"
 
@@ -1936,200 +1943,33 @@ label Day1EventEnd:
     y "That Big Chungus guy was strong."
     m "So, it wasn't a dream after all."
     g "...That's weird."
-    m "I guess I'll go ask some other students."
-    g "Okay."
-    g "I'll go check in our class"
-
-    hide yomki
-    hide gorou_neutral
-    with Dissolve(0.5)
-
-    # m "I don't know anyone in this class so I guess I'll just ask the students in my class."
-
-    # scene classroom with Dissolve(0.5)
-
-    # m "Okay, this girl isn't talking with anyone."
-
-    # show momoka_neutral with Dissolve(0.5)
-
-    # m "Hey."
-    # mo "..."
-    
-    # hide momoka_neutral
-    # show momoka_surprised
-
-    # mo "Ah-"
-
-    # hide momoka_surprised
-    # show momoka_intrigued
-
-    # mo "Do you need something...?"
-    # m "Do you remember seeing a big bunny last friday?"
-    # mo "That's a weird question, but let me think..."
-    
-    # pause 1
-
-    # mo "I don't remember seeing one..."
-    # m "Okay."
-
-    # hide momoka_intrigued with Dissolve(0.5)
-
-    # m "(Guess, I should've expected that...)"
-    # m "(Not every student would come see that.)"
-    # m "(Well, I should ask someone else just to be sure.)"
-
-    # show momoka_panick with Dissolve(0.5)
-
-    # mo "Wait-"
-    # mo "You're friends with Gorou, right?"
-    # m "Huh, yeah?"
-
-    # hide momoka_panick
-    # show momoka_neutral
-
-    # mo "Could you tell him that he forgot his Waccland Switch at my house."
-
-    # pause 0.5
-
-    # m "Wait..."
-    # m "Gorou has a girlfriend?!?"
-
-    # hide momoka_neutral
-    # show momoka_panick
-
-    # mo "W-What?!?"
-    # mo "I-I'm not his girlfriend..."
-
-    # show momoka_confused
-    # hide momoka_panick
-
-    # mo "He's my childhood friend."
-    # m "I was just joking."
-    # mo "Y-yeah... I guess."
-    # m "Still surprised Gorou has female friends."
-
-    # hide momoka_confused
-    # show momoka_serious
-
-    # mo "I mean... I'm his only female friend..."
-    # mo "He's kind of... you know-"
-    # m "Weird?"
-    # mo "Yeah."
-    # mo "It's kind of rare for him to make friends because of that."
-    # mo "Most people will just assume he's stupid and make fun of him."
-    # m "(I probably shouldn't say anything.)"
-
-    # hide momoka_serious
-    # show momoka_surprised
-
-    # mo "But you know, he knows full well that what he's saying is dumb."
-    # mo "He's doing it on purpose."
-    # mo "But most people just think he's delusional."
-    # mo "He's a really nice person if you ge-"
-
-    # hide momoka_surprised
-    # show momoka_neutral
-
-    # m "Alright... I've heard enough..."
-    # mo "Sorry for rambling..."
-    # m "Don't worry about that."
-    # m "It's just that I have something to do before the bell rings."
-    # m "See you later."
-    # mo "By the way, my name is Arima Momoka, nice to meet you."
-
-    # hide momoka_neutral with Dissolve(0.5)
-
-    # show masashi_neutral with Dissolve (0.5)
-
-    # m "I'm Masashi Kamiya, but you can call me MC!"
-    # m "Gaming is my life! And Wacc-Fuel is my blood!"
-    # m "Even if I lose it all, outside the walls, I will never look away."
-    # m "Because I am freedom itself!"
-
-    # hide masashi_neutral with Dissolve (0.5)
-
-    # show momoka_neutral with Dissolve(0.5)
-
-    # mo "I think I see how you became friends with Gorou!"
-    # mo "You two are pretty similar!"
-    # m "(I WILL not say anything.)"
-    # m "I really need to go though."
-    # m "Goodbye."
-    # mo "Bye."
-
-    # scene corridor with Dissolve(0.5)
-
-    # m "Not much time left before the bell rings."
-    # m "I should report back."
-
-    # scene club with Dissolve(0.5)
-
-    # show yomki
-    # show gorou_neutral
-    # show gorou_neutral:
-    #     xpos 1400 ypos 1100
-    # with Dissolve(0.5)
-
-    # m "Okay."
-    # m "Only had time to ask one person."
-    # m "Didn't see anything."
-    # m "Also Gorou, she said you forgot your Waccland switch at her house."
-    # g "Wait- you asked Momoka?"
-    # g "I'll go retrieve it after class."
-    # y "..."
-
-    # pause 1
-
-    # y "What?"
-    # y "Gorou, you have a girlfriend?!?"
-    
-    # pause 1
-
-    # g "..."
-
-    # hide gorou_neutral
-    # show gorou_surprised
-    # show gorou_surprised:
-    #     xpos 1400 ypos 1100
-    
-    # g "W-W-What?!?"
-    # g "W-Why would you s-say this?!?"
-
-    # hide gorou_surprised
-    # show gorou_yell
-    # show gorou_yell:
-    #     xpos 1400 ypos 1100
-
-    # g "I, will never have a girlfriend!"
-    # g "The darkness deep within me is far too deep for a mere mortal to tolerate!"
-    # y "I was just joking bro."
-
-    # hide gorou_yell
-    show gorou_neutral
-    show gorou_neutral:
-        xpos 1400 ypos 1100
-    
-    g "Uhh, ok..."
-    y "Either way, me and Gorou asked some people in our class."
-    g "None of them remembers the incident."
-    m "That's... weird."
-    y "Yeah fam."
-    y "It's like our school was subject to mass hallucinations."
-    y "What kind of illicit substances could cause this."
+    y "Huh? That actually happened???"
+    y "I was just talking about the dream I had-"
+    m "Wait- we all had the same dream?"
+    g "..."
+    y "..."
     m "..."
-
-    pause 1
-
-    m "Probably just be a coincidence!"
-    g "By the way, what were we talking about?"
-    y "Last friday bro, me and MC balled so hard!"
-    y "How could you not remember!"
-    g "Kind of weird how it attracted so many people."
-    m "Yeah."
+    m "I think we're overthinking this."
+    m "Probably just a coincidence."
+    y "True."
+    y "Anyway, we climbed so hard yesterday."
+    y "We both managed to beat Dark souls XXI in a single day."
+    m "Yeah bro, that was crazy."
+    g "Ah yeah, the famous Dark souls series. I've heard legends of it's challenge and it's infamous 2nd entry- Dark Souls II."
+    g "Some say it's the best video game that has ever existed..."
+    g "Or so the legend goes..."
+    y "Huh... are you high?"
+    y "Dark Souls II kinda mid bro, easily the worst Dark Souls"
+    y "Dark Souls XXI is where it's at bro."
+    m "Yeah, it takes everything that made Dark Souls II good, and multiplies it by 10."
+    y "Can you even call it Dark Souls if you don't have to no-hit every boss while every attack has a 1 frame dodge and parry window?"
+    m "That game is for casuals bro."
+    g "Damn bro, Michael Zaki really never misses."
 
     "Ding dong bing bong."
 
-    m "Time to go to class."
+    m "(The bell rang interupting our conversation.)"
+    m "We'll talk more about it later."
     m "See you guys later."
     g "Farewell."
     y "See you bro."
