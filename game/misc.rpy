@@ -128,9 +128,35 @@ image usui_neutral:
     "char/usui_neutral.png"
     ypos 1200 xpos 900
     zoom 0.55
+
+# Masashi
         
 image masashi_neutral:
     "char/masashi_neutral.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+image masashi_neutral:
+    "char/masashi_annoyed.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+image masashi_neutral:
+    "char/masashi_confused.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+image masashi_neutral:
+    "char/masashi_mew.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+image masashi_neutral:
+    "char/masashi_suspicious.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+image masashi_neutral:
+    "char/masashi_thinking.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+image masashi_neutral:
+    "char/masashi_unsure.png"
     ypos 1100 xpos 900
     zoom 0.55
 

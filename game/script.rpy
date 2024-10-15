@@ -975,7 +975,7 @@ label Day1EventEnd:
         i "Puts some kind of distance between people when you use honorifics."
         m "Well yeah... that's true."
         m "Didn't know you smoked."
-        i "Huh, yeah, been smokin' for a quite a long time."
+        i "Huh, yeah, been smokin' for quite a long time."
         i "All 'cause of this one guy."
         i "Always rambled on and on about how he much he despised lazy people."
         i "He was always like: ''Those damn fools don't even bother doing anything with their lives.''"
@@ -1803,15 +1803,16 @@ label Day1EventEnd:
         hide asami_confused
         show asami_neutral
 
-        a "Okay, enough joking arround."
+        a "...Alright, I'll be honest for once."
         a "I won't pretend to be all impressed by that and suddenly change my opinion of you."
         a "But that was some nice balling."
-        a "Good job you too."
+        a "Good job to you two."
         a "Anyway, I better leave before I'm late to class."
+        m "Wait what-"
 
         hide asami_neutral with Dissolve(0.5)
 
-        m "(Asami left the room.)"
+        m "(Asami left the room before I could respond.)"
         m "(Not exactly the reaction I was expecting.)"
         m "(I thought she'd say something like: Nah, you're still just some loser! That bunny guy didn't even break a sweat!)"
         m "(I really don't get this girl.)"
