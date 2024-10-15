@@ -135,27 +135,27 @@ image masashi_neutral:
     "char/masashi_neutral.png"
     ypos 1100 xpos 900
     zoom 0.55
-image masashi_neutral:
+image masashi_annoyed:
     "char/masashi_annoyed.png"
     ypos 1100 xpos 900
     zoom 0.55
-image masashi_neutral:
+image masashi_confused:
     "char/masashi_confused.png"
     ypos 1100 xpos 900
     zoom 0.55
-image masashi_neutral:
+image masashi_mew:
     "char/masashi_mew.png"
     ypos 1100 xpos 900
     zoom 0.55
-image masashi_neutral:
+image masashi_suspicious:
     "char/masashi_suspicious.png"
     ypos 1100 xpos 900
     zoom 0.55
-image masashi_neutral:
+image masashi_thinking:
     "char/masashi_thinking.png"
     ypos 1100 xpos 900
     zoom 0.55
-image masashi_neutral:
+image masashi_unsure:
     "char/masashi_unsure.png"
     ypos 1100 xpos 900
     zoom 0.55

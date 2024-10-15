@@ -75,7 +75,7 @@ label start:
 
     # FR THIS TIME THIS IS THE start
 
-    "NOVEMBER 21, 20XX."
+    "APRIL 1, 20XX."
     "The final day has arrived."
     "No one could have guessed what was coming."
     "But even then, we had to fight it..."
@@ -88,37 +88,47 @@ label start:
     pause 0.5
 
     "The land was scorched to the ground..."
-    "They had come, the ones who are only known as the *REDACTED FOR SPOILERS*..."
+    "They had come, the ones he warned us about..."
 
-    unk "MC, the only way you can save this world is to ############."
-    unk "I will ######### from ##########."
-    unk "########### you have one mission. One of the greatest importance..."
+    #MC, the only way you can save this world is gone
+    unk "MC, the only way you can save this world is ############."
+    #I will send you back to the past, exactly 1 year ago.
+    unk "I will ######### to ##########."
+    #Masashi, you have one mission. One of the greatest importance...
+    unk "###########, you have one mission. One of the greatest importance..."
     unk "Go get bitches. At any cost, no matter if it's one or a thousand... You must get a Girlfriend!"
+    #I'm sorry I couldn't do anything about her... but that's why you need to succeed... no matter the cost.
+    unk "########## I couldn't do anything about ######## why you need to succeed... ########## the cost."
     m "I understand..."
     m "I'll do it!"
     m "I will get a Girlfriend... and-"
 
-    scene black with Dissolve (1.5)
-    scene white with Dissolve (3)
+    play music ("bgm/man....mp3") fadeout (3.5)
 
-    play music ("bgm/man....mp3") fadeout (1.5)
+    scene black with Dissolve (3)
+    scene white with Dissolve (.5)
 
     show chungus with Dissolve (3)
 
-    c "It is nice to meet you, Sussy Boi."
+    c "It is nice to meet you, MC."
     c "I am the being known as Big Chungus,"
     c "the god of this world."
     c "Masashi Kamiya... Thoust grand quest begins here."
-    c "It all begins here..."
     c "Acquire a Maiden. That is thy task."
     c "Now, go forth with Wacc and Land, my child!"
     c "For this is YOUR Waccland Dating SIM 2: Electric Boogaloo."
 
     play sound "sfx/bonk.mp3"
 
-    scene bedroom with dissolve
-    
-    stop music
+    pause 0.2
+
+    scene black with Dissolve(.1)
+
+    stop music fadeout 0.5
+
+    pause 2
+
+    scene bedroom with Dissolve (3)
 
     m "Huh..."
     m "(A blinding light passes through the curtains straight into my face...)"
@@ -129,7 +139,7 @@ label start:
     m "..."
     m "The hell was this dream??"
     m "I feel like I should be remembering something important just now..."
-    m "Dammit, the curse of shitty games has befallen me."
+    m "Dammit, the curse of bad games has befallen me."
     m "..."
     m "...Wait... yeah probably should get up..."
     m "Yet another captivating school year awaits me..."
@@ -157,7 +167,7 @@ label start:
     m "(First founded in 1869, this school was the gathering place for all the most brilliant minds.)"
     m "(It's name derives from Kevin Waccland, the saviour of the world, inventor of WA KU OH!)"
     m "(A place for such amazing people, named after the most amazing person.)"
-    m "(Well, now it's just a normal high school that even normal people can go. That's how I got here.)"
+    m "(Well it would be but... now it's just a normal high school that even normal people can go. That's how I got here.)"
     m "Well I better go to my class before the bell rings."
 
     play sound ("sfx/vine boom.mp3")
@@ -178,21 +188,24 @@ label start:
     show asami_neutral with Dissolve (1)
 
     unk "You've just woken up for school and you're gonna go back to sleep now?"
-    m "Who the hell are you?"
-    unk "Me? That's not important right now!"
-    m "(What's with this annoying girl, I was just minding my own business and she starts critizing my gamer lifestyle of sleeping through the entire class.)"
+    m "...?"
+    m "Who even are you?"
+    unk "Me? That's not really important right now!"
+    m "(What's with this annoying girl, I was just minding my own business and she starts critizing my lifestyle of sleeping through the entire class.)"
     m "(I have also never even seen her face before...)"
+    m "(With that kind of personality, I'm pretty sure I would have at least taken notice of her in middle school.)"
     unk "What's with that reaction! Very well, I shall introduce myself."
 
     show asami_smug
     hide asami_neutral
 
-    a "The name's Nakamura Asami! You better remember it, for I am the one who shall soon rule this world!!!"
-    m "(This girl's delusional... I better ignore her, maybe she'll leave soon if she sees I'm not interested in small talk.)"
+    a "The name's Nakamura Asami! You better remember it!"
+    a "I'll have you know I was the most popular girl at my middle school!"
+    m "(With this attitude? This girl's delusional... I better ignore her, maybe she'll leave soon if she sees I'm not interested in small talk.)"
     a "Well, I just arrived here, can't afford to be picky with friends!"
     a "And you were conveniently in the desk right in front of me!"
-    a "My parents came here for work, and with that I arrive here with no one I know!"
-    a "Back home, I had like a hundred friends. Now, I have to start back at 0. But I won't let that stop me!"
+    a "My parents came here for work, so I don't know anyone here."
+    a "Back home, I had like a hundred friends. Now, I have to start back at square one. But I won't let that stop me!"
     a "After all, I'm not some kind of loser that talks to no one!"
     m "(What is she even talking about, I stopped listening 5 minutes ago...)"
     m "Sigh..."
@@ -223,6 +236,7 @@ label start:
     a "We'll continue this later! I won't stop until you understand the errors of your ways!"
     t "I said quiet, Asami!"
     a "Okay..."
+    a "(...How does he already know my name?)"
 
     hide asami_mad with Dissolve (1)
 
@@ -235,9 +249,9 @@ label start:
 
     m "(Man, all the female students are talking about the new teacher...)"
     m "(This is so cliché, can't they just, I don't know... concentrate on the class instead????)"
-    m "(It's almost always the same as soon as we have a young male teacher.)"
+    m "(It's almost always the same as soon as we have a male teacher that looks slightly better than average.)"
     m "(Well, no use complaining about that on the first day of school, they'll stop once they realize he's just a plain old teacher.)"
-    m "(I sat through the entire class between dream and reality, contemplating the meaning of life and why I decided to game all night.)"
+    m "(I sat through the entire class between dream and reality, contemplating the meaning of life and why I decided to play games all night.)"
     m "(I briefly wonder if this whole scenario was schemed by someone...)"
     m "(...Altough I quickly dismiss the idea.)"
 
@@ -287,7 +301,7 @@ label start:
 
     play music ("bgm/7.ogg") fadeout(1)
 
-    a "How dare you insinuate that I am this amoeba's girlfriend!"
+    a "How dare you insinuate that I am this loser's girlfriend!"
     a "This guy's been ignoring me for the entire time while I talked about my life story."
     y "Can we skip dialogue here?"
     m "Nah, bro. This is a visual novel, if you skipped everything you wouldn't even have a game."
@@ -326,12 +340,15 @@ label start:
     
     hide asami_mad with Dissolve (1)
 
-    m "(She leaves the class running. I think she forgot that classes still aren't done for the day. Maybe she'll realize this and return soon.)"
+    m "(She leaves the class running. She probably forgot that classes still aren't done for the day. Maybe she'll realize this and return soon.)"
 
     show yomki:
         ease 1.5 xpos 400 ypos 25
 
     y "Bruh. I guess better luck next time MC."
+    y "Maybe one day you'll have as much charisma as me."
+    m "Yeah bro, gotta play more souls games."
+    y "Hell yeah bro!"
     y "I gotta go now, bye."
 
     hide yomki with Dissolve (0.5)
