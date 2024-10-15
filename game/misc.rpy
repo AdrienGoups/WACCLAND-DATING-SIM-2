@@ -49,6 +49,10 @@ image asami_intrigued:
     "char/asami_intrigued.png"
     ypos 1200 xpos 900
     zoom 0.55
+image asami_cat:
+    "char/asami_cat.png"
+    ypos 1200 xpos 900
+    zoom 0.55
 
 # MOMOKA
 
@@ -157,6 +161,11 @@ image masashi_thinking:
     zoom 0.55
 image masashi_unsure:
     "char/masashi_unsure.png"
+    ypos 1100 xpos 900
+    zoom 0.55
+
+image gotou_neutral:
+    "char/gotou_neutral.png"
     ypos 1100 xpos 900
     zoom 0.55
 

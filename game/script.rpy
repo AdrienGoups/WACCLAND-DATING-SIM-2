@@ -10,17 +10,18 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define m = Character("Kamiya")
-define u = Character("Usui")
-define b = Character("Bob")
-define c = Character("Big Chungus")
-define a = Character("Asami")
-define t = Character("Teacher")
-define i = Character("Mr. Izumi")
-define y = Character("Yomki")
-define mi = Character("Miyuki")
-define g = Character("Gorou")
-define mo = Character("Momoka")
+define m = Character("Kamiya", who_color="#f06767")
+define u = Character("Usui", who_color="#ade7f7")
+define b = Character("Bob", who_color="#eb9c71")
+define c = Character("Big Chungus", who_color="#ccfffa")
+define a = Character("Asami", who_color="#de6ac9")
+define t = Character("Teacher", who_color="#7489d4")
+define i = Character("Mr. Izumi", who_color="#7489d4")
+define y = Character("Yomki", who_color="#e0bf72")
+define mi = Character("Miyuki", who_color="#8f72e0")
+define g = Character("Gorou", who_color="#79db9a")
+define go = Character("Gotou", who_color="#4079bb")
+define mo = Character("Momoka", who_color="#ffaf96")
 define unk = Character("???")
 
 # The game starts here.
@@ -532,7 +533,7 @@ label Day1EventEnd:
     m "(My memories seems a bit hazy.)"
     if Yomki_Event_1:
         m "(Maybe it's the chicken nuggets thats hitting.)"
-        m "(...that doesn't make any sense, why the fuck would chicken do that?)"
+        m "(...that doesn't make any sense, why the hell would chicken do that?)"
         
     #YOMKI EVENT END
     
@@ -1825,11 +1826,11 @@ label Day1EventEnd:
         a "But that was some nice balling."
         a "Good job to you two."
         a "Anyway, I better leave before I'm late to class."
-        m "Wait what-"
+        m "Uhh okay...?"
 
         hide asami_neutral with Dissolve(0.5)
 
-        m "(Asami left the room before I could respond.)"
+        m "(Asami left the room before I could say anything.)"
         m "(Not exactly the reaction I was expecting.)"
         m "(I thought she'd say something like: Nah, you're still just some loser! That bunny guy didn't even break a sweat!)"
         m "(I really don't get this girl.)"
@@ -1992,7 +1993,56 @@ label Day1EventEnd:
     g "Farewell."
     y "See you bro."
 
-    scene black with Dissolve(0.5)
+    scene classroom with Dissolve(0.5)
+
+    m "(It wasn't long after I sat down that I realized something.)"
+    m "(The whole class seemed... excited.)"
+    m "(I guess I'll just ask Asami.)"
+
+    show asami_neutral with dissolve
+
+    m "Hey, do you have any idea why everyone's so excited?"
+
+    hide asami_neutral
+    show asami_smug
+    with dissolve
+
+    a "I'm glad you asked!"
+    a "You see, it's simple-"
+
+    hide asami_smug
+    show asami_cat
+    with dissolve
+
+    a "Apparently there's a new teacher they hired."
+    a "And... well... he's apparently quite good looking so... yeah..."
+    m "Classic high school students..."
+    a "They really should feel ashamed of themselves!"
+    a "He can't be that hot, right?"
+
+
+    show asami_cat:
+        ease 1 xpos 1400 ypos 1200
+    show gotou_neutral
+    show gotou_neutral:
+        xpos 800 ypos 1100
+    with dissolve
+
+    pause .5
+
+    hide asami_cat
+    show asami_judge
+    show asami_judge:
+        xpos 1400 ypos 1200
+    with dissolve
+
+    a "..."
+    a "What were they even smoking?"
+    a "That's just you with glasses and with dyed hair!"
+    m "Mayhap."
+    go "Yeah, didn't have the budget to make a sprite for me."
+    go "Also sorry ladies, I don't like underage women."
+    go "I vastly prefer mommies."
 
     m "lore"
 

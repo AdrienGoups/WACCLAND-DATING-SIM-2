@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1913: show statement expects a non-empty block.
-    show yomki with Dissolve(0.5):
-                                  ^
+File "game/script.rpy", line 23: unexpected EOF while parsing
+    Character("Gotou");
+                       ^
 
-Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat May 11 15:53:10 2024
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Tue Oct 15 18:06:02 2024
