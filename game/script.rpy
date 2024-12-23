@@ -22,6 +22,7 @@ define mi = Character("Miyuki", who_color="#8f72e0")
 define g = Character("Gorou", who_color="#79db9a")
 define go = Character("Gotou", who_color="#4079bb")
 define mo = Character("Momoka", who_color="#ffaf96")
+define cl = Character("Classmates")
 define unk = Character("???")
 
 # The game starts here.
@@ -113,9 +114,12 @@ label start:
 
     c "It is nice to meet you, MC."
     c "I am the being known as Big Chungus,"
-    c "the god of this world."
+    c "The overseer of this world."
     c "Masashi Kamiya... Thoust grand quest begins here."
-    c "Acquire a Maiden. That is thy task."
+    c "Acquire a partner. That is thy task."
+    c "Altough, you are unfortunately but an average high school student."
+    c "You shall better yourself in due time to have any chance of winning the heart of a maiden."
+    c "You shall face many trials and challenges, but I believe in thy potential."
     c "Now, go forth with Wacc and Land, my child!"
     c "For this is YOUR Waccland Dating SIM 2: Electric Boogaloo."
 
@@ -134,42 +138,47 @@ label start:
     m "Huh..."
     m "(A blinding light passes through the curtains straight into my face...)"
     m "(I realize that I have overslept and that my alarm has been ringing for a good 15 minutes.)"
-    m "Isn't 15 minutes a bit much?!"
-    # nah i'd win
+    m "Have I really been ignoring it for 15 minutes?!"
     m "(I quickly turn off the alarm.)"
     m "..."
     m "The hell was this dream??"
     m "I feel like I should be remembering something important just now..."
-    m "Dammit, the curse of bad games has befallen me."
+    m "Dammit, I can't remember..."
+    m "(This oddly feels like the plot of an anime I watched not long ago...)"
+    m "(Couldn't tell which one, this trope's too common.)"
     m "..."
-    m "...Wait... yeah probably should get up..."
+    m "I shouldn't stay in bed for much longer or I'll be late."
     m "Yet another captivating school year awaits me..."
 
     scene black with dissolve
 
     m "(I quickly prepare myself for school.)"
     m "(I also vaguely question why I suddenly started to think out loud, but I dismiss the idea pretty quickly.)"
-    m "Whatever, I'm leaving now!.... Why am I yelling this, I literally live alone..."
+    m "(Whatever, I'm leaving now!)"
 
     scene residential with dissolve
 
     play music ("bgm/2.ogg") fadeout (1)
     
-    m "Huh...? Something feels different today..."
-    m "Probably nothing..."
-    m "I should probably hurry up."
+    m "(Today's my first day of high school.)"
+    m "(Most people would be either excited or discouraged, but what I'm feeling is different.)"
+    m "(I've got this weird feeling of anxiety slowly invading my body, like something is wrong.)"
+    m "(...I'm probably worrying for nothing.)"
+    m "(I should probably hurry up though.)"
     m "(I bolt towards the school quickly dodging the cars as I pass through crosswalks on my way there.)"
     m "(A set of stairs separate me from the entrance to the school.)"
 
     scene school with Dissolve (1)
 
-    m "(The school is now right in view. And still 15 minutes until the bell rings.)"
+    m "(The school is now right in view. And still 5 minutes until the bell rings.)"
     m "(And now I'm standing at the doors of Waccland's Peak Academy.)"
     m "(First founded in 1869, this school was the gathering place for all the most brilliant minds.)"
     m "(It's name derives from Kevin Waccland, the saviour of the world, inventor of WA KU OH!)"
+    m "(It is said that he lived about 2000 years ago.)"
     m "(A place for such amazing people, named after the most amazing person.)"
     m "(Well it would be but... now it's just a normal high school that even normal people can go. That's how I got here.)"
-    m "Well I better go to my class before the bell rings."
+    m "(You can thank the war 40 years ago for this.)"
+    m "(Well I better go to my class before the bell rings.)"
 
     play sound ("sfx/vine boom.mp3")
     show saul with Dissolve (0.5)
@@ -178,13 +187,15 @@ label start:
 
     m "(I follow the indications to my new class, class 1-C.)"
     scene classroom with Dissolve (1)
-    m "As I enter the door, I quickly maneuver through the desks to arrive at my assigned desk, right beside the window in the second to last row."
+    m "(As I enter the door, I quickly maneuver through the desks to arrive at my assigned desk, right beside the window in the second to last row.)"
+    m "(I sit at my desk while trying my hardest to stay awake.)"
     m "(I'm still sleepy... shouldn't have gamed all night...)"
-    m "I slowly close my eyes..."
+    m "(I slowly close my eyes...)"
     scene black with Dissolve (2)
-    unk "HEYYYYYY!!!!!"
+    unk "Hey!!"
     scene classroom with Dissolve (2)
 
+    m "?!"
     m "What?!"
     show asami_neutral with Dissolve (1)
 
@@ -192,6 +203,8 @@ label start:
     m "...?"
     m "Who even are you?"
     unk "Me? That's not really important right now!"
+    unk "You can't just start sleeping in the middle of class!"
+    unk "I'm telling this for your own good, you know?"
     m "(What's with this annoying girl, I was just minding my own business and she starts critizing my lifestyle of sleeping through the entire class.)"
     m "(I have also never even seen her face before...)"
     m "(With that kind of personality, I'm pretty sure I would have at least taken notice of her in middle school.)"
@@ -206,9 +219,9 @@ label start:
     a "Well, I just arrived here, can't afford to be picky with friends!"
     a "And you were conveniently in the desk right in front of me!"
     a "My parents came here for work, so I don't know anyone here."
-    a "Back home, I had like a hundred friends. Now, I have to start back at square one. But I won't let that stop me!"
+    a "Back home, I had tons of friends. Now, I have to start back at square one. But I won't let that stop me!"
     a "After all, I'm not some kind of loser that talks to no one!"
-    m "(What is she even talking about, I stopped listening 5 minutes ago...)"
+    m "(What is she even talking about, I stopped listening ages ago...)"
     m "Sigh..."
 
     hide asami_smug
@@ -218,6 +231,7 @@ label start:
 
     a "Hey are you ignoring me!"
     m "I sure am. Now, leave me alone."
+    m "I'm too tired to be dealing with someone who doesn't know what personal space is."
     a "That's not very polite! You're talking to such a cute girl and you don't even bother listening to a word she says!"
     m "I don't see the correlation between your points. I'm trying to sleep here."
     a "The audacity! Are you stupid or what?"
@@ -254,13 +268,14 @@ label start:
     m "(Well, no use complaining about that on the first day of school, they'll stop once they realize he's just a plain old teacher.)"
     m "(I sat through the entire class between dream and reality, contemplating the meaning of life and why I decided to play games all night.)"
     m "(I briefly wonder if this whole scenario was schemed by someone...)"
-    m "(...Altough I quickly dismiss the idea.)"
+    m "(...Although I quickly dismiss the idea.)"
+    m "(That's what I get for playing games during the whole spring break.)"
 
     "Ding dong bing bong!"
 
     show izumi_neutral with Dissolve (0.5)
 
-    i "Well, looks like time is up, we'll continue next class were we left off."
+    i "Well, looks like time is up, we'll continue next class where we left off."
 
     hide izumi_neutral with Dissolve (0.5)
 
@@ -291,6 +306,8 @@ label start:
         ypos 25
 
     m "(This guy is my good friend Yomki, I have no idea why he's backing up my obvious bullshit.)"
+    m "(We've known each other since elementary school.)"
+    m "(Like me, he's also a huge gamer and he's also my best friend.)"
     m "(Unfortunately, he isn't in my class this year.)"
     y "Sup, it's me Yomki. What you tryin' to do with my bro?"
     y "Huh, don't tell me MC has a girlfriend now???????"
@@ -305,7 +322,7 @@ label start:
     a "How dare you insinuate that I am this loser's girlfriend!"
     a "This guy's been ignoring me for the entire time while I talked about my life story."
     y "Can we skip dialogue here?"
-    m "Nah, bro. This is a visual novel, if you skipped everything you wouldn't even have a game."
+    m "Nah, bro. It's like in a visual novel, if you skipped everything you wouldn't even have a game."
     y "I have no idea what's going on."
     a "Returning to the original subject, Kamiya-kun, I require an apology."
     m "Why should I need to apologize, I didn't do anything. You're the one who's annoying me!"
@@ -351,6 +368,8 @@ label start:
     m "Yeah bro, gotta play more souls games."
     y "Hell yeah bro!"
     y "I gotta go now, bye."
+    y "Don't forget to hop on VC tonight."
+    m "Yeah I will, homie."
 
     hide yomki with Dissolve (0.5)
 
@@ -359,7 +378,7 @@ label start:
     m "(Well, not that I really care.)"
     "The rest of the day goes by without any other incident."
     "Ding dong bing bong."
-    m "(Maybe I should try to patch things up with Asami, if I let things like this, it's probably only gonna bring me trouble.)"
+    m "(Maybe I should try to patch things up with Asami, if I let things like this, it's probably only gonna bring me trouble knowing her personality.)"
 
     show yomki with Dissolve (0.5)
 
@@ -392,7 +411,14 @@ label YomkiEvent1:
 
     y "Yo those new Big Waccs are bussin' frfr."
     m "Sure is bro."
+    m "That special rizz sauce sure is something."
+    y "Yeah I know what you mean, it tastes like when you finally find a bonfire after a long and arduous climb in Dark Souls."
+    m "Couldn't find a better analogy than this bro."
     m "Still, no matter what year it is, Wacc Nuggets are still so poggers."
+    y "Yeah bro, the quality of the chicken is really nuts."
+    y "And the crispy exterior is also really fire."
+    m "No matter what products they do, any Waccland products are straight up peak."
+    y "Yeah, no wonder they're such a big company."
     y "BTW, bro. You started Dark Souls XX?"
     m "Yeah, I spent the entire night playing. I was so sleepy at school that I just wanted to sleep all day."
     m "But like you saw, things didn't go as planned."
@@ -400,9 +426,10 @@ label YomkiEvent1:
     y "Oh, you won't believe who they brought back for the final boss."
     m "No way! Let me guess... Michael Zaki's Foreskin duo?"
     y "Nah bro! MANX THE SOUDER!"
-    m "NO WAY FRFR???!?!?!?"
-    y "No cap, bro."
+    m "NO WAY FRFR ONG???!?!?!?"
+    y "No cap, bro ong."
     m "(Me and Yomki finish our meal. Time passes quickly as we discuss the strategies we used for each bosses.)"
+    m "(From the godly Rick, soldier of god to the amazing Patches consort of Miyazaki, truly Michael Zaki never missed.)"
     m "(After a while we decided to go back home.)"
     hide yomki with Dissolve (0.5)
 
@@ -414,16 +441,20 @@ label AsamiEvent1:
     $ Asami_Event_1 = True
 
     m "(After thinking about it, I gotta fix things up.)"
+    m "(Altough I would love to hang out with my bro, the future of my school life rests upon this operation.)"
     m "Sorry, not right now. I have something to do."
     y "Huh, something to do?"
+    y "You don't mean..."
     y "Oh wait never mind, I gotta no-life dark souls XX."
     y "Well good luck with Manx the Souder Requiem Over Heaven!"
+    y "He's completely cracked with the sauce."
+    y "I'm already at over 100 tries against him."
 
     hide yomki with Dissolve (0.5)
 
     m "(I couldn't even say anything before he left.)"
     m "Well whatever."
-    m "(She left already, so I have to run after her.)"
+    m "(She left already, so I'll have to run after her.)"
     m "(I quickly packed up my things and left.)"
 
     scene corridor with Dissolve (1)
@@ -532,8 +563,8 @@ label Day1EventEnd:
     m "(Or did something make me exhausted this morning.)"
     m "(My memories seems a bit hazy.)"
     if Yomki_Event_1:
-        m "(Maybe it's the chicken nuggets thats hitting.)"
-        m "(...that doesn't make any sense, why the hell would chicken do that?)"
+        m "(Maybe it's the chicken nuggets that's hitting.)"
+        m "(...that doesn't make any sense though.)"
         
     #YOMKI EVENT END
     
@@ -543,7 +574,7 @@ label Day1EventEnd:
         
     #END OF ROUTE SPLIT
     
-    m "(Meh, it's probably nothing!)"
+    m "(*Sigh*, it's probably nothing.)"
 
     scene black with Dissolve (1)
     scene residential with Dissolve (1)
@@ -551,27 +582,34 @@ label Day1EventEnd:
     play music ("bgm/2.ogg") fadeout (1)
 
     "The next day."
-    m "Another captivating day at school..."
+    m "(My alarm clock was as loud as ever.)"
+    m "(At least this time I woke up on time.)"
+
+    pause 0.5
+
+    m "Yet another captivating day at school..."
     m "(On my way to the school I see a pale haired girl running with a toast in her mouth.)"
     m "(There's still 5 minutes left before the bell rings...)"
     m "(Why is she even running...?)"
-
-    show usui_neutral:
-        xpos -800 ypos 140
-        ease 1 xpos 1920 ypos 140
-    pause 1
-
     m "Huh... anyway."
-    m "Onward to hell!"
+    m "(I make my way to school once more)"
 
     scene classroom with Dissolve (1)
 
     "Waccland's Peak Academy, Place Japan, Hour: 7:58"
 
     m "(I arrive in class and sit at my desk.)"
-    m "(An annoying face is staring at me right behind me.)"
-
-    # if asami rizz point 1 = idk how to set variables
+    m "(The class is as loud as ever, gossiping about all the latest news like usual.)"
+    cl "Hey, did you hear about what happened to Leo!"
+    cl "Word is that he got beaten by the one and only Ninja!"
+    cl "Damn, that's crazy bro!"
+    cl "Didn't think Mkleo could lose a match."
+    cl "This just proves how good ninja has gotten!"
+    m "(As always talking about celebrities no one cares about.)"
+    m "(I do love myself some WA-KU-OH! but those pro players don't get it at all.)"
+    m "(Card games were never about being competitive, it was always just about having fun.)"
+    m "(But I have more pressing matters to attend to right now...)"
+    m "(An annoying face is staring at me from behind, eager to disturb the peace that I found myself in.)"
 
     if Asami_Event_1:
 
@@ -593,7 +631,21 @@ label Day1EventEnd:
         a "I was just thinking out loud"
         m "...Okay?"
 
-        hide asami_judge with Dissolve (0.5)
+        hide asami_judge
+        show asami_neutral
+
+        a "Anyway, I'll never get all that celebrity talk."
+        a "Everyone's just been spouting the same things ever since the day started."
+        a "I honestly don't get it."
+        m "Yeah, true."
+        m "I was thinking the same thing earlier... before you interupted my train of thought."
+        a "Oh, I thought you were just sleeping like yesterday!"
+        m "There's a huge difference between sleeping and thinking, you know?"
+        a "Don't feel like arguing anymore."
+        a "We'll talk again later."
+        m "(As if I would want to talk to you...)"
+
+        hide asami_neutral with Dissolve (0.5)
 
     # else the good route
 
@@ -613,13 +665,40 @@ label Day1EventEnd:
 
     "Mr. Izumi enters the classroom."
     i "Class is about to begin."
-
+    i "Today we're going to be studying ancient history."
+    i "As you probably already know, not much is known from the times before Kevin Waccland saved the world."
+    i "According to archeologists, the land was previously known as the land of the Seventh, although some sources also claim that it was known as WACCLAND."
+    i "In those times, people were able to use magic to cast powerful spells able to pierce the heavens themselves."
+    i "Which then leads us to the tale of Kevin Waccland."
+    i "Kevin Waccland was born about 2000 years ago as the prince of the great empire of Waccland."
+    i "Yet, turmoil lurked in the darkest reaches of the empire."
+    i "Dark cultists summoned forth forbidden magic to try and take control of the world."
+    i "Yet, Kevin rose up to those cultists and battled them."
+    i "In their final battle, the cutlists had managed to summon an old and powerful god."
+    i "The odds were stacked against him, but Kevin had a plan."
+    i "The dark god fueled itself of the magic of the people."
+    i "Kevin decided to seal away the magic of the people inside cards and challenged the god to a duel."
+    i "Inside those cards lied beasts conjured of pure magic."
+    i "With this power, Kevin Waccland was able to succesfully seal the dark god inside a card."
+    i "This very card is sealed in a location unknown to the masses, as it's power could most certainly provoke the end of the world."
+    i "And that's why you rarely ever see anyone able to use magic these days."
+    i "It's all sealed in the original WA-KU-OH! cards which is also kept in an undisclosed location."
+    i "The only cards with magic in them are the original deck of Kevin and the Old one card."
+    i "Although according to Kevin's words, it doesn't matter if the cards are genuine or not, the real magic were the friends he made along the way."
+    i "And thus concludes today's class."
+    
     hide izumi_neutral with Dissolve (0.5)
 
     "Ding dong bing bong."
 
     play music ("bgm/break.mp3") fadeout (1)
 
+    m "(Any real WA-KU-OH! fan would already know all of this.)"
+    m "(The hit manga WA-KU-OH! was produced by veteran manga artist Kazuki Tenoizoro. He worked closely with archeologists to preserve the myth in all of it's glory.)"
+    m "(The blend of real and fiction and it's absurd humour is what makes the series an absolute masterpiece.)"
+    m "(It was later adapted in an animated series produced by the one and only Waccland animations.)"
+    m "(It brought many professional voice actors such as Nenjiro Tsukasa. The sheer quality of the animations and voice acting makes it one of the best animated shows ever created.)"
+    m "(But enough talking about my favorite Manga.)"
     m "(It's finally time for lunch break.)"
     m "(I'm gonna go see my bro Yomki.)"
 
@@ -635,6 +714,11 @@ label Day1EventEnd:
     m "You're such a god gamer."
     y "True."
     m "(We continue to chat for a while.)"
+    m "(I mentionned the class we just had about Kevin Waccland.)"
+    m "(Yomki continued to listen to my yapping for a while.)"
+
+    pause 0.5
+
     m "Hey, Yomki. Wanna go on the roof"
     y "Yeah bro. I love breaking school regulations."
     m "(And with that, we headed to the school rooftop.)"
@@ -659,7 +743,10 @@ label Day1EventEnd:
 
     hide miyuki_neutral with Dissolve (0.5)
 
+    m "(That has to have been the most cliché confession I've ever seen.)"
     m "(The dumbass quickly left while tears dropped from his eyes. What a dumbass? He really asked out a girl that he never talked to???)"
+    m "(This dumbass has truly mastered the art of mob-fu.)"
+    m "(Truly the background character of background characters.)"
 
     show yomki with Dissolve (0.5)
 
@@ -672,7 +759,7 @@ label Day1EventEnd:
 
     unk "What a waste of time..."
     m "(While quickly glancing at her bag, I noticed a pin on it.)"
-    m "(It's a pin of WA-KU-OH!, my favourite anime!)"
+    m "(It's a pin of WA-KU-OH!, my favourite manga!)"
     m "(Could perhaps this girl be one our kind???)"
     m "(Yomki noticed me staring at her, which he quickly whispered to me.)"
 
@@ -704,6 +791,8 @@ label Day1EventEnd:
     y "It's about time we go grind in real life."
     y "Let's go hit the gym and get GAINS after school!"
     m "(I could do what Yomki said, but I'm also intrigued by that girl...)"
+    m "(It's not everyday you meet a diehard WA-KU-OH! fan here.)"
+    m "(Everyone just simps for the top players because they're hot while not caring about the game at all.)"
 
     menu:
         "What will you do?"
@@ -744,8 +833,12 @@ label Day1EventEnd:
         m "Who the hell are you?"
         m "(Who even starts a conversation with someone by calling them bébé chat?)"
         m "Huhhh... yeah."
-        unk "Damn, I go here every day. I'm gonna get as buff as a JoJo character."
-        unk "Do you take the Sauce?"
+        unk "Damn, I go here every day. I'm gonna get as buff as a JuJu character."
+        unk "You do know what JuJu's bizzare adventure is bro?"
+        m "Yeah, I know about that one, it's the one with Julian Juestar beating up muscular vampires."
+        unk "Yeah man! That one!"
+        unk "The dudes in that show literally have muscles on top of their muscles."
+        unk "By the way, do you take the Sauce?"
         m "The fuck you mean sauce?"
         unk "The Sauce. Don't you know what Sauce is?"
         b "Anyway, the name's Yasuhiro Bob, you can call me Bob, or bébé chat, I don't really care."
@@ -780,7 +873,14 @@ label Day1EventEnd:
         y "Who the fuck this???"
         y "Didn't know you were gay, MC!!?!?!"
         m "The fuck you mean, I just met this dude."
+        b "Sup my dudebro."
+        b "Name's Bob, me and MC have been friends for a while"
+        b "And by a while I mean I met this dude 5 minutes ago."
+        y "Damn, that's crazy bro."
+        y "Name's Yomki, I'm what you can call a climber."
+        b "Nice to meet you bébé chat."
         b "Anyway, *With deep ass voice* later bébés chats."
+        b "I got some chemistry to study."
 
         hide bob_neutral with Dissolve(0.5)
         show yomki:
@@ -850,7 +950,7 @@ label Day1EventEnd:
         show miyuki_neutral
 
         unk "Huh, this? I just picked it up 'cause it was popular at the time."
-        unk "Don't know anything about it. Never bothered to watch it."
+        unk "Don't know anything about it. Except it's popular in Waccland city."
         m "(Damn, my luck ran out. She's a fake.)"
         m "(A damn normie. What a waste of my time.)"
         m "(Well, after all the trouble I went through, might as well ask for her name.)"
@@ -875,12 +975,12 @@ label Day1EventEnd:
         scene black with Dissolve(1)
 
         mi "Guess I should remove the pin before I get annoyed by any more fans."
-        mi "But... It looked cool..."
-        mi "I don't really want to throw it away."
 
         scene corridor with Dissolve (1)
 
-        m "(At this point, I have nothing else to do, so might as well go home.)"
+        m "(As I head back towards my class to pick up my bag I hear a faint trumpet melody.)"
+        m "Guess she wasn't kidding about that club practice?"
+        m "I pick up my bag in the classroom and head home."
 
         jump Day2EventEnd
 
@@ -934,7 +1034,7 @@ label Day1EventEnd:
     m "Guess the day's over."
     m "What should I do next."
     m "Don't feel like hanging out with Yomki today."
-    m "I should just go home and game all evening."
+    m "Maybe I should just go home and game all evening."
 
     if Asami_Event_1:
 
@@ -980,7 +1080,7 @@ label Day1EventEnd:
         play music ("bgm/8.ogg") fadeout(1)
 
         m "(As usual, the road to exit the school is completely filled with students.)"
-        m "(Not surprising, who in their right mind would want to stay in hell?)"
+        m "(Not surprising, who in their right mind would want to stay in this purgatory?)"
         m "(I start to walk towards the exit.)"
         m "(Altough while turning to get on the sidewalk, I notice someone I know.)"
 
@@ -1008,6 +1108,15 @@ label Day1EventEnd:
         i "Yep, That's right."
         m "Doesn't seem like his attitude changed much."
         i "Yeah."
+        i "It was shortly after the big war."
+        i "Waccland's Peak Academy hadn't fallen from grace yet."
+        i "You kids probably don't know the full story yet."
+        m "Yeah, that's weird they never really tell why it fell from grace."
+        i "Well, long story short, the director was a corrupt piece of shit."
+        i "Michel himself was the one who accused him of his crimes."
+        i "The reputation of the school got ruined in a couple of years because of that."
+        m "..."
+        i "Those days weren't all that bad though."
         i "I remember back in my days, we didn't even have phones."
         i "Hell, we didn't even have electricity."
         i "It was all just swords, and magic, and all."
@@ -1044,6 +1153,12 @@ label Day1EventEnd:
         m "How old are you again?"
         i "That's not relevant-"
         i "Either way, I gotta go."
+        i "Got to take care of my boy."
+        m "You have a son?"
+        i "Nah, not a son."
+        i "I got a salamander."
+        m "That's quite a weird pet..."
+        i "Yeah, I know."
 
         hide izumi_smoke with Dissolve (0.5)
 
@@ -1117,6 +1232,7 @@ label Day1EventEnd:
             a "You aren't happy to be friends with me?"
             m "Take a guess."
             a "..."
+            a "Either way-"
 
             show asami_unsure
             hide asami_judge
@@ -1160,9 +1276,19 @@ label Day1EventEnd:
             show asami_neutral
 
             a "Nevermind then."
-            m "(Why is she always so... annoying...)"
+            m "The fuck you mean by that?!?"
 
-        a "Kamiya, I wanted to ask you something in return."
+            hide asami_neutral
+            show asami_judge
+
+            a "I was joking. Like you know... A JOKE."
+            a "Ugh... I can't expect someone like you to understand how deep that joke was."
+            a "Anyway-"
+
+            hide asami_judge
+            show asami_neutral
+
+        a "Kamiya, I had something I wanted to ask you."
 
         hide asami_neutral
         show asami_smug
@@ -1175,7 +1301,7 @@ label Day1EventEnd:
         hide asami_smug
 
         a "Alright, what's your username"
-        m "I'm not telling you."
+        m "Why should I tell you?"
 
         show asami_mad
         hide asami_neutral
@@ -1196,34 +1322,72 @@ label Day1EventEnd:
         show asami_neutral
         hide asami_judge
 
-        m "By the way, while we're at it."
-        m "Do you want to hang out today?"
-        a "Yeah why not, got nothing else planned."
+        a "By the way, while we're at it."
+        a "Did you want to hang out today?"
+        a "This isn't a question by the way, you're coming with me no matter your answer."
+        m "Okay, sure, it's going to be more annoying if I say no anyway."
 
         hide asami_neutral
         show asami_smug
 
-        a "If we're going to hang out, then show me arround town!"
+        a "I'd like you to show me around town!"
         m "uhhh...."
-        m "I'm the one who proposed hanging out...?"
-        m "Shouldn't I get to choose where we go?"
+        m "Do I look like the kind of guy who knows about the outside world...?"
+        m "And shouldn't you find a place to go since you were the one who forced me to hang out with you?"
         a "What do you mean?"
-        a "If you're going to ask for a date with a girl as cute as me, of course I'm the one who should choose!"
-        m "...I never said this was a date."
-        a "Either way, I'm pretty sure all the places you would have recommended would be shit anyway."
+        a "If you're going to ask for a date with a girl as cute as me, of course I get to choose what to do!"
+        m "...You were the one who proposed to hang out, also since when is this a date?"
+        a "Either way, you're from here? Shouldn't you know your way around town?"
+        m "..."
 
         scene black with Dissolve(0.5)
 
-        m "(Despite these unfortunate circumstances, I show Asami arround town.)"
+        m "(Despite these unfortunate circumstances, I show Asami around town.)"
         m "(Even with me repeating over and over that this is NOT a date, Asami keeps on rambling on and on about how I should be grateful that a girl as cute as herself is accepting a date with me.)"
         m "(I somewhat ponder about if choosing to hang out with her was a bad decision...)"
         m "(But back to the original topic, I showed her all the popular places where people hang out... not that I'd know myself, I just looked it up online.)"
+
+        scene waccdonald with Dissolve (0.5)
+
+        show asami_unsure with Dissolve (0.5)
+
+        m "Anyway, this is the Waccdonald's."
+        m "Me and my bro Yomki often eat lunch here."
+        m "For fast food, the quality and the price is really good."
+        a "You're on a date with a girl and you bring her to a Waccdonald's?"
+        a "Have you no shame?"
+        m "You asked me to show you around town, that's what I'm doing."
+        a "Yet another boring reaction, you're no fun MC!"
+        m "How the hell do you want me to react?"
+        a "It's too early to be tired of my antics Kamiya-kun!"
+        m "I don't care."
+
+        scene gym with Dissolve (0.5)
+
+        show asami_neutral with Dissolve (0.5)
+
+        m "This is the local gym, me and my homie Yomki often come here to train."
+        m "Although I don't think someone like you would be interested in gyms."
+        a "Yeah, can't deny that."
+        a "Didn't think you trained."
+        m "I mostly just go with Yomki."
+        a "Personally, I usually just go jogging."
+        m "That's surprising, I thought you wouldn't care about staying fit."
+
+        hide asami_neutral
+        show asami_mad
+
+        a "Hey!"
+        a "I have a reputation to uphold as the cutest girl in the school!"
+        a "Just because I'm cute doesn't mean I can skip on excercise."
+        m "Fair."
 
         scene house with Dissolve (0.5)
 
         show asami_neutral with Dissolve (0.5)
 
-        m "(After showing her arround town, we make a brief stop.)"
+        m "(After showing her around town, we make a brief stop.)"
+        m "(Asami then towards me.)"
         a "Hey MC."
         m "What?"
 
@@ -1261,6 +1425,23 @@ label Day1EventEnd:
         show asami_smug
 
         a "I just felt like asking."
+        m "Can't you tell me the real reason?"
+
+        hide asami_smug
+        show asami_serious
+
+        a "...Fine."
+
+        hide asami_serious
+        show asami_annoyed
+
+        a "It's because..."
+
+        hide asami_annoyed
+        show asami_smug
+
+        a "Actually, why should I tell you?"
+        a "You haven't told me where you lived!"
         m "(Once again, this girl has pebbles instead of a brain.)"
         a "So tell me-"
 
@@ -1346,7 +1527,7 @@ label Day1EventEnd:
         a "Anyway, forget about where you live."
         a "I'll just ask your friend Yomki!"
         m "Please don't do that..."
-        a "..."
+        a "Okay, I shall totally ignore what you just said!"
 
         pause 0.5
 
@@ -1568,6 +1749,7 @@ label Day1EventEnd:
     m "(With the coming of the 5th day, it feels like I should be getting used to this new daily routine, yet...)"
     m "(With all these bizzare events, I haven't had the time to get accustomed to my new surroundings.)"
     m "(Altough today feels different... somehow...)"
+    m "(Even more than during the past 4 days.)"
     m "(Well, it's no use worrying about it, these past few days have only been a series of a bunch of weird stuff.)"
     m "(It's normal I'd be worried about it.)"
 
@@ -1597,7 +1779,7 @@ label Day1EventEnd:
     m "Who... are you again...?"
     c "Thy greatest Chungus is gracing thyself with his presence and thou doth not even remember him?"
     c "I, am Big Chungus, the greatest and the one and only true Chungus!"
-    c "The god of this world, of this wacc, of this land."
+    c "The overseer of this world, of this wacc, of this land."
     c "Brave warrior of the maidens... I challenge thou to the Dunktastic Duel of WACC AND LAND!"
     c "Thou hast no other choices!"
     c "Face me OR thou shall never feel the touch of a woman ever again!"
@@ -1616,7 +1798,7 @@ label Day1EventEnd:
     m "Alright."
     m "Almighty Chungus!"
     m "I accept your D-D-D-D-D-DUEL!!!"
-    m "(The space arround us started to shift.)"
+    m "(The space arround us started to shift as if reality itself was but a hazy dream.)"
 
     scene school_gym
     show chungus
@@ -1825,15 +2007,20 @@ label Day1EventEnd:
         a "I won't pretend to be all impressed by that and suddenly change my opinion of you."
         a "But that was some nice balling."
         a "Good job to you two."
+        a "Also I guess I should also tell you this."
+        a "The whole time I've been annoying you on purpose."
+        a "We do a minuscule ammount of tomfoolery."
         a "Anyway, I better leave before I'm late to class."
         m "Uhh okay...?"
+        m "You decide to tell me this now?!?"
 
         hide asami_neutral with Dissolve(0.5)
 
-        m "(Asami left the room before I could say anything.)"
+        m "(Asami left the room before I could say anything else.)"
         m "(Not exactly the reaction I was expecting.)"
         m "(I thought she'd say something like: Nah, you're still just some loser! That bunny guy didn't even break a sweat!)"
-        m "(I really don't get this girl.)"
+        m "(And then she's apparently been trolling me on purpose.)"
+        m "(What is that girl's deal?!?)"
 
     else:
         hide asami_confused
@@ -1860,13 +2047,8 @@ label Day1EventEnd:
 
     hide yomki with Dissolve(0.5)
 
-    m "(As the both of us left the gym, I see the figure of a girl.)"
-
-    show usui_neutral with Dissolve(0.5)
-
-    hide usui_neutral with Dissolve(0.5)
-
-    m "(Altough she leaves as soon as I looked at her...)"
+    m "(As the both of us left the gym, I see the figure of a man.)"
+    m "(Altough he leaves as soon as I looked at him...)"
     m "..."
     y "Something bro?"
     m "Nah, just my imagination."
@@ -1892,19 +2074,18 @@ label Day1EventEnd:
 
     pause 2
 
-    m "(Yesterday came and went fast, and soon I woke up in my bed like usual...)"
-    m "(Although I had a very weird dream...)"
+    m "(Yesterday came and went like a whirlwind, and soon I woke up in my bed like usual...)"
+    m "(Although I feel like my memories are a bit hazy)"
     m "That dream sure was weird..."
     m "That huge bunny was crazy fast."
     m "..."
     m "(In my dream... I was balling with this huge bunny, yet... it was a bit too clear)"
     m "(was it really a dream...?)"
     m "..."
-
-    pause 100
-
+    m "Wait, we did play basketball but against who?"
+    m "I must have hit my head pretty hard yesterday."
     m "I really don't know."
-    m "...Probably just a dream."
+    m "...I do remember someone being in a bunny suit."
     m "Woke up earlier than usual though..."
     m "Guess I'll just go to school earlier."
 
@@ -1969,8 +2150,11 @@ label Day1EventEnd:
     y "..."
     m "..."
     m "I think we're overthinking this."
-    m "Probably just a coincidence."
-    y "True."
+    y "I saw you head to the gym with a guy in a bunny suit and you guys started to play basketball and that's about it."
+    m "Man, I really must have hit my head really hard to have imagined that scenario."
+    m "Any idea who was in that bunny suit?"
+    y "I seem to have seen a teacher removing a bunny suit behind the gym while leaving."
+    y "But as to why... I don't know."
     y "Anyway, we climbed so hard yesterday."
     y "We both managed to beat Dark souls XXI in a single day."
     m "Yeah bro, that was crazy."
