@@ -2082,7 +2082,7 @@ label Day1EventEnd:
     m "Nah, quite the contrary, she actively pisses me off."
     y "What did she do?"
     m "Nothing really... she just pisses me off."
-    y "Isn't she like the (self-proclamed) cutest girl in the school though?"
+    y "Isn't she like the (self-proclaimed) cutest girl in the school though?"
     m "Urgh, not you too..."
     y "Anyway, wanna hit the Waccdonald's MC?"
     m "Hell yeah brother!"
