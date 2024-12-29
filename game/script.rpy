@@ -686,18 +686,27 @@ label Day1EventEnd:
     i "The only cards with magic in them are the original deck of Kevin and the Old one card."
     i "Although according to Kevin's words, it doesn't matter if the cards are genuine or not, the real magic were the friends he made along the way."
     i "And thus concludes today's class."
+    i "Altough a bit of trivia before the bell rings."
+    i "Back in the days, issues amongst the populace were traditionally settled with a game of WA-KU-OH!"
+    i "With Waccland entertainments acquiring the liscence to the game, it's popularity has skyrocketed in the past 10 years."
+    i "Before that, the church was responsible for producing and updating the ruleset of the game."
+    i "Must have been hard to get the liscence to such a huge game."
+    i "But seeing it's popularity and the ammount of cash it's printing, I don't think they're regretting one bit."
     
     hide izumi_neutral with Dissolve (0.5)
 
     "Ding dong bing bong."
+    "Well, class is over, see you guys tommorow."
 
     play music ("bgm/break.mp3") fadeout (1)
 
     m "(Any real WA-KU-OH! fan would already know all of this.)"
-    m "(The hit manga WA-KU-OH! was produced by veteran manga artist Kazuki Tenoizoro. He worked closely with archeologists to preserve the myth in all of it's glory.)"
+    m "(The card game is it's own thing, but any real fan would also bundle it up with the manga.)"
+    m "(The hit manga WA-KU-OH! was produced by veteran manga artist Kazuki Tenoizoro and liscenced by Waccland entertainments. He worked closely with archeologists to preserve the myth in all of it's glory.)"
     m "(The blend of real and fiction and it's absurd humour is what makes the series an absolute masterpiece.)"
     m "(It was later adapted in an animated series produced by the one and only Waccland animations.)"
     m "(It brought many professional voice actors such as Nenjiro Tsukasa. The sheer quality of the animations and voice acting makes it one of the best animated shows ever created.)"
+    m "(With how good the WA-KU-OH! manga is, you'd think it was written by Kevin Waccland himself.)"
     m "(But enough talking about my favorite Manga.)"
     m "(It's finally time for lunch break.)"
     m "(I'm gonna go see my bro Yomki.)"
@@ -1357,10 +1366,24 @@ label Day1EventEnd:
         a "You're on a date with a girl and you bring her to a Waccdonald's?"
         a "Have you no shame?"
         m "You asked me to show you around town, that's what I'm doing."
-        a "Yet another boring reaction, you're no fun MC!"
+
+        hide asami_unsure
+        show asami_annoyed
+
+        a "Can't you come up with a better reaction?"
         m "How the hell do you want me to react?"
-        a "It's too early to be tired of my antics Kamiya-kun!"
-        m "I don't care."
+
+        hide asami_annoyed
+        show asami_kill
+
+        a "How about aknowledging my cuteness for once, Kamiya-kun!"
+        m "No, thank you very much."
+        m "Anyway we're leaving since ms. perfect wants to complain about every little detail."
+
+        show asami_confused
+        hide asami_unsure
+
+        a "What is this about ms. perfect?!?"
 
         scene gym with Dissolve (0.5)
 
@@ -1387,7 +1410,7 @@ label Day1EventEnd:
         show asami_neutral with Dissolve (0.5)
 
         m "(After showing her around town, we make a brief stop.)"
-        m "(Asami then towards me.)"
+        m "(Asami then turned towards me.)"
         a "Hey MC."
         m "What?"
 
@@ -2010,17 +2033,30 @@ label Day1EventEnd:
         a "Also I guess I should also tell you this."
         a "The whole time I've been annoying you on purpose."
         a "We do a minuscule ammount of tomfoolery."
+
+        hide asami_neutral
+        show asami_smug
+
+        a "You know, you're lucky to have a friend as cute as me."
+        m "No, I am not."
+        m "Also you decide to tell me this now?!?"
+
+        hide asami_smug
+        show asami_neutral
+
         a "Anyway, I better leave before I'm late to class."
-        m "Uhh okay...?"
-        m "You decide to tell me this now?!?"
 
         hide asami_neutral with Dissolve(0.5)
 
         m "(Asami left the room before I could say anything else.)"
         m "(Not exactly the reaction I was expecting.)"
         m "(I thought she'd say something like: Nah, you're still just some loser! That bunny guy didn't even break a sweat!)"
-        m "(And then she's apparently been trolling me on purpose.)"
+        m "(And then she's apparently been annoying me on purpose.)"
         m "(What is that girl's deal?!?)"
+        m "(At least that means she wasn't this stupid.)"
+        m "(But still...)"
+        m "(This girl pisses me off.)"
+        m "(But the problem is that even if she pisses you off you can't help but be pulled into her antics.)"
 
     else:
         hide asami_confused
@@ -2042,6 +2078,12 @@ label Day1EventEnd:
 
     show yomki with Dissolve(0.5)
 
+    y "You guys dating or what?"
+    m "Nah, quite the contrary, she actively pisses me off."
+    y "What did she do?"
+    m "Nothing really... she just pisses me off."
+    y "Isn't she like the (self-proclamed) cutest girl in the school though?"
+    m "Urgh, not you too..."
     y "Anyway, wanna hit the Waccdonald's MC?"
     m "Hell yeah brother!"
 
