@@ -221,13 +221,13 @@ image gorou_surprised:
 
 image izumi_neutral:
     "char/izumi_neutral.png"
-    ypos 1200
+    ypos 1100
     xpos 900
     zoom 0.55
 
 image izumi_smoke:
     "char/izumi_smoke.png"
-    ypos 1200
+    ypos 1100
     xpos 900
     zoom 0.55
 
