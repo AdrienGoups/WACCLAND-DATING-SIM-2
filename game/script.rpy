@@ -2023,12 +2023,96 @@ label start:
     with dissolve
 
     a "..."
-    a "What were they even smoking?"
-    a "That's just you with glasses and with dyed hair!"
-    m "Mayhap."
-    go "Yeah, didn't have the budget to make a sprite for me."
-    go "Also sorry ladies, I don't like underage women."
-    go "I vastly prefer mommies."
+    a "With their reactions I was expecting a bit more..."
+    a "Don't get me wrong, he's not bad looking but..."
+    m "Your standards may be a bit high Asami."
+    a "Says the guy who would date a fictional character."
+    m "I wouldn't do that though."
+    m "I'm not that desperate-"
+    go "Okay everyone! Class is going to start soon."
+    a "I'm not convinced, but that will have to wait for after class, unlike you I actually pay attention during class!"
+
+    hide asami_judge with dissolve
+
+    pause 1.0
+
+    go "My name is Hidetaka Gotou, I will be your science teacher this year."
+    go "As you probably already know this is my first day teaching here."
+    go "If you have any questions you are free to ask them to me at my office after classes end."
+
+    pause 1.0
+
+    "Gotou started his lecture"
+    "Words melded together as your conciousness started to fade, yet by a miracle a glimpse of interest sparked."
+    go "-This brings us to WACC energy, or as some called in the past 'Magic'."
+    go "Altough the name magic is a bit misleading-"
+    go "Altough our understanding of WACC energy is limited, it is far from what you could call 'magic'."
+    go "WACC energy as long since been used to produce miracular feats."
+    go "Miraculous is a bit misleading though, as the ancient journals reveal that to control WACC energy required great power and intense training."
+    go "Yet why haven't we seen these kinds of feats for more than 2 thousand years?"
+    go "Well first we must know the origin of WACC energy."
+    go "WACC energy as you might already know is able to produce a seemingly infinite ammount of electrons."
+    go "Altough it's potential infinite, even the most talented could never harness even a fraction of it's power."
+    go "The only recorded person to have been able to unleash the true power of WACC energy is none other than Kevin Waccland."
+    go "You must already be familiar with that name?"
+    go "When he sealed the god inside the cards, so came the power of WACC along with it."
+    go "These days, only very specific people are able to awaken the power of WACC, and even then, they can't even wield a fraction of the power ancient mages had."
+    go "Not only are people with powers exeedingly rare, what they can do with these powers is extremely limited."
+    go "Altough if we look at matters outside humans, WACC energy explains many phenomenons in nature."
+
+    hide gotou_neutral with dissolve
+
+    pause 1
+
+    "The lecture continued for a while longer before the bell rang once again."
+
+    pause 1.0
+
+    m "Well, better go see my homie Yomki since I got nothing better to do."
+
+    scene corridor with dissolve
+
+    m "(I make my way to Yomki's classroom when I suddenly bump into the man himself.)"
+
+    show yomki with dissolve
+
+    y "Yo, sup MC."
+    m "Good, I was looking for you bro."
+    y "Did you need anything bro?"
+    m "Nah, just wanted to chill with my homie."
+    y "Alright, I'm down to netflix and chil- uh I mean BRO I GOT HACKED?!?!? NO WAY?!?!?"
+    m "Damn, I hate when that happens bro..."
+    y "Yeah, it's crazy bro."
+    m "Alto-"
+
+    show yomki:
+        ease 1 xpos 1400 ypos 1200
+    show gotou_neutral with dissolve
+
+    go "Oh, Masashi-san... and... Yomki was it?"
+    y "Yep, that's me."
+    y "Altough I haven't seen you before?"
+    y "You MC's teach?"
+    go "Yes, we actually just saw each other."
+    m "I gotta say though, you were pretty interesting, usually I just fall asleep during classes."
+    m "But this time I actually felt like listening."
+    go "That's good, sometimes all it takes to make something interesting is having someone that's good at explaining."
+    go "Altough I had something else I wanted to talk to you two about."
+    m "Okay? What did you want to talk about?"
+    go "You last week before class? I happened to see you two in the gym."
+    go "That was some nice balling."
+    y "Thanks bro, not every day you see people who can truly appreciate the art of balling."
+    go "Well, I just so happen to have a bit of experience playing basketball when I was younger, and I gotta say, I've never seen a game quite like this."
+    m "Well, I don't really have that much experience playing basketball, but I did use to play with Yomki a bit when we were kids."
+    go "Hmm... that's pretty interesting."
+    y "Didn't really take you for the sports type though."
+    go "People often tell me that. I stopped playing after high school though."
+    go "These days I just hit the gym a once or twice a week."
+    go "Anyway, I gotta go, I got a meeting in 5 minutes."
+
+    hide gotou_neutral with dissolve
+
+    y "Glebbing"
 
     m "lore"
 
