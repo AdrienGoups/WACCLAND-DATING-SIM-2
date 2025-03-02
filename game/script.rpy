@@ -2033,6 +2033,8 @@ label start:
     a "I'm not convinced, but that will have to wait for after class, unlike you I actually pay attention during class!"
 
     hide asami_judge with dissolve
+    show gotou_neutral:
+        ease 1 xpos 900 ypos 1100
 
     pause 1.0
 
@@ -2086,7 +2088,7 @@ label start:
     m "Alto-"
 
     show yomki:
-        ease 1 xpos 1400 ypos 1200
+        ease 1 xpos 1400 ypos 1100
     show gotou_neutral with dissolve
 
     go "Oh, Masashi-san... and... Yomki was it?"
@@ -2099,22 +2101,274 @@ label start:
     go "That's good, sometimes all it takes to make something interesting is having someone that's good at explaining."
     go "Altough I had something else I wanted to talk to you two about."
     m "Okay? What did you want to talk about?"
-    go "You last week before class? I happened to see you two in the gym."
+    go "You know last friday before class? I happened to see you two in the gym."
     go "That was some nice balling."
     y "Thanks bro, not every day you see people who can truly appreciate the art of balling."
     go "Well, I just so happen to have a bit of experience playing basketball when I was younger, and I gotta say, I've never seen a game quite like this."
+    go "That bunny guy was no slouch either."
+    go "Felt like either of you could win this."
     m "Well, I don't really have that much experience playing basketball, but I did use to play with Yomki a bit when we were kids."
     go "Hmm... that's pretty interesting."
     y "Didn't really take you for the sports type though."
     go "People often tell me that. I stopped playing after high school though."
     go "These days I just hit the gym a once or twice a week."
     go "Anyway, I gotta go, I got a meeting in 5 minutes."
+    m "See you later teach'."
 
     hide gotou_neutral with dissolve
 
-    y "Glebbing"
+    y "Didn't think he'd be chill like that."
+    m "..."
+    y "Something wrong bro?"
+    m "Nah, must be my imagination."
+    y "You sure bro?"
+    m "Yeah, just a strange feeling I got when I talked to him."
+    m "Anyway, forget I said anything."
+    y "...Sure, I guess."
+    m "Anything you wanna do before going home bro?"
+    y "Idk, could take a bit of a walk though."
+    m "Searching for a ''cute girl'' again, if you know what I mean?"
+    y "Yep, gotta look for ones with special assets."
+    y "With my years of practice I can more or less guess if their feets look good."
+    m "I mean I don't judge or anything, but care to tell my why feet of all things?"
+    y "Bro, don't you see how good it would feel to-"
+    m "I'm gonna stop you right there Yomki."
+    m "Don't feel like hearing all about your fetishes."
+    y "Like you're any better bro."
+    y "I know what you have on your hard drive."
+    m "Look here Yomki, we don't talk about my secret collection."
+    y "Yeah bro, I wouldn't tell a soul about it."
+    m "I am COOKED if anyone finds out about it."
+    y "Yeah I know, but what's so wrong about having he-"
+    m "Bro, watch your mouth!"
+    m "Someone's coming."
 
-    m "lore"
+    pause 1.0
+
+    show gorou_neutral with dissolve
+
+    g "Hey, MC and Yomki!"
+    g "What were you two talking about?"
+    y "Nothing all that interesting bro."
+    m "Y-yeah bro."
+    g "That's weird, I heard you talk about a secret collection of some sorts..."
+    m "Ahhh uhhhh... you know how it is uhhh...."
+    y "He's talking about games he downloaded very legally on Supreme games UK bro!"
+    g "Oh yeah, that. Guess you wouldn't want some teacher hearing about that."
+    m "(Thanks Yomki for saving my ass.)"
+    y "(No prob bro.)"
+    g "So yeah, I was actually looking for you two."
+    g "I am forcing you to go with me."
+    m "And what if I say no?"
+
+    stop music fadeout 1.0
+
+    pause 1.0
+
+    g "..."
+
+    pause 1.0
+
+    play music "bgm/2.ogg" fadeout 1
+
+    m "Uhh... nevermind then, I'll go with you."
+    y "Don't have anything else to do, so I'll follow."
+    g "Ok, we'll be heading to the courtyard."
+
+    scene rooftop with dissolve
+
+    show yomki
+    show yomki:
+        xpos 1400 ypos 1100
+    show gorou_neutral
+    with dissolve
+
+    g "Alright, we're here."
+    m "Mind explaining why there's a summoning circle on the floor?"
+    y "And also who's that girl akwardly standing over there?"
+
+    show momoka_intrigued
+    show momoka_intrigued:
+        xpos 400 ypos 1200
+    with dissolve
+
+    g "Oh... her?"
+    g "That's Momoka, one of my friends."
+    g "We've known each other since elementary school!"
+    g "She follows me in my path to the darkest abyss imaginable..."
+    mo "..."
+    g "...?"
+    g "Momo-tan, didn't you agree to contribute to my dark and edgy catchphrase?!"
+
+    hide momoka_intrigued
+    show momoka_panick
+    show momoka_panick:
+        xpos 400 ypos 1200
+
+    mo "...but isn't it really embarassing to say it out loud in front of people you've never seen before?!"
+    g "Like I said before, they will be too busy being intimidated by our edginess that they'll cower in fear!"
+
+    hide momoka_panick
+    show momoka_serious
+    show momoka_serious:
+        xpos 400 ypos 1200
+
+    mo "Look, I don't want to get teased because of that-"
+    mo "People already tease me for being friends with you."
+    mo "I don't want it to get worse..."
+    g "Don't worry about that then, those two are my friends."
+    g "Anyway, like I was saying..."
+    g "Momo-tan follows me in my path to the darkest abyss imaginable..."
+    mo "...W-where even the light can't e-escape!"
+    g "Anyway, here's Momoka, my good friend."
+    m "(What the hell are those two yapping on about.)"
+    y "(Dunno bro, didn't listen to a word they said.)"
+    g "Anyway, guy with the red hair's Kamiya and the other's Yomki"
+    m "Name's Masashi Kamiya but you can call me MC, through despair and hope, only myself, the ultimate hope, can pierce the way towards the heavens!"
+    m "For I am the one who games."
+    mo "Uhm... are you one of those Chuunibyo like Gorou...?"
+    m "Nah, I just do it for my introduction."
+    mo "Okay."
+    y "Sup guys, it's me Yomki, name's Tenma Yomki."
+    mo "Nice to meet you two, my name is Arima Momoka."
+    mo "Like he said I've been friends with him for quite a while."
+    m "(Hey Gorou, how'd you find a friend like that?)"
+    g "(It's a long story.)"
+    m "(Are you two dating or something?)"
+    g "(...?!?)"
+    mo "...?"
+    mo "What are you two being all sneaky for?"
+    g "Uhhhh... nothing!"
+    m "(Okay, think I got my answer.)"
+    m "(I'm rooting for you bro.)"
+    g "(I didn't say anything about having a crush on her!)"
+    y "(Well, you just did.)"
+    g "(Dammit.)"
+
+    pause 1.0
+
+    g "Anyway, the reason I called all of you here is for one very important reason."
+    g "You know the game Waccland Impact?"
+    y "What's that?"
+    m "Oh, lord..."
+    g "It's a game that's popular right now, there's millions of people playing the game."
+    g "And they just released a brand new character!"
+    y "Yeah and?"
+    g "It's time to gamble!"
+    g "The brand new character is called Hai Hoshino, the idol who hates everyone!"
+    mo "..."
+    mo "That girl again...?"
+    mo "Didn't you get her last time?"
+    g "Those are two completely different characters Momo-tan."
+    mo "???"
+    mo "But- don't they just look the same?"
+    g "Rookie mistake, can't you see that this is an alternate version of the main antagonist of the game Nightmare-chan?"
+    g "But this time she was reborn as an idol in another world where she will get her revenge against the world!"
+    g "I've been saving up for 5 months to get her!"
+    g "It's time to start..."
+
+    pause 1.0
+
+    m "What have you been yapping on about for the last 5 minutes bro."
+    y "Didn't get a single word he was saying."
+    g "Silence you two! The ritual must not be disturbed..."
+    "You, Yomki and Momoka all look at yourself, dumbfounded by the utter cringe that you have just witnessed."
+    
+    pause 1.0
+
+    g "...Nah... not this... decent... already have her maxxed out..."
+
+    pause 1.0
+
+    g "Oh!"
+    g "She's coming home!!!"
+    g "I can feel it."
+    g "It's turned golden!"
+    g "Come on, come on...."
+
+    pause 1.0
+
+    g "..."
+    g "WHAT IN THE ACTUAL FUCK?!?!?"
+    g "ARE YOU GODDAMN FUCKING KIDDING ME?!?!?"
+    m "Woah, calm down bro."
+    g "...hahahaha...."
+    g "HAHAHAHAHAHA...."
+    g "Once again..."
+    g "YOU'VE COME TO HAUNT ME ONCE AGAIN?!?"
+    g "I'LL NEVER FORGIVE YOU!!!!!!!"
+    g "CURSE YOU SHITTY CATGIRL BITCH!!!!!"
+    g "YOU'VE RUINED MY 50/50 ONCE AGAIN..."
+    g "Know that I shall haunt your nightmares for the rest of your entire miserable fucking life..."
+    mo "Calm down Gorou!"
+    mo "She isn't even real!"
+    g "..."
+    g "Why must it always be like this..."
+    g "Oh mighty lord of the gacha... why have you forsaken me yet again...?"
+    y "Damn bro, must be tough being addicted to gacha."
+    m "Yeah sure, he can quit whenever he wants, isn't that right?"
+    g "Why...?"
+    g "Why are you looking at me with those smug eyes..."
+    m "Man, he's still locked up in his world."
+    mo "...He's always been like this..."
+    m "I can't even laugh about this, he just looks so pathetic..."
+    y "Damn..."
+    mo "Sorry for how Gorou's acting."
+    mo "He tends to overdo things a bit too much..."
+    m "Don't worry about that, I've had my fair share of run-ins with weirdos."
+    m "And besides, he's a fan of Waccland chronicles, I already respect him."
+
+    hide momoka_serious
+    show momoka_neutral
+    show momoka_neutral:
+        xpos 400 ypos 1200
+
+    mo "Oh yeah, he did talk to me about meeting another fan."
+    mo "So that was you?"
+    m "Yeah."
+    mo "Well, I think you'd be happy to know I'm also a fan."
+    m "R-really?"
+    m "Damn, didn't think I would ever find two fans at school."
+    m "That game is really an underated gem."
+    mo "Yeah, the story, the music, the characters, they're all fantastic."
+    mo "There's so many good things about this game..."
+    
+    pause 1.0
+
+    g "Momo-tan!"
+    g "Why is it that I always get shitty luck in this game?!?"
+    mo "Well... I guess I'll have to entertain Gorou for a bit."
+    mo "We'll talk again later."
+
+    pause 1.0
+
+    mo "Don't worry Gorou, you'll get her next time."
+    g "Like hell I will!!!"
+    g "The gacha gods have forsaken me!"
+    mo "Well... can't you get her guaranteed though since you lost the 50/50...?"
+    g "Do I look like I have enough currency for that?"
+    mo "...I... Uhh... I give up..."
+    
+    pause 1.0
+
+    g "I swear upon the darkness, this wretched catgirl shall know my wrath!!!"
+    y "Here he goes again."
+    mo "Yeah..."
+    mo "I really wish I could defend him... but like you see... it's just a tiny bit hard to do that..."
+    g "There is nothing to defend!!!"
+    g "For I am the heir of darkness!"
+    g "Anything that stands in my path shall know despair!"
+    g "Anyway, see you guys later."
+
+    hide gorou_neutral with dissolve
+
+    pause 1.0
+
+    "Gorou left the courtyard."
+    mo "Well, I'll go with him."
+    mo "See you guys later."
+    y "Later bro."
+    m "Yeah, see you later."
 
     m "Uhhhhh tf do i cook??????"
     "but suddenly"
