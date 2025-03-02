@@ -2130,7 +2130,7 @@ label start:
     m "Searching for a ''cute girl'' again, if you know what I mean?"
     y "Yep, gotta look for ones with special assets."
     y "With my years of practice I can more or less guess if their feets look good."
-    m "I mean I don't judge or anything, but care to tell my why feet of all things?"
+    m "I mean I don't judge or anything, but care to tell me why feet of all things?"
     y "Bro, don't you see how good it would feel to-"
     m "I'm gonna stop you right there Yomki."
     m "Don't feel like hearing all about your fetishes."
