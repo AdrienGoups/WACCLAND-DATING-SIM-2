@@ -2370,6 +2370,29 @@ label start:
     y "Later bro."
     m "Yeah, see you later."
 
+    # this will not be in the game
+
+    scene classroom with dissolve
+
+    show asami_judge
+    show asami_judge:
+        xpos 1400 ypos 1200
+    with dissolve
+
+    m "Yo Asami you should sit on my face frfr."
+    a "Well if you subscibed to my onlyfans, maybe I will consider."
+    m "YO YOU GOT AN ONLY FANS GIRL, i hope there's feet!"
+    y "Did someone call?"
+    "Shitting Noise."
+
+    hide asami_judge
+
+    "mariowinner" "yo this is just like my favourite game dangit granpa 2 where john granpa suses the impostor from amongus then sucks of tanigo komaea"
+    m "ain't no fucking way"
+    
+
+    # end of shitpost
+
     m "Uhhhhh tf do i cook??????"
     "but suddenly"
 
