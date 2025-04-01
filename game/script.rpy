@@ -2372,7 +2372,11 @@ label start:
 
     # this will not be in the game
 
-    scene classroom with dissolve
+    scene black
+
+    "NOW IS THE TIME FOR THE CHAPTER 1: MURDER AT THE SCHOOL TRIP?!?"
+
+    scene classroom with Dissolve(0.5)
 
     show asami_judge
     show asami_judge:
@@ -2386,6 +2390,10 @@ label start:
     "Shitting Noise."
 
     hide asami_judge
+
+    scene cockland with Dissolve(0.5)
+
+    show mario with Dissolve (2)
 
     "mariowinner" "yo this is just like my favourite game dangit granpa 2 where john granpa suses the impostor from amongus then sucks of tanigo komaea"
     m "ain't no fucking way"

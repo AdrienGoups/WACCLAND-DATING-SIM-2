@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 23: unexpected EOF while parsing
-    Character("Gotou");
-                       ^
+File "game/script.rpy", line 2390: expected 'image_name_component' not found.
+    scene "bg/cockland smp.jpg" with Dissolve(50)
+          ^
 
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Tue Oct 15 18:06:02 2024
+File "game/script.rpy", line 2392: expected 'image_name_component' not found.
+    show "char/sans ryuji2.jpg" with dissolve
+         ^
+
+Ren'Py Version: Ren'Py 8.2.1.24030407
+Tue Apr  1 19:04:18 2025

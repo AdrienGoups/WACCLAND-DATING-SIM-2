@@ -291,6 +291,14 @@ image billy:
     ypos 1700 xpos 900
     zoom 0.4
 
+image cockland:
+    "bg/cocklandsmp.jpg"
+    zoom 2.0
+
+image mario:
+    "char/sans ryuji2.jpg"
+    zoom 1.5
+
 init -1 python:   #create sound channels for simultanious sfx playback
         renpy.music.register_channel("sound1", "sfx", False)
         renpy.music.register_channel("sound2", "sfx", False)
