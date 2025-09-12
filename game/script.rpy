@@ -269,7 +269,7 @@ label start:
     m "(Well, no use complaining about that on the first day of school, they'll stop once they realize he's just a plain old teacher.)"
     m "(I sat through the entire class between dream and reality, contemplating the meaning of life and why I decided to play games all night.)"
     m "(I briefly wonder if this whole scenario was schemed by someone...)"
-    m "(...Although I quickly dismiss the idea.)"
+    m "(...Altough I quickly dismiss the idea.)"
     m "(That's what I get for playing games during the whole spring break.)"
 
     "Ding dong bing bong!"
@@ -323,7 +323,7 @@ label start:
     a "How dare you insinuate that I am this loser's girlfriend!"
     a "This guy's been ignoring me for the entire time while I talked about my life story."
     y "Isn't there supposed to be a skip button somewhere?"
-    m "Sorry bro, we're not in a video game, you'll have to listen to her profoud speech.."
+    m "Sorry bro, we're not in a video game, you'll have to listen to her profound speech.."
     y "I have no idea what's going on."
     a "Returning to the original subject, Kamiya-kun, I require an apology."
     m "Yeah, and why should I? From what I recall, you're the one who's been bothering me."
@@ -430,7 +430,7 @@ label start:
 
     m "(She glances at me once before continuing.)"
     m "(I didn't go there just for nothing!)"
-    m "(I go down the stairs, although she seems annoyed by my persistence.)"
+    m "(I go down the stairs, altough she seems annoyed by my persistence.)"
 
     show asami_judge with Dissolve (0.5)
 
@@ -620,7 +620,7 @@ label start:
     i "Class is about to begin."
     i "Today we're going to be studying ancient history."
     i "As you probably already know, not much is known from the times before Kevin Waccland saved the world."
-    i "According to archeologists, the land was previously known as the land of the Seventh, although some sources also claim that it was known as WACCLAND."
+    i "According to archeologists, the land was previously known as the land of the Seventh, altough some sources also claim that it was known as WACCLAND."
     i "In those times, people were able to use magic to cast powerful spells able to pierce the heavens themselves."
     i "Which then leads us to the tale of Kevin Waccland."
     i "Kevin Waccland was born about 2000 years ago as the prince of the great empire of Waccland."
@@ -637,7 +637,7 @@ label start:
     i "And that's why you rarely ever see anyone able to use magic these days."
     i "It's all sealed in the original WA-KU-OH! cards which is also kept in an undisclosed location."
     i "The only cards with magic in them are the original deck of Kevin and the Old one card."
-    i "Although according to Kevin's words, it doesn't matter if the cards are genuine or not, the real magic were the friends he made along the way."
+    i "Altough according to Kevin's words, it doesn't matter if the cards are genuine or not, the real magic were the friends he made along the way."
     i "And thus concludes today's class."
     i "Altough a bit of trivia before the bell rings."
     i "Back in the days, issues amongst the populace were traditionally settled with a game of WA-KU-OH!"
@@ -649,7 +649,7 @@ label start:
     hide izumi_neutral with Dissolve (0.5)
 
     "Ding dong bing bong."
-    i "Well, class is over, see you guys tommorow."
+    i "Well, class is over, see you guys tomorrow."
 
     play music ("bgm/break.mp3") fadeout (1)
 
@@ -962,7 +962,7 @@ label start:
 
     m "Huh... why is she looking at me?"
     a "Hey MC!"
-    a "See you tommorow!"
+    a "See you tomorrow!"
     m "..."
     m "(I guess I could try my chance talking with Asami too.)"
 
@@ -1105,7 +1105,7 @@ label start:
     show asami_neutral with Dissolve (0.5)
 
     m "This is the local gym, me and my homie Yomki often come here to train."
-    m "Although I don't think someone like you would be interested in gyms."
+    m "Altough I don't think someone like you would be interested in gyms."
     a "Yeah, can't deny that."
     a "Didn't think you trained."
     m "I mostly just go with Yomki."
@@ -1232,7 +1232,7 @@ label start:
     pause 0.5
 
     a "Anyway, farewell!"
-    a "See you tommorow!"
+    a "See you tomorrow!"
     m "Goodbye."
 
     hide asami_neutral with Dissolve(0.5)
@@ -1515,8 +1515,8 @@ label start:
     show yomki:
         ease 1 xpos 900
 
-    i "See you tommorow, MC and Yomki."
-    m "...See you tommorow Mr. Izumi."
+    i "See you tomorrow, MC and Yomki."
+    m "...See you tomrrow Mr. Izumi."
     m "..."
     m "Well, that wasn't what I was expecting."
     y "Yeah me too bro, his vibe was completely different than during class."
@@ -1638,7 +1638,7 @@ label start:
     m "I..."
     m "I refuse to go down this easily!"
     m "(I begin to run straight to the ball, catching it in mid-air as it bounced on the floor.)"
-    m "(Although, when I turned I saw an imposing figure.)"
+    m "(Altough, when I turned I saw an imposing figure.)"
     m "(Big chungus seemed even larger than usual.)"
     m "(As I tried to outmaneuver him, Big Chungus managed to snatch the ball from me.)"
     c "Looks like I get another point."
@@ -1877,7 +1877,7 @@ label start:
     pause 2
 
     m "(Yesterday came and went like a whirlwind, and soon I woke up in my bed like usual...)"
-    m "(Although I feel like my memories are a bit hazy)"
+    m "(Altough I feel like my memories are a bit hazy)"
     m "That dream sure was weird..."
     m "That huge bunny was crazy fast."
     m "..."
