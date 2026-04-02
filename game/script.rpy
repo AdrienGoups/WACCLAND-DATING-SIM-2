@@ -21,7 +21,7 @@ define y = Character("Yomki", who_color="#e0bf72")
 define mi = Character("Miyuki", who_color="#8f72e0")
 define g = Character("Gorou", who_color="#79db9a")
 define go = Character("Gotou", who_color="#4079bb")
-define mo = Character("Momoka", who_color="#ffaf96")
+define mo = Character("Momoka", who_color="#ffaf96")asami_neutra
 define cl = Character("Classmates")
 define unk = Character("???")
 
@@ -49,7 +49,7 @@ label start:
     
     #a "So, you're here! Welcome to WACCLAND DaTING SIM 2, where the game isn't even started yet and I'm just here to test the character sprites"
     
-    #show asami_dumbass
+    #show asami_neutral
     #hide asami_neutral
     #show miyuki_neutral with Dissolve(0.5):
         #xpos -300
@@ -210,7 +210,7 @@ label start:
     m "(With that kind of personality, I'm pretty sure I would have at least taken notice of her in middle school.)"
     unk "What's with that reaction! Very well, I shall introduce myself."
 
-    show asami_smug
+    show asami_neutral
     hide asami_neutral
 
     a "The name's Nakamura Asami! You better remember it!"
@@ -224,8 +224,8 @@ label start:
     m "(What is she even talking about, I stopped listening ages ago...)"
     m "Sigh..."
 
-    hide asami_smug
-    show asami_mad
+    hide asami_neutral
+    show asami_neutral
 
     play music ("bgm/7.ogg") fadeout(1)
 
@@ -243,7 +243,7 @@ label start:
 
     play music ("bgm/2.ogg") fadeout(1)
 
-    show asami_mad:
+    show asami_neutral:
         ease 1 xpos 1600
 
     show izumi_neutral with Dissolve (0.5)
@@ -254,7 +254,7 @@ label start:
     a "Okay..."
     a "(...How does he already know my name?)"
 
-    hide asami_mad with Dissolve (1)
+    hide asami_neutral with Dissolve (1)
 
     m "She then goes to sit right behind me, unfortunately..."
     i "Well, Good Morning everyone. My name is Izumi Naoki, just a plain' ol' teacher."
@@ -280,13 +280,13 @@ label start:
 
     hide izumi_neutral with Dissolve (0.5)
 
-    show asami_kill with Dissolve (0.5)
+    show asami_neutral with Dissolve (0.5)
     
     a "But for us it's now, I-STILL-HAVEN'T-ASKED-FOR-YOUR-NAME-kun!"
     m "Class just finished and you're already rambling..."
     m "Well, no use not introducing myself."
 
-    hide asami_kill with Dissolve (0.5)
+    hide asami_neutral with Dissolve (0.5)
     show masashi_neutral with Dissolve (0.5)
 
     m "I'm Masashi Kamiya, but you can call me MC!"
@@ -314,7 +314,7 @@ label start:
     y "Huh, don't tell me MC has a girlfriend now???????"
 
     hide asami_neutral
-    show asami_mad:
+    show asami_neutral:
         xpos 900
         ypos 140
 
@@ -332,8 +332,8 @@ label start:
     y "You are not enemies... Nobody here has any enemies."
     y "Thus, you two are not enemies."
 
-    hide asami_mad
-    show asami_unsure:
+    hide asami_neutral
+    show asami_neutral:
         xpos 900
         ypos 140
 
@@ -348,8 +348,8 @@ label start:
 
     stop music
     
-    hide asami_unsure
-    show asami_mad:
+    hide asami_neutral
+    show asami_neutral:
         xpos 900
         ypos 140
     
@@ -358,7 +358,7 @@ label start:
 
     play music ("bgm/2.ogg") fadeout(1)
     
-    hide asami_mad with Dissolve (1)
+    hide asami_neutral with Dissolve (1)
 
     m "(She leaves the class running. She probably forgot that classes still aren't done for the day. Maybe she'll realize this and return soon.)"
 
@@ -411,35 +411,35 @@ label start:
     m "(I quickly chase after her and yell out:)"
     m "Asami wait!"
     
-    show asami_judge with Dissolve (0.5)
+    show asami_neutral with Dissolve (0.5)
 
     a "Eh?"
     a "..."
     m "I wanted to apologize again for earlier."
     a "..."
 
-    hide asami_judge with Dissolve (0.5)
+    hide asami_neutral with Dissolve (0.5)
 
     m "(She continued walking down the stairs, ignoring me.)"
 
-    show asami_mad with Dissolve (0.5)
+    show asami_neutral with Dissolve (0.5)
 
     a "..."
 
-    hide asami_mad with Dissolve (0.5)
+    hide asami_neutral with Dissolve (0.5)
 
     m "(She glances at me once before continuing.)"
     m "(I didn't go there just for nothing!)"
     m "(I go down the stairs, although she seems annoyed by my persistence.)"
 
-    show asami_judge with Dissolve (0.5)
+    show asami_neutral with Dissolve (0.5)
 
     a "..."
     a "Kamiya-kun... if you really want to apoligize to me..."
     a "I'll accept your apology only on one condition."
 
-    hide asami_judge
-    show asami_smug
+    hide asami_neutral
+    show asami_neutral
 
     a "If you become my friend, then I'll gladly accept it!"
     m "..."
@@ -453,43 +453,43 @@ label start:
     m "..."
     m "Okay, I accept. I'll become your friend."
 
-    hide asami_smug
-    show asami_intrigued
+    hide asami_neutral
+    show asami_neutral
 
     a "You really mean it...?"
 
-    hide asami_intrigued
-    show asami_smug
+    hide asami_neutral
+    show asami_neutral
 
     play music ("bgm/7.ogg") fadeout (1)
 
     a "Well, of course you'd accept!"
     a "You couldn't possibly decline being friends with such a cute girl!"
 
-    hide asami_smug
-    show asami_happy
+    hide asami_neutral
+    show asami_neutral
 
     a "Just be glad you're now friends with someone as great as me!"
     m "(Man, I already regret my choice.)"
     m "(I may have accidently ruined my entire year.)"
     m "(Too late to go back.)"
 
-    show asami_judge
-    hide asami_happy
+    show asami_neutral
+    hide asami_neutral
 
     a "What? Why are you looking at me like that?"
     a "You aren't happy to be friends with me?"
     m "Take a guess."
     a "..."
 
-    show asami_unsure
-    hide asami_judge
+    show asami_neutral
+    hide asami_neutral
 
     pause 0.5
     
     m "(Asami then grabbed her bag that she put on the floor when I interrupted her.)"
 
-    hide asami_unsure with Dissolve (0.5)
+    hide asami_neutral with Dissolve (0.5)
 
     m "(She left without saying anything else.)"
 
@@ -576,14 +576,14 @@ label start:
     m "(But I have more pressing matters to attend to right now...)"
     m "(An annoying face is staring at me from behind, eager to disturb the peace that I found myself in.)"
 
-    show asami_happy with Dissolve (0.5)
+    show asami_neutral with Dissolve (0.5)
 
     a "Hey Kamiya, good morning!"
     a "Don't you feel blessed being graced by such a cute girl in the morning?"
     m "No, I don't, thank you very much."
     
-    show asami_judge
-    hide asami_happy
+    show asami_neutral
+    hide asami_neutral
         
     a "*Sigh* You just can't appreciate the good things in life can you?"
     m "Well maybe I would be happier if I had some peace for once."
@@ -596,7 +596,7 @@ label start:
     a "I was just thinking out loud"
     m "...Okay?"
 
-    hide asami_judge
+    hide asami_neutral
     show asami_neutral
 
     a "Anyway, I'll never get all that celebrity talk."
@@ -637,7 +637,7 @@ label start:
     i "And that's why you rarely ever see anyone able to use magic these days."
     i "It's all sealed in the original WA-KU-OH! cards which is also kept in an undisclosed location."
     i "The only cards with magic in them are the original deck of Kevin and the Old one card."
-    i "Although according to Kevin's words, it doesn't matter if the cards are genuine or not, the real magic were the friends he made along the way."
+    i "Although according to Kevin's words, it doesn't matter if the cards are genuine or not, the real magic were the friends he neutrale along the way."
     i "And thus concludes today's class."
     i "Altough a bit of trivia before the bell rings."
     i "Back in the days, issues amongst the populace were traditionally settled with a game of WA-KU-OH!"
@@ -735,8 +735,8 @@ label start:
     m "Nah, bro, I saw that she had a WA-KU-OH! pin. Only real ones watch that shit."
     y "Hmmm... IDK then bro..."
 
-    show miyuki_mad
-    show miyuki_mad:
+    show miyuki_neutral
+    show miyuki_neutral:
         xpos 1400 ypos 1200
     hide miyuki_neutral
 
@@ -752,7 +752,7 @@ label start:
     y "Anyway bro, we spent all these days grinding in Dark Souls XX."
     y "It's about time we go grind in real life."
     y "Let's go hit the gym and get GAINS after school!"
-    m "(I could do what Yomki said, but I'm also intrigued by that girl...)"
+    m "(I could do what Yomki said, but I'm also neutral by that girl...)"
     m "(It's not everyday you meet a diehard WA-KU-OH! fan here.)"
     m "(Everyone just simps for the top players because they're hot while not caring about the game at all.)"
 
@@ -895,20 +895,20 @@ label start:
     m "For over ten thousand years, I have protected this world from iminent destruction!"
 
     hide masashi_neutral with Dissolve (0.5)
-    show miyuki_unimpressed with Dissolve (0.5)
+    show miyuki_neutral with Dissolve (0.5)
 
     unk "Huh? The hell is wrong with this guy?"
 
     # serious face
-    hide miyuki_unimpressed
-    show miyuki_mad
+    hide miyuki_neutral
+    show miyuki_neutral
 
     unk "Well, what business did you have with me?"
     m "Well, uhm..."
     m "It's about the pin on your backpack, could you possibly be a fan?"
 
     #change expression
-    hide miyuki_mad
+    hide miyuki_neutral
     show miyuki_neutral
 
     unk "Huh, this? I just picked it up 'cause it was popular at the time."
@@ -919,13 +919,13 @@ label start:
     m "Well, sorry for bothering you. But before I go, could I at least know your name?"
 
     #change expression
-    show miyuki_unimpressed
+    show miyuki_neutral
 
     unk "My name?"
 
     #change to miyuki neutral
     show miyuki_neutral
-    hide miyuki_unimpressed
+    hide miyuki_neutral
 
     mi "My name is Mochizuki Miyuki. Do you have anything else to say? I'm quite busy after all."
     mi "I got club practice to do."
@@ -975,7 +975,7 @@ label start:
     a "What is it?"
 
     hide asami_neutral
-    show asami_smug
+    show asami_neutral
 
     a "You want to ask me out?"
     m "Huh-"
@@ -983,51 +983,51 @@ label start:
     a "You are talking to the cutest girl in school after all."
     m "..."
 
-    hide asami_smug
-    show asami_judge
+    hide asami_neutral
+    show asami_neutral
 
     a "Well, just so you know, I refuse!"
     m "...I never said anything about asking you out..."
 
-    hide asami_judge
-    show asami_confused
+    hide asami_neutral
+    show asami_neutral
 
     a "What?"
 
     pause 1
 
-    hide asami_confused
+    hide asami_neutral
     show asami_neutral
 
     a "Nevermind then."
     m "The fuck you mean by that?!?"
 
     hide asami_neutral
-    show asami_judge
+    show asami_neutral
 
     a "I was joking. Like you know... A JOKE."
     a "Ugh... I can't expect someone like you to understand how deep that joke was."
     a "Anyway-"
 
-    hide asami_judge
+    hide asami_neutral
     show asami_neutral
 
     a "Kamiya, I had something I wanted to ask you."
 
     hide asami_neutral
-    show asami_smug
+    show asami_neutral
 
     a "Do you perchance, have a InstaWACC account?"
     a "I shall grace you with my friendship!"
     m "Yeah, I got one, altough I barely use it."
 
     show asami_neutral
-    hide asami_smug
+    hide asami_neutral
 
     a "Alright, what's your username"
     m "Why should I tell you?"
 
-    show asami_mad
+    show asami_neutral
     hide asami_neutral
 
     a "You're getting a friend request from a girl as cute as me, and you refuse her offer?"
@@ -1038,13 +1038,13 @@ label start:
     m "My username is MC_Kun_420."
 
     hide asami_neutral
-    show asami_judge
+    show asami_neutral
 
     a "What a lame username..."
     m "You asked for it didn't you?"
 
     show asami_neutral
-    hide asami_judge
+    hide asami_neutral
 
     a "By the way, while we're at it."
     a "Did you want to hang out today?"
@@ -1052,7 +1052,7 @@ label start:
     m "Okay, sure, it's going to be more annoying if I say no anyway."
 
     hide asami_neutral
-    show asami_smug
+    show asami_neutral
 
     a "I'd like you to show me around town!"
     m "uhhh...."
@@ -1073,7 +1073,7 @@ label start:
 
     scene waccdonald with Dissolve (0.5)
 
-    show asami_unsure with Dissolve (0.5)
+    show asami_neutral with Dissolve (0.5)
 
     m "Anyway, this is the Waccdonald's."
     m "Me and my bro Yomki often eat lunch here."
@@ -1082,21 +1082,21 @@ label start:
     a "Have you no shame?"
     m "You asked me to show you around town, that's what I'm doing."
 
-    hide asami_unsure
-    show asami_annoyed
+    hide asami_neutral
+    show asami_neutral
 
     a "Can't you come up with a better reaction?"
     m "How the hell do you want me to react?"
 
-    hide asami_annoyed
-    show asami_kill
+    hide asami_neutral
+    show asami_neutral
 
     a "How about aknowledging my cuteness for once, Kamiya-kun!"
     m "No, thank you very much."
     m "Anyway we're leaving since ms. perfect wants to complain about every little detail."
 
-    show asami_confused
-    hide asami_unsure
+    show asami_neutral
+    hide asami_neutral
 
     a "What is this about ms. perfect?!?"
 
@@ -1113,7 +1113,7 @@ label start:
     m "That's surprising, I thought you wouldn't care about staying fit."
 
     hide asami_neutral
-    show asami_mad
+    show asami_neutral
 
     a "Hey!"
     a "I have a reputation to uphold as the cutest girl in the school!"
@@ -1129,7 +1129,7 @@ label start:
     a "Hey MC."
     m "What?"
 
-    show asami_happy
+    show asami_neutral
     hide asami_neutral
 
     a "Where do you live?"
@@ -1138,14 +1138,14 @@ label start:
     m "43, Mind Your Own Business Street."
     a "..."
 
-    hide asami_happy
-    show asami_judge
+    hide asami_neutral
+    show asami_neutral
 
     a "Where even is that?"
     m "Is your head so empty that it can't even comprehend a simple joke?"
 
-    hide asami_judge
-    show asami_mad
+    hide asami_neutral
+    show asami_neutral
 
     a "Well, that's just mean MC."
     a "You shouldn't say that to such a cute girl!"
@@ -1154,29 +1154,29 @@ label start:
     a "That's an order!"
     m "Why the hell do you even want to know!?"
 
-    hide asami_mad
-    show asami_judge
+    hide asami_neutral
+    show asami_neutral
     
     a "Why?"
 
-    hide asami_judge
-    show asami_smug
+    hide asami_neutral
+    show asami_neutral
 
     a "I just felt like asking."
     m "Can't you tell me the real reason?"
 
-    hide asami_smug
-    show asami_serious
+    hide asami_neutral
+    show asami_neutral
 
     a "...Fine."
 
-    hide asami_serious
-    show asami_annoyed
+    hide asami_neutral
+    show asami_neutral
 
     a "It's because..."
 
-    hide asami_annoyed
-    show asami_smug
+    hide asami_neutral
+    show asami_neutral
 
     a "Actually, why should I tell you?"
     a "You haven't told me where you lived!"
@@ -1192,8 +1192,8 @@ label start:
     b "Woah bébé chat, didn't know you had a girlfriend!"
     b "Must be 'cause of your GAINS!"
 
-    hide asami_smug
-    show asami_mad
+    hide asami_neutral
+    show asami_neutral
     
     a "What?"
     a "This guy my boyfriend?"
@@ -1214,7 +1214,7 @@ label start:
     b "Continue stacking those GAINS!"
     m "Will do, Bob."
 
-    hide asami_mad with Dissolve (0.5)
+    hide asami_neutral with Dissolve (0.5)
 
     b "Anyway, I gotta go take the sauce!"
     b "See you later!"
@@ -1386,7 +1386,7 @@ label start:
     m "You were one of my people after all."
 
     hide gorou_neutral
-    show gorou_smug
+    show gorou_neutral
 
     g "As they say in the lands between, those who play Waccland Chronicles are your friends."
     m "Facts Brother!!!"
@@ -1397,7 +1397,7 @@ label start:
     g "Farewell!"
     m "Bye!"
 
-    hide gorou_smug with Dissolve (0.5)
+    hide gorou_neutral with Dissolve (0.5)
 
     m "I got this guy completely wrong..."
     m "Man."
@@ -1421,7 +1421,7 @@ label start:
 
     show yomki:
         ease 1 xpos 1400 ypos 1100
-    show izumi_smoke with Dissolve(0.5)
+    show izumi_neutral with Dissolve(0.5)
 
     m "Mr. Izumi?"
     i "Ah, Kamiya and Yomki, didn't know you guys were friends."
@@ -1511,7 +1511,7 @@ label start:
     y "That's quite a weird pet."
     i "Yeah, I know."
 
-    hide izumi_smoke with Dissolve (0.5)
+    hide izumi_neutral with Dissolve (0.5)
     show yomki:
         ease 1 xpos 900
 
@@ -1681,21 +1681,21 @@ label start:
     m "Sorry, homie."
 
     hide yomki
-    show yomki_smug
+    show yomki_neutral
 
     y "Alright, let's show this Chungus what real bros can do!"
     m "Yeah bro!"
 
-    hide yomki_smug with Dissolve (0.5)
+    hide yomki_neutral with Dissolve (0.5)
 
     "As the two of you ball with Big Chungus, even more of your friends arrive."
 
-    show gorou_yell with Dissolve (0.5)
+    show gorou_neutral with Dissolve (0.5)
 
     g "MC, Yomki! The phoenix's divine darkness shall forever be at your command!"
     g "May your balls light up the way to the heavens!"
 
-    hide gorou_yell
+    hide gorou_neutral
     show bob_neutral
     with Dissolve(0.5)
 
@@ -1703,13 +1703,13 @@ label start:
     b "You're sure to win with all those GAINS!"
 
     hide bob_neutral
-    show miyuki_unimpressed
+    show miyuki_neutral
     with Dissolve(0.5)
 
     mi "The hell those three doing???"
     mi "And why is there a big rabbit?"
 
-    hide miyuki_unimpressed
+    hide miyuki_neutral
     show izumi_neutral
     with Dissolve(0.5)
 
@@ -1773,7 +1773,7 @@ label start:
     m "(I have finished his trial.)"
     m "(As the dust settles, everyone who gathered in the gym begin to leave.)"
 
-    show yomki_smug with Dissolve(0.5)
+    show yomki_neutral with Dissolve(0.5)
 
     m "Yomki, I couldn't have done it without you bro!"
     y "Together, we can pierce even the heavens bro!"
@@ -1783,12 +1783,12 @@ label start:
     y "Don't worry about it, No homo bro."
     m "Sure bro."
 
-    hide yomki_smug with Dissolve(0.5)
+    hide yomki_neutral with Dissolve(0.5)
 
     m "(And with that, the only ones left were me, Yomki...)"
     m "(And her...)"
 
-    show asami_serious with Dissolve(0.5)
+    show asami_neutral with Dissolve(0.5)
 
     a "Kamiya..."
     a "I-I..."
@@ -1799,7 +1799,7 @@ label start:
 
     pause 2
 
-    hide asami_serious
+    hide asami_neutral
     show asami_neutral
 
     a "...Alright, I'll be honest for once."
@@ -1811,13 +1811,13 @@ label start:
     a "We do a minuscule ammount of tomfoolery."
 
     hide asami_neutral
-    show asami_smug
+    show asami_neutral
 
     a "You know, you're lucky to have a friend as cute as me."
     m "No, I am not."
     m "Also you decide to tell me this now?!?"
 
-    hide asami_smug
+    hide asami_neutral
     show asami_neutral
 
     a "Anyway, I better leave before I'm late to class."
@@ -1895,16 +1895,16 @@ label start:
 
     play music "bgm/2.ogg" fadeout 1
 
-    m "(I made my way to school, and arrived 30 minutes early.)"
+    m "(I neutrale my way to school, and arrived 30 minutes early.)"
     m "(Classes haven't started yet, and I don't know what else to do, so might as well wait for Yomki.)"
     m "(I waited a couple minutes before a familiar figured popped up.)"
 
-    show gorou_smug with Dissolve(0.5)
+    show gorou_neutral with Dissolve(0.5)
 
     g "Could it be...? MC! My bro, my man, my dude!"
     m "Yo Gorou, what's up?"
 
-    hide gorou_smug
+    hide gorou_neutral
     show gorou_neutral
 
     g "I had a strange dream."
@@ -1966,7 +1966,7 @@ label start:
     y "Huh... are you high?"
     y "Dark Souls II kinda mid bro, easily the worst Dark Souls"
     y "Dark Souls XXI is where it's at bro."
-    m "Yeah, it takes everything that made Dark Souls II good, and multiplies it by 10."
+    m "Yeah, it takes everything that neutrale Dark Souls II good, and multiplies it by 10."
     y "Can you even call it Dark Souls if you don't have to no-hit every boss while every attack has a 1 frame dodge and parry window?"
     m "That game is for casuals bro."
     g "Damn bro, Michael Zaki really never misses."
@@ -1990,14 +1990,14 @@ label start:
     m "Hey, do you have any idea why everyone's so excited?"
 
     hide asami_neutral
-    show asami_smug
+    show asami_neutral
     with dissolve
 
     a "I'm glad you asked!"
     a "You see, it's simple-"
 
-    hide asami_smug
-    show asami_cat
+    hide asami_neutral
+    show asami_neutral
     with dissolve
 
     a "Apparently there's a new teacher they hired."
@@ -2007,7 +2007,7 @@ label start:
     a "He can't be that hot, right?"
 
 
-    show asami_cat:
+    show asami_neutral:
         ease 1 xpos 1400 ypos 1200
     show gotou_neutral
     show gotou_neutral:
@@ -2016,9 +2016,9 @@ label start:
 
     pause .5
 
-    hide asami_cat
-    show asami_judge
-    show asami_judge:
+    hide asami_neutral
+    show asami_neutral
+    show asami_neutral:
         xpos 1400 ypos 1200
     with dissolve
 
@@ -2032,7 +2032,7 @@ label start:
     go "Okay everyone! Class is going to start soon."
     a "I'm not convinced, but that will have to wait for after class, unlike you I actually pay attention during class!"
 
-    hide asami_judge with dissolve
+    hide asami_neutral with dissolve
     show gotou_neutral:
         ease 1 xpos 900 ypos 1100
 
@@ -2130,7 +2130,7 @@ label start:
     m "Searching for a ''cute girl'' again, if you know what I mean?"
     y "Yep, gotta look for ones with special assets."
     y "With my years of practice I can more or less guess if their feets look good."
-    m "I mean I don't judge or anything, but care to tell me why feet of all things?"
+    m "I mean I don't neutral or anything, but care to tell me why feet of all things?"
     y "Bro, don't you see how good it would feel to-"
     m "I'm gonna stop you right there Yomki."
     m "Don't feel like hearing all about your fetishes."
@@ -2187,8 +2187,8 @@ label start:
     m "Mind explaining why there's a summoning circle on the floor?"
     y "And also who's that girl akwardly standing over there?"
 
-    show momoka_intrigued
-    show momoka_intrigued:
+    show momoka_neutral
+    show momoka_neutral:
         xpos 400 ypos 1200
     with dissolve
 
@@ -2200,17 +2200,17 @@ label start:
     g "...?"
     g "Momo-tan, didn't you agree to contribute to my dark and edgy catchphrase?!"
 
-    hide momoka_intrigued
-    show momoka_panick
-    show momoka_panick:
+    hide momoka_neutral
+    show momoka_neutral
+    show momoka_neutral:
         xpos 400 ypos 1200
 
     mo "...but isn't it really embarassing to say it out loud in front of people you've never seen before?!"
     g "Like I said before, they will be too busy being intimidated by our edginess that they'll cower in fear!"
 
-    hide momoka_panick
-    show momoka_serious
-    show momoka_serious:
+    hide momoka_neutral
+    show momoka_neutral
+    show momoka_neutral:
         xpos 400 ypos 1200
 
     mo "Look, I don't want to get teased because of that-"
@@ -2308,7 +2308,7 @@ label start:
     y "Damn bro, must be tough being addicted to gacha."
     m "Yeah sure, he can quit whenever he wants, isn't that right?"
     g "Why...?"
-    g "Why are you looking at me with those smug eyes..."
+    g "Why are you looking at me with those neutral eyes..."
     m "Man, he's still locked up in his world."
     mo "...He's always been like this..."
     m "I can't even laugh about this, he just looks so pathetic..."
@@ -2318,7 +2318,7 @@ label start:
     m "Don't worry about that, I've had my fair share of run-ins with weirdos."
     m "And besides, he's a fan of Waccland chronicles, I already respect him."
 
-    hide momoka_serious
+    hide momoka_neutral
     show momoka_neutral
     show momoka_neutral:
         xpos 400 ypos 1200
@@ -2378,8 +2378,8 @@ label start:
 
     scene classroom with Dissolve(0.5)
 
-    show asami_judge
-    show asami_judge:
+    show asami_neutral
+    show asami_neutral:
         xpos 1400 ypos 1200
     with dissolve
 
@@ -2389,7 +2389,7 @@ label start:
     y "Did someone call?"
     "Shitting Noise."
 
-    hide asami_judge
+    hide asami_neutral
 
     scene cockland with Dissolve(0.5)
 
