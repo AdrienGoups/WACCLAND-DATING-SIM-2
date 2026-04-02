@@ -10,18 +10,18 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define m = Character("Kamiya", who_color="#f06767")
+define m = Character("Cockland", who_color="#f06767")
 define u = Character("Usui", who_color="#ade7f7")
 define b = Character("Bob", who_color="#eb9c71")
-define c = Character("Big Chungus", who_color="#ccfffa")
-define a = Character("Asami", who_color="#de6ac9")
+define c = Character("John Cockland", who_color="#ccfffa")
+define a = Character("Ondori", who_color="#de6ac9")
 define t = Character("Teacher", who_color="#7489d4")
-define i = Character("Mr. Izumi", who_color="#7489d4")
+define i = Character("Mr. Cockven", who_color="#7489d4")
 define y = Character("Yomki", who_color="#e0bf72")
-define mi = Character("Miyuki", who_color="#8f72e0")
+define mi = Character("Tamago", who_color="#8f72e0")
 define g = Character("Gorou", who_color="#79db9a")
-define go = Character("Gotou", who_color="#4079bb")
-define mo = Character("Momoka", who_color="#ffaf96")asami_neutra
+define go = Character("Tamagoyaki", who_color="#4079bb")
+define mo = Character("Hiyoko", who_color="#ffaf96")
 define cl = Character("Classmates")
 define unk = Character("???")
 
@@ -47,7 +47,7 @@ label start:
     
     #with Dissolve (1.5)
     
-    #a "So, you're here! Welcome to WACCLAND DaTING SIM 2, where the game isn't even started yet and I'm just here to test the character sprites"
+    #a "So, you're here! Welcome to COCKLAND DaTING SIM 2, where the game isn't even started yet and I'm just here to test the character sprites"
     
     #show asami_neutral
     #hide asami_neutral
@@ -71,7 +71,7 @@ label start:
 
     #pause 10
 
-    #"The time has cometh for the Wacclandeth of Dating SIM.... 2!!!!!!!!!!"
+    #"The time has cometh for the COCKlandeth of Dating SIM.... 2!!!!!!!!!!"
     #"the revengeance of the electric boogaloo of CHUNGUS"
     #"No adrien I ain't fixin' the goddamn script"
 
@@ -113,15 +113,15 @@ label start:
     show chungus with Dissolve (3)
 
     c "It is nice to meet you, MC."
-    c "I am the being known as Big Chungus,"
+    c "I am the being known as John Cockland,"
     c "The overseer of this world."
-    c "Masashi Kamiya... Thoust grand quest begins here."
+    c "Mathias Cockland... Thoust grand quest begins here."
     c "Acquire a partner. That is thy task."
     c "Altough, you are unfortunately but an average high school student."
     c "You shall better yourself in due time to have any chance of winning the heart of a maiden."
     c "You shall face many trials and challenges, but I believe in thy potential."
-    c "Now, go forth with Wacc and Land, my child!"
-    c "For this is YOUR Waccland Dating SIM 2: Electric Boogaloo."
+    c "Now, go forth with COCK and Land, my child!"
+    c "For this is YOUR COCKland Dating SIM 2: Electric Boogaloo."
 
     play sound "sfx/bonk.mp3"
 
@@ -171,9 +171,9 @@ label start:
     scene school with Dissolve (1)
 
     m "(The school is now right in view. And still 5 minutes until the bell rings.)"
-    m "(And now I'm standing at the doors of Waccland's Peak Academy.)"
+    m "(And now I'm standing at the doors of COCKland's Peak Academy.)"
     m "(First founded in 1869, this school was the gathering place for all the most brilliant minds.)"
-    m "(It's name derives from Kevin Waccland, the saviour of the world, inventor of WA KU OH!)"
+    m "(It's name derives from Kevin COCKland, the saviour of the world, inventor of WA KU OH!)"
     m "(It is said that he lived about 2000 years ago.)"
     m "(A place for such amazing people, named after the most amazing person.)"
     m "(Well it would be but... now it's just a normal high school that even normal people can go. That's how I got here.)"
@@ -211,7 +211,7 @@ label start:
     unk "What's with that reaction! Very well, I shall introduce myself."
 
     show asami_neutral
-    hide asami_neutral
+    
 
     a "The name's Nakamura Asami! You better remember it!"
     a "I'll have you know I was the most popular girl at my middle school!"
@@ -257,7 +257,7 @@ label start:
     hide asami_neutral with Dissolve (1)
 
     m "She then goes to sit right behind me, unfortunately..."
-    i "Well, Good Morning everyone. My name is Izumi Naoki, just a plain' ol' teacher."
+    i "Well, Good Morning everyone. My name is Cockven Naoki, just a plain' ol' teacher."
     "Female Student 1" "Wow, he's so cool and hot!"
     "Female Student 2" "He looks so mature!"
 
@@ -289,8 +289,8 @@ label start:
     hide asami_neutral with Dissolve (0.5)
     show masashi_neutral with Dissolve (0.5)
 
-    m "I'm Masashi Kamiya, but you can call me MC!"
-    m "Gaming is my life! And Wacc-Fuel is my blood!"
+    m "I'm Mathias Cockland, but you can call me MC!"
+    m "Gaming is my life! And COCK-Fuel is my blood!"
     m "Over these last 10 years, I have played many games!"
     m "But I have never lost... For I am the ultimate gamer!"
 
@@ -325,7 +325,7 @@ label start:
     y "Isn't there supposed to be a skip button somewhere?"
     m "Sorry bro, we're not in a video game, you'll have to listen to her profoud speech.."
     y "I have no idea what's going on."
-    a "Returning to the original subject, Kamiya-kun, I require an apology."
+    a "Returning to the original subject, Cockland-kun, I require an apology."
     m "Yeah, and why should I? From what I recall, you're the one who's been bothering me."
     a "'Bothering me', You ignored me and then you call me annoying!"
     y "Guys, does it even matter?"
@@ -344,7 +344,7 @@ label start:
 
     play music ("bgm/8.ogg") fadeout(1)
 
-    m "I'm sorry Asami, I shouldn't have ignored you. I was rude even though I barely knew you..."
+    m "I'm sorry Ondori, I shouldn't have ignored you. I was rude even though I barely knew you..."
 
     stop music
     
@@ -384,12 +384,12 @@ label start:
     m "(Well, not that I really care.)"
     "The rest of the day goes by without any other incident."
     "Ding dong bing bong."
-    m "(Maybe I should try to patch things up with Asami, if I let things like this, it's probably only gonna bring me trouble knowing her personality.)"
+    m "(Maybe I should try to patch things up with Ondori, if I let things like this, it's probably only gonna bring me trouble knowing her personality.)"
 
     show yomki with Dissolve (0.5)
 
-    y "Hey bro, wanna head to WaccDonald's with me!"
-    y "I know I said to hop on VC, but I'm hungry and could really use some WaccDonald's."
+    y "Hey bro, wanna head to COCKDonald's with me!"
+    y "I know I said to hop on VC, but I'm hungry and could really use some COCKDonald's."
     m "(His offer is tempting, but he'll have to wait a bit.)"
     m "(The future of my school life rests upon this operation, I can't ignore it.)"
     m "Sorry, not right now. I have something to do."
@@ -409,7 +409,7 @@ label start:
 
     m "(I see her walking towards the stairs to leave.)"
     m "(I quickly chase after her and yell out:)"
-    m "Asami wait!"
+    m "Ondori wait!"
     
     show asami_neutral with Dissolve (0.5)
 
@@ -435,7 +435,7 @@ label start:
     show asami_neutral with Dissolve (0.5)
 
     a "..."
-    a "Kamiya-kun... if you really want to apoligize to me..."
+    a "Cockland-kun... if you really want to apoligize to me..."
     a "I'll accept your apology only on one condition."
 
     hide asami_neutral
@@ -475,7 +475,6 @@ label start:
     m "(Too late to go back.)"
 
     show asami_neutral
-    hide asami_neutral
 
     a "What? Why are you looking at me like that?"
     a "You aren't happy to be friends with me?"
@@ -483,11 +482,10 @@ label start:
     a "..."
 
     show asami_neutral
-    hide asami_neutral
 
     pause 0.5
     
-    m "(Asami then grabbed her bag that she put on the floor when I interrupted her.)"
+    m "(Ondori then grabbed her bag that she put on the floor when I interrupted her.)"
 
     hide asami_neutral with Dissolve (0.5)
 
@@ -497,18 +495,18 @@ label start:
 
     m "(Welp, time to call Yomki to tell him I'm done.)"
 
-    scene waccdonald with Dissolve (1)
+    scene COCKdonald with Dissolve (1)
     show yomki with Dissolve (0.5)
 
-    y "Yo those new Big Waccs are bussin' frfr."
+    y "Yo those new Big COCKs are bussin' frfr."
     m "Sure is bro."
     m "That special rizz sauce sure is something."
     y "Yeah I know what you mean, it tastes like when you finally find a bonfire after a long and arduous climb in Dark Souls."
     m "Couldn't find a better analogy than this bro."
-    m "Still, no matter what year it is, Wacc Nuggets are still so poggers."
+    m "Still, no matter what year it is, COCK Nuggets are still so poggers."
     y "Yeah bro, the quality of the chicken is really nuts."
     y "And the crispy exterior is also really fire."
-    m "No matter what products they do, any Waccland products are straight up peak."
+    m "No matter what products they do, any COCKland products are straight up peak."
     y "Yeah, no wonder they're such a big company."
     y "BTW, bro. You started Dark Souls XX?"
     m "Yeah, I spent the entire night playing. I was so sleepy at school that I just wanted to sleep all day."
@@ -561,7 +559,7 @@ label start:
 
     scene classroom with Dissolve (1)
 
-    "Waccland's Peak Academy, Place Japan, Hour: 7:58"
+    "COCKland's Peak Academy, Place Japan, Hour: 7:58"
 
     m "(I arrive in class and sit at my desk.)"
     m "(The class is as loud as ever, gossiping about all the latest news like usual.)"
@@ -578,12 +576,11 @@ label start:
 
     show asami_neutral with Dissolve (0.5)
 
-    a "Hey Kamiya, good morning!"
+    a "Hey Cockland, good morning!"
     a "Don't you feel blessed being graced by such a cute girl in the morning?"
     m "No, I don't, thank you very much."
     
     show asami_neutral
-    hide asami_neutral
         
     a "*Sigh* You just can't appreciate the good things in life can you?"
     m "Well maybe I would be happier if I had some peace for once."
@@ -616,14 +613,14 @@ label start:
 
     show izumi_neutral with Dissolve (0.5)
 
-    "Mr. Izumi enters the classroom."
+    "Mr. Cockven enters the classroom."
     i "Class is about to begin."
     i "Today we're going to be studying ancient history."
-    i "As you probably already know, not much is known from the times before Kevin Waccland saved the world."
-    i "According to archeologists, the land was previously known as the land of the Seventh, although some sources also claim that it was known as WACCLAND."
+    i "As you probably already know, not much is known from the times before Kevin COCKland saved the world."
+    i "According to archeologists, the land was previously known as the land of the Seventh, although some sources also claim that it was known as COCKLAND."
     i "In those times, people were able to use magic to cast powerful spells able to pierce the heavens themselves."
-    i "Which then leads us to the tale of Kevin Waccland."
-    i "Kevin Waccland was born about 2000 years ago as the prince of the great empire of Waccland."
+    i "Which then leads us to the tale of Kevin COCKland."
+    i "Kevin COCKland was born about 2000 years ago as the prince of the great empire of COCKland."
     i "Yet, turmoil lurked in the darkest reaches of the empire."
     i "Dark cultists summoned forth forbidden magic to try and take control of the world."
     i "Yet, Kevin rose up to those cultists and battled them."
@@ -632,7 +629,7 @@ label start:
     i "The dark god fueled itself of the magic of the people."
     i "Kevin decided to seal away the magic of the people inside cards and challenged the god to a duel."
     i "Inside those cards lied beasts conjured of pure magic."
-    i "With this power, Kevin Waccland was able to succesfully seal the dark god inside a card."
+    i "With this power, Kevin COCKland was able to succesfully seal the dark god inside a card."
     i "This very card is sealed in a location unknown to the masses, as it's power could most certainly provoke the end of the world."
     i "And that's why you rarely ever see anyone able to use magic these days."
     i "It's all sealed in the original WA-KU-OH! cards which is also kept in an undisclosed location."
@@ -641,7 +638,7 @@ label start:
     i "And thus concludes today's class."
     i "Altough a bit of trivia before the bell rings."
     i "Back in the days, issues amongst the populace were traditionally settled with a game of WA-KU-OH!"
-    i "With Waccland entertainments acquiring the liscence to the game, it's popularity has skyrocketed in the past 10 years."
+    i "With COCKland entertainments acquiring the liscence to the game, it's popularity has skyrocketed in the past 10 years."
     i "Before that, the church was responsible for producing and updating the ruleset of the game."
     i "Must have been hard to get the liscence to such a huge game."
     i "But seeing it's popularity and the ammount of cash it's printing, I don't think they're regretting one bit."
@@ -655,11 +652,11 @@ label start:
 
     m "(Any real WA-KU-OH! fan would already know all of this.)"
     m "(The card game is it's own thing, but any real fan would also bundle it up with the manga.)"
-    m "(The hit manga WA-KU-OH! was produced by veteran manga artist Kazuki Tenoizoro and liscenced by Waccland entertainments. He worked closely with archeologists to preserve the myth in all of it's glory.)"
+    m "(The hit manga WA-KU-OH! was produced by veteran manga artist Kazuki Tenoizoro and liscenced by COCKland entertainments. He worked closely with archeologists to preserve the myth in all of it's glory.)"
     m "(The blend of real and fiction and it's absurd humour is what makes the series an absolute masterpiece.)"
-    m "(It was later adapted in an animated series produced by the one and only Waccland animations.)"
+    m "(It was later adapted in an animated series produced by the one and only COCKland animations.)"
     m "(It brought many professional voice actors such as Nenjiro Tsukasa. The sheer quality of the animations and voice acting makes it one of the best animated shows ever created.)"
-    m "(With how good the WA-KU-OH! manga is, you'd think it was written by Kevin Waccland himself.)"
+    m "(With how good the WA-KU-OH! manga is, you'd think it was written by Kevin COCKland himself.)"
     m "(But enough talking about my favorite Manga.)"
     m "(It's finally time for lunch break.)"
     m "(I'm gonna go see my bro Yomki.)"
@@ -676,7 +673,7 @@ label start:
     m "You're such a god gamer."
     y "True."
     m "(We continue to chat for a while.)"
-    m "(I mentionned the class we just had about Kevin Waccland.)"
+    m "(I mentionned the class we just had about Kevin COCKland.)"
     m "(Yomki continued to listen to my yapping for a while.)"
 
     pause 0.5
@@ -800,8 +797,8 @@ label start:
     show masashi_neutral
     with Dissolve (0.5)
 
-    m "My name is Masashi Kamiya, but you can call me MC!"
-    m "Gaming is my life and Wacc-Fuel is my blood."
+    m "My name is Mathias Cockland, but you can call me MC!"
+    m "Gaming is my life and COCK-Fuel is my blood."
     m "As darkness covers this land, I will become the light that banishes evil."
 
     hide masashi_neutral 
@@ -890,8 +887,8 @@ label start:
     hide miyuki_neutral with Dissolve (0.5)
     show masashi_neutral with Dissolve (0.5)
 
-    m "My name is Masashi Kamiya, but you can call me MC!"
-    m "Gaming is my life and Wacc-Fuel is my blood."
+    m "My name is Mathias Cockland, but you can call me MC!"
+    m "Gaming is my life and COCK-Fuel is my blood."
     m "For over ten thousand years, I have protected this world from iminent destruction!"
 
     hide masashi_neutral with Dissolve (0.5)
@@ -912,7 +909,7 @@ label start:
     show miyuki_neutral
 
     unk "Huh, this? I just picked it up 'cause it was popular at the time."
-    unk "Don't know anything about it. Except it's popular in Waccland city."
+    unk "Don't know anything about it. Except it's popular in COCKland city."
     m "(Damn, my luck ran out. She's a fake.)"
     m "(A damn normie. What a waste of my time.)"
     m "(Well, after all the trouble I went through, might as well ask for her name.)"
@@ -923,7 +920,7 @@ label start:
 
     unk "My name?"
 
-    #change to miyuki neutral
+    #change to Tamago neutral
     show miyuki_neutral
     hide miyuki_neutral
 
@@ -964,12 +961,12 @@ label start:
     a "Hey MC!"
     a "See you tommorow!"
     m "..."
-    m "(I guess I could try my chance talking with Asami too.)"
+    m "(I guess I could try my chance talking with Ondori too.)"
 
     play music "bgm/3.ogg" fadeout (1)
 
     "Alright, I'll talk to Asami"
-    m "Asami, wait."
+    m "Ondori, wait."
     m "Don't leave yet."
     m "I wanted to talk with you."
     a "What is it?"
@@ -1012,12 +1009,12 @@ label start:
     hide asami_neutral
     show asami_neutral
 
-    a "Kamiya, I had something I wanted to ask you."
+    a "Cockland, I had something I wanted to ask you."
 
     hide asami_neutral
     show asami_neutral
 
-    a "Do you perchance, have a InstaWACC account?"
+    a "Do you perchance, have a InstaCOCK account?"
     a "I shall grace you with my friendship!"
     m "Yeah, I got one, altough I barely use it."
 
@@ -1028,7 +1025,6 @@ label start:
     m "Why should I tell you?"
 
     show asami_neutral
-    hide asami_neutral
 
     a "You're getting a friend request from a girl as cute as me, and you refuse her offer?"
     a "What a weirdo."
@@ -1044,7 +1040,6 @@ label start:
     m "You asked for it didn't you?"
 
     show asami_neutral
-    hide asami_neutral
 
     a "By the way, while we're at it."
     a "Did you want to hang out today?"
@@ -1066,19 +1061,19 @@ label start:
 
     scene black with Dissolve(0.5)
 
-    m "(Despite these unfortunate circumstances, I show Asami around town.)"
-    m "(Even with me repeating over and over that this is NOT a date, Asami keeps on rambling on and on about how I should be grateful that a girl as cute as herself is accepting a date with me.)"
+    m "(Despite these unfortunate circumstances, I show Ondori around town.)"
+    m "(Even with me repeating over and over that this is NOT a date, Ondori keeps on rambling on and on about how I should be grateful that a girl as cute as herself is accepting a date with me.)"
     m "(I somewhat ponder about if choosing to hang out with her was a bad decision...)"
     m "(But back to the original topic, I showed her all the popular places where people hang out... not that I'd know myself, I just looked it up online.)"
 
-    scene waccdonald with Dissolve (0.5)
+    scene COCKdonald with Dissolve (0.5)
 
     show asami_neutral with Dissolve (0.5)
 
-    m "Anyway, this is the Waccdonald's."
+    m "Anyway, this is the COCKdonald's."
     m "Me and my bro Yomki often eat lunch here."
     m "For fast food, the quality and the price is really good."
-    a "You're on a date with a girl and you bring her to a Waccdonald's?"
+    a "You're on a date with a girl and you bring her to a COCKdonald's?"
     a "Have you no shame?"
     m "You asked me to show you around town, that's what I'm doing."
 
@@ -1091,12 +1086,12 @@ label start:
     hide asami_neutral
     show asami_neutral
 
-    a "How about aknowledging my cuteness for once, Kamiya-kun!"
+    a "How about aknowledging my cuteness for once, Cockland-kun!"
     m "No, thank you very much."
     m "Anyway we're leaving since ms. perfect wants to complain about every little detail."
 
     show asami_neutral
-    hide asami_neutral
+
 
     a "What is this about ms. perfect?!?"
 
@@ -1125,12 +1120,12 @@ label start:
     show asami_neutral with Dissolve (0.5)
 
     m "(After showing her around town, we make a brief stop.)"
-    m "(Asami then turned towards me.)"
+    m "(Ondori then turned towards me.)"
     a "Hey MC."
     m "What?"
 
     show asami_neutral
-    hide asami_neutral
+
 
     a "Where do you live?"
     m "Where I live?"
@@ -1208,7 +1203,7 @@ label start:
     b "Yeah, no problem bébé chat."
     b "By the way, my name is Yasuhiro Bob, nice to meet you."
     a "Nice to meet you too... I guess."
-    a "My name is Nakamura Asami, THE cutest girl at our school!"
+    a "My name is Nakamura Ondori, THE cutest girl at our school!"
     b "Quite a bold claim, I like that."
     b "Anyway, MC, don't give up."
     b "Continue stacking those GAINS!"
@@ -1237,7 +1232,7 @@ label start:
 
     hide asami_neutral with Dissolve(0.5)
 
-    m "(Asami left.)"
+    m "(Ondori left.)"
     m "Man, these days don't get any weirder."
     m "Anyway, time to head home."
 
@@ -1346,7 +1341,7 @@ label start:
 
     g "!!!"
     g "Yomki!"
-    g "Why didn't you tell me earlier that this guy played Waccland chronicles!!!"
+    g "Why didn't you tell me earlier that this guy played COCKland chronicles!!!"
     m "...?"
     m "Huh?"
 
@@ -1374,8 +1369,8 @@ label start:
     show masashi_neutral
     with Dissolve (0.5)
 
-    m "My name is Masashi Kamiya, but you can call me MC!"
-    m "Gaming is my life and Wacc-Fuel is my blood."
+    m "My name is Mathias Cockland, but you can call me MC!"
+    m "Gaming is my life and COCK-Fuel is my blood."
     m "Throughout Heaven and Earth, I alone am the Honored One which will guide the world to salvation!"
 
     hide masashi_neutral 
@@ -1388,10 +1383,10 @@ label start:
     hide gorou_neutral
     show gorou_neutral
 
-    g "As they say in the lands between, those who play Waccland Chronicles are your friends."
+    g "As they say in the lands between, those who play COCKland Chronicles are your friends."
     m "Facts Brother!!!"
     m "Spit Your shit indeed!"
-    m "(Me and Gorou then proceed to have the nerdiest handshake ever.)"
+    m "(Me and Niwatori then proceed to have the nerdiest handshake ever.)"
     g "It was nice to meet you MC, MY FRIEND."
     g "Unfortunately, I must go now, for my untouched game needs some playing!"
     g "Farewell!"
@@ -1424,7 +1419,7 @@ label start:
     show izumi_neutral with Dissolve(0.5)
 
     m "Mr. Izumi?"
-    i "Ah, Kamiya and Yomki, didn't know you guys were friends."
+    i "Ah, Cockland and Yomki, didn't know you guys were friends."
     i "Heading home?"
     m "Yeah."
     i "Also you can drop the mister while outside school."
@@ -1443,13 +1438,13 @@ label start:
     i "Michel."
     m "I'm pretty sure I heard that name before..."
     m "Wait-"
-    m "THE Michel Popstonia studied here at Waccland's Peak Academy?!?"
+    m "THE Michel Popstonia studied here at COCKland's Peak Academy?!?"
     y "That's kinda crazy actually."
     i "Yep, That's right."
     m "Doesn't seem like his attitude changed much."
     i "Yeah."
     i "It was shortly after the big war."
-    i "Waccland's Peak Academy hadn't fallen from grace yet."
+    i "COCKland's Peak Academy hadn't fallen from grace yet."
     i "You kids probably don't know the full story yet."
     m "Yeah, that's weird they never really tell why it fell from grace."
     i "Well, long story short, the director was a corrupt piece of shit."
@@ -1480,7 +1475,7 @@ label start:
     m "...Naoki, how often do you smoke?"
     i "Not that much."
     i "One day you'll understand how it feels like to be a living legend."
-    m "...Alright then, have you been playing WACC Quest XIII too much?"
+    m "...Alright then, have you been playing COCK Quest XIII too much?"
     i "Probably."
     m "(Interesting, I didn't think he'd be the type to play games like that.)"
     y "Damn, you one of us bro?"
@@ -1488,7 +1483,7 @@ label start:
     m "A gamer."
     i "I guess you could call me that."
     i "I've played pretty much all the classics from the 90's."
-    i "From WACC Fantasy, to the legend of WACC, to WACCLAND 64."
+    i "From COCK Fantasy, to the legend of COCK, to COCKLAND 64."
     m "Damn-"
     m "You're old."
     i "You do know I'm 36?"
@@ -1577,18 +1572,18 @@ label start:
     pause 1
 
     m "Who... are you again...?"
-    c "Thy greatest Chungus is gracing thyself with his presence and thou doth not even remember him?"
-    c "I, am Big Chungus, the greatest and the one and only true Chungus!"
-    c "The overseer of this world, of this wacc, of this land."
-    c "Brave warrior of the maidens... I challenge thou to the Dunktastic Duel of WACC AND LAND!"
+    c "Thy greatest Cockland is gracing thyself with his presence and thou doth not even remember him?"
+    c "I, am John Cockland, the greatest and the one and only true Chungus!"
+    c "The overseer of this world, of this COCK, of this land."
+    c "Brave warrior of the maidens... I challenge thou to the Dunktastic Duel of COCK AND LAND!"
     c "Thou hast no other choices!"
     c "Face me OR thou shall never feel the touch of a woman ever again!"
 
     pause 1
 
     m "..."
-    m "(What the hell is this rabbit even saying?)"
-    m "(Dunktastic duel of WACC AND LAND?)"
+    m "(What the hell is this COCK even saying?)"
+    m "(Dunktastic duel of COCK AND LAND?)"
     m "(And, could I really defeat a god?)"
     m "(Altough, my hesitation is quickly dispelled by the thoughts of my friends.)"
     m "(They're here for me.)"
@@ -1614,12 +1609,12 @@ label start:
 
     # zoom sfx
 
-    m "(As he said this, the chungus zoomed arround the court at lightning speed.)"
+    m "(As he said this, the Cockland zoomed arround the court at lightning speed.)"
 
     scene ballcg1 with Dissolve (1)
 
-    m "(Without even being able to process what was happening, the chungus had already jumped.)"
-    m "(I watched in horror as the chungus dunked the ball straight into the basket.)"
+    m "(Without even being able to process what was happening, the Cockland had already jumped.)"
+    m "(I watched in horror as the Cockland dunked the ball straight into the basket.)"
 
     play sound ("sfx/ball i guess.mp3")
     queue sound ("sfx/explosion4.ogg") volume (0.5)
@@ -1632,20 +1627,20 @@ label start:
 
     c "One point, motherducker."
     c "A bit slow this one, don't you think?"
-    c "Thou can do better, Masashi Kamiya."
+    c "Thou can do better, Mathias Cockland."
     m "(I began to wonder if I even had a chance...)"
     m "(Did he purposefully challenge me knowing that I never had a chance?)"
     m "I..."
     m "I refuse to go down this easily!"
     m "(I begin to run straight to the ball, catching it in mid-air as it bounced on the floor.)"
     m "(Although, when I turned I saw an imposing figure.)"
-    m "(Big chungus seemed even larger than usual.)"
-    m "(As I tried to outmaneuver him, Big Chungus managed to snatch the ball from me.)"
+    m "(John Cockland seemed even larger than usual.)"
+    m "(As I tried to outmaneuver him, John Cockland managed to snatch the ball from me.)"
     c "Looks like I get another point."
 
     hide chungus with Dissolve (1)
 
-    m "(Big Chungus then bolted straight to the basket.)"
+    m "(John Cockland then bolted straight to the basket.)"
     m "..."
 
     scene ballcg1 with Dissolve (1)
@@ -1681,14 +1676,14 @@ label start:
     m "Sorry, homie."
 
     hide yomki
-    show yomki_neutral
+    show yomki
 
-    y "Alright, let's show this Chungus what real bros can do!"
+    y "Alright, let's show this Cockland what real bros can do!"
     m "Yeah bro!"
 
-    hide yomki_neutral with Dissolve (0.5)
+    hide yomki with Dissolve (0.5)
 
-    "As the two of you ball with Big Chungus, even more of your friends arrive."
+    "As the two of you ball with John Cockland, even more of your friends arrive."
 
     show gorou_neutral with Dissolve (0.5)
 
@@ -1707,7 +1702,7 @@ label start:
     with Dissolve(0.5)
 
     mi "The hell those three doing???"
-    mi "And why is there a big rabbit?"
+    mi "And why is there a big COCK?"
 
     hide miyuki_neutral
     show izumi_neutral
@@ -1746,7 +1741,7 @@ label start:
     m "(Everyone is speechless.)"
     m "(No one has ever balled this hard.)"
     m "(No one...)"
-    m "(Not even big Chungus.)"
+    m "(Not even John Cockland.)"
 
     scene school_gym with Dissolve (1)
 
@@ -1757,9 +1752,9 @@ label start:
     c "!!!"
     c "This power."
     c "I was right all along."
-    c "Masashi Kamiya, you are the one."
+    c "Mathias Cockland, you are the one."
     c "You are destined for greatness."
-    c "The Chungus congratulates you, for you have outballed him."
+    c "The Cockland congratulates you, for you have outballed him."
     c "Thou hast passed the trial."
     c "May your L's be few, and your bitches many!"
 
@@ -1769,11 +1764,11 @@ label start:
 
     play music "bgm/8.ogg"
 
-    m "(The chungus then vanished in a flash of light.)"
+    m "(The Cockland then vanished in a flash of light.)"
     m "(I have finished his trial.)"
     m "(As the dust settles, everyone who gathered in the gym begin to leave.)"
 
-    show yomki_neutral with Dissolve(0.5)
+    show yomki with Dissolve(0.5)
 
     m "Yomki, I couldn't have done it without you bro!"
     y "Together, we can pierce even the heavens bro!"
@@ -1783,14 +1778,14 @@ label start:
     y "Don't worry about it, No homo bro."
     m "Sure bro."
 
-    hide yomki_neutral with Dissolve(0.5)
+    hide yomki with Dissolve(0.5)
 
     m "(And with that, the only ones left were me, Yomki...)"
     m "(And her...)"
 
     show asami_neutral with Dissolve(0.5)
 
-    a "Kamiya..."
+    a "Cockland..."
     a "I-I..."
     a "I was wrong about you..."
     a "I didn't know you were able to ball that hard."
@@ -1824,9 +1819,9 @@ label start:
 
     hide asami_neutral with Dissolve(0.5)
 
-    m "(Asami left the room before I could say anything else.)"
+    m "(Ondori left the room before I could say anything else.)"
     m "(Not exactly the reaction I was expecting.)"
-    m "(I thought she'd say something like: Nah, you're still just some loser! That bunny guy didn't even break a sweat!)"
+    m "(I thought she'd say something like: Nah, you're still just some loser! That COCK guy didn't even break a sweat!)"
     m "(And then she's apparently been annoying me on purpose.)"
     m "(What is that girl's deal?!?)"
     m "(At least that means she wasn't this stupid.)"
@@ -1844,7 +1839,7 @@ label start:
     y "Isn't she like the (self-proclaimed) cutest girl in the school though?"
     m "Urgh, not you too..."
     m "A real man's gotta have standards!"
-    y "Anyway, wanna hit the Waccdonald's MC?"
+    y "Anyway, wanna hit the COCKdonald's MC?"
     m "Hell yeah brother!"
 
     hide yomki with Dissolve(0.5)
@@ -1857,7 +1852,7 @@ label start:
 
     scene black with Dissolve(2)
 
-    m "(And with that wrapped up, me and Yomki skipped school to go to the Waccdonald's.)"
+    m "(And with that wrapped up, me and Yomki skipped school to go to the COCKdonald's.)"
     m "(And thus concludes the first chapter of my new life.)"
     m "(At this time, I was blissfully unaware of what horrors would befall me...)"
     m "(But that's a story for another day!)"
@@ -1879,15 +1874,15 @@ label start:
     m "(Yesterday came and went like a whirlwind, and soon I woke up in my bed like usual...)"
     m "(Although I feel like my memories are a bit hazy)"
     m "That dream sure was weird..."
-    m "That huge bunny was crazy fast."
+    m "That huge COCK was crazy fast."
     m "..."
-    m "(In my dream... I was balling with this huge bunny, yet... it was a bit too clear)"
+    m "(In my dream... I was balling with this huge COCK, yet... it was a bit too clear)"
     m "(was it really a dream...?)"
     m "..."
     m "Wait, we did play basketball but against who?"
     m "I must have hit my head pretty hard yesterday."
     m "I really don't know."
-    m "...I do remember someone being in a bunny suit."
+    m "...I do remember someone being in a COCK suit."
     m "Woke up earlier than usual though..."
     m "Guess I'll just go to school earlier."
 
@@ -1902,7 +1897,7 @@ label start:
     show gorou_neutral with Dissolve(0.5)
 
     g "Could it be...? MC! My bro, my man, my dude!"
-    m "Yo Gorou, what's up?"
+    m "Yo Niwatori, what's up?"
 
     hide gorou_neutral
     show gorou_neutral
@@ -1910,7 +1905,7 @@ label start:
     g "I had a strange dream."
     g "A storm was brewing, thunder roaring..."
     g "A man took a leap of fate-"
-    m "Was there a big fat bunny?"
+    m "Was there a big fat COCK?"
     g "..."
     g "Well..."
     g "Yeah."
@@ -1926,7 +1921,7 @@ label start:
 
     y "Top of the mornin'"
     y "No way?!?"
-    y "Gorou and MC talking together?!?"
+    y "Niwatori and MC talking together?!?"
     y "Didn't know you two were dating?!?"
 
     pause 2
@@ -1942,7 +1937,7 @@ label start:
     pause 1
 
     y "Anyway, you guys were talking about friday?"
-    y "That Big Chungus guy was strong."
+    y "That John Cockland guy was strong."
     m "So, it wasn't a dream after all."
     g "...That's weird."
     y "Huh? That actually happened???"
@@ -1952,10 +1947,10 @@ label start:
     y "..."
     m "..."
     m "I think we're overthinking this."
-    y "I saw you head to the gym with a guy in a bunny suit and you guys started to play basketball and that's about it."
+    y "I saw you head to the gym with a guy in a COCK suit and you guys started to play basketball and that's about it."
     m "Man, I really must have hit my head really hard to have imagined that scenario."
-    m "Any idea who was in that bunny suit?"
-    y "I seem to have seen a teacher removing a bunny suit behind the gym while leaving."
+    m "Any idea who was in that COCK suit?"
+    y "I seem to have seen a teacher removing a COCK suit behind the gym while leaving."
     y "But as to why... I don't know."
     y "Anyway, we climbed so hard yesterday."
     y "We both managed to beat Dark souls XXI in a single day."
@@ -2038,29 +2033,29 @@ label start:
 
     pause 1.0
 
-    go "My name is Hidetaka Gotou, I will be your science teacher this year."
+    go "My name is Hidetaka Tamagoyaki, I will be your science teacher this year."
     go "As you probably already know this is my first day teaching here."
     go "If you have any questions you are free to ask them to me at my office after classes end."
 
     pause 1.0
 
-    "Gotou started his lecture"
+    "Tamagoyaki started his lecture"
     "Words melded together as your conciousness started to fade, yet by a miracle a glimpse of interest sparked."
-    go "-This brings us to WACC energy, or as some called in the past 'Magic'."
+    go "-This brings us to COCK energy, or as some called in the past 'Magic'."
     go "Altough the name magic is a bit misleading-"
-    go "Altough our understanding of WACC energy is limited, it is far from what you could call 'magic'."
-    go "WACC energy as long since been used to produce miracular feats."
-    go "Miraculous is a bit misleading though, as the ancient journals reveal that to control WACC energy required great power and intense training."
+    go "Altough our understanding of COCK energy is limited, it is far from what you could call 'magic'."
+    go "COCK energy as long since been used to produce miracular feats."
+    go "Miraculous is a bit misleading though, as the ancient journals reveal that to control COCK energy required great power and intense training."
     go "Yet why haven't we seen these kinds of feats for more than 2 thousand years?"
-    go "Well first we must know the origin of WACC energy."
-    go "WACC energy as you might already know is able to produce a seemingly infinite ammount of electrons."
+    go "Well first we must know the origin of COCK energy."
+    go "COCK energy as you might already know is able to produce a seemingly infinite ammount of electrons."
     go "Altough it's potential infinite, even the most talented could never harness even a fraction of it's power."
-    go "The only recorded person to have been able to unleash the true power of WACC energy is none other than Kevin Waccland."
+    go "The only recorded person to have been able to unleash the true power of COCK energy is none other than Kevin COCKland."
     go "You must already be familiar with that name?"
-    go "When he sealed the god inside the cards, so came the power of WACC along with it."
-    go "These days, only very specific people are able to awaken the power of WACC, and even then, they can't even wield a fraction of the power ancient mages had."
+    go "When he sealed the god inside the cards, so came the power of COCK along with it."
+    go "These days, only very specific people are able to awaken the power of COCK, and even then, they can't even wield a fraction of the power ancient mages had."
     go "Not only are people with powers exeedingly rare, what they can do with these powers is extremely limited."
-    go "Altough if we look at matters outside humans, WACC energy explains many phenomenons in nature."
+    go "Altough if we look at matters outside humans, COCK energy explains many phenomenons in nature."
 
     hide gotou_neutral with dissolve
 
@@ -2105,7 +2100,7 @@ label start:
     go "That was some nice balling."
     y "Thanks bro, not every day you see people who can truly appreciate the art of balling."
     go "Well, I just so happen to have a bit of experience playing basketball when I was younger, and I gotta say, I've never seen a game quite like this."
-    go "That bunny guy was no slouch either."
+    go "That COCK guy was no slouch either."
     go "Felt like either of you could win this."
     m "Well, I don't really have that much experience playing basketball, but I did use to play with Yomki a bit when we were kids."
     go "Hmm... that's pretty interesting."
@@ -2223,8 +2218,8 @@ label start:
     g "Anyway, here's Momoka, my good friend."
     m "(What the hell are those two yapping on about.)"
     y "(Dunno bro, didn't listen to a word they said.)"
-    g "Anyway, guy with the red hair's Kamiya and the other's Yomki"
-    m "Name's Masashi Kamiya but you can call me MC, through despair and hope, only myself, the ultimate hope, can pierce the way towards the heavens!"
+    g "Anyway, guy with the red hair's Cockland and the other's Yomki"
+    m "Name's Mathias Cockland but you can call me MC, through despair and hope, only myself, the ultimate hope, can pierce the way towards the heavens!"
     m "For I am the one who games."
     mo "Uhm... are you one of those Chuunibyo like Gorou...?"
     m "Nah, I just do it for my introduction."
@@ -2232,7 +2227,7 @@ label start:
     y "Sup guys, it's me Yomki, name's Tenma Yomki."
     mo "Nice to meet you two, my name is Arima Momoka."
     mo "Like he said I've been friends with him for quite a while."
-    m "(Hey Gorou, how'd you find a friend like that?)"
+    m "(Hey Niwatori, how'd you find a friend like that?)"
     g "(It's a long story.)"
     m "(Are you two dating or something?)"
     g "(...?!?)"
@@ -2248,7 +2243,7 @@ label start:
     pause 1.0
 
     g "Anyway, the reason I called all of you here is for one very important reason."
-    g "You know the game Waccland Impact?"
+    g "You know the game COCKland Impact?"
     y "What's that?"
     m "Oh, lord..."
     g "It's a game that's popular right now, there's millions of people playing the game."
@@ -2272,7 +2267,7 @@ label start:
     m "What have you been yapping on about for the last 5 minutes bro."
     y "Didn't get a single word he was saying."
     g "Silence you two! The ritual must not be disturbed..."
-    "You, Yomki and Momoka all look at yourself, dumbfounded by the utter cringe that you have just witnessed."
+    "You, Yomki and Hiyoko all look at yourself, dumbfounded by the utter cringe that you have just witnessed."
     
     pause 1.0
 
@@ -2316,7 +2311,7 @@ label start:
     mo "Sorry for how Gorou's acting."
     mo "He tends to overdo things a bit too much..."
     m "Don't worry about that, I've had my fair share of run-ins with weirdos."
-    m "And besides, he's a fan of Waccland chronicles, I already respect him."
+    m "And besides, he's a fan of COCKland chronicles, I already respect him."
 
     hide momoka_neutral
     show momoka_neutral
@@ -2337,12 +2332,12 @@ label start:
 
     g "Momo-tan!"
     g "Why is it that I always get shitty luck in this game?!?"
-    mo "Well... I guess I'll have to entertain Gorou for a bit."
+    mo "Well... I guess I'll have to entertain Niwatori for a bit."
     mo "We'll talk again later."
 
     pause 1.0
 
-    mo "Don't worry Gorou, you'll get her next time."
+    mo "Don't worry Niwatori, you'll get her next time."
     g "Like hell I will!!!"
     g "The gacha gods have forsaken me!"
     mo "Well... can't you get her guaranteed though since you lost the 50/50...?"
@@ -2364,7 +2359,7 @@ label start:
 
     pause 1.0
 
-    "Gorou left the courtyard."
+    "Niwatori left the courtyard."
     mo "Well, I'll go with him."
     mo "See you guys later."
     y "Later bro."
@@ -2383,7 +2378,7 @@ label start:
         xpos 1400 ypos 1200
     with dissolve
 
-    m "Yo Asami you should sit on my face frfr."
+    m "Yo Ondori you should sit on my face frfr."
     a "Well if you subscibed to my onlyfans, maybe I will consider."
     m "YO YOU GOT AN ONLY FANS GIRL, i hope there's feet!"
     y "Did someone call?"
@@ -2422,12 +2417,12 @@ label start:
         ypos 25
     play music ("bgm/alphen.mp3") fadeout (1)
 
-    "Billy" "YO ITS ME BILLY WACCLAND SMP IV HERE TO TELL YOU TO GET BITCHES LOSER!!!!!!!!"
+    "Billy" "YO ITS ME BILLY COCKLAND SMP IV HERE TO TELL YOU TO GET BITCHES LOSER!!!!!!!!"
     "Billy" "COCK AMIRITE FELLAS!!!"
-    "Billy" "So basically, this is YOUR Waccland DaTING SIM 2: Electric Boogaloo, now go now."
-    "With Wacc and land."
+    "Billy" "So basically, this is YOUR COCKland DaTING SIM 2: Electric Boogaloo, now go now."
+    "With COCK and land."
     hide billy with Dissolve (1)
-    "YOu suddenly remember Big CHungus'S words."
+    "YOu suddenly remember John Cockland'S words."
     m "NO WAY I NEED TO COOK!!!"
     m "BE MY GIRLFRIEND ASAMI!!!"
     a "Fuck no! WTF!"
@@ -2440,24 +2435,24 @@ label start:
     play sound "sfx/vine boom.mp3"
     "The end."
 
-    # m "Roll credits!!!"
+    m "Roll credits!!!"
 
-    # play music "bgm/credits.mp3" fadeout 2
+    play music "bgm/credits.mp3" fadeout 2
 
-    # "WACCLAND DaTING SIM 2: elecrtric boogaloo - Prologue: To ball, is to live."
-    # "Created by" " Aqua 'Rhadish' 'Goups' Hoshino"
-    # "Created by" "Joker 'Lean' 'Lédouzy' Persona5 AKA 'The real Goups'"
-    # "Character art by" "Rhadish"
-    # "Background art by" "stolen assets from Doki Doki Literature Club and other various non-copyright free sources online."
-    # "Music by" "stolen from Doki Doki Literature Club and other various video games or animes."
-    # "Script written by" "Lédouzy and Rhadish."
-    # "Concept by" "Rhadish"
-    # "Special thanks" "Gabriel 'Bob' Théroux"
-    # "Special thanks" "Yomki 'Yomki' Yomki"
-    # "Special thanks" "Manx 'Oof Slayer' 'OddWerty05' The Soudeux"
-    # "Special thanks" "And... NOT YOU! FUCK YOU! KEEP YOURSELF SAFE."
+    "COCKLAND DaTING SIM 2: elecrtric boogaloo - Prologue: To ball, is to live."
+    "Created by" " Aqua 'Rhadish' 'Goups' Hoshino"
+    "Created by" "Joker 'Lean' 'Lédouzy' Persona5 AKA 'The real Goups'"
+    "Character art by" "Rhadish"
+    "Background art by" "stolen assets from Doki Doki Literature Club and other various non-copyright free sources online."
+    "Music by" "MITSUO BINGA"
+    "Script written by" "Lédouzy and Rhadish."
+    "Concept by" "Rhadish"
+    "Special thanks" "Gabriel 'Bob' Théroux"
+    "Special thanks" "Yomki 'Yomki' Yomki"
+    "Special thanks" "Manx 'Oof Slayer' 'OddWerty05' The Soudeux"
+    "Special thanks" "And... NOT YOU! FUCK YOU! KEEP YOURSELF SAFE."
 
-    # "The end."
+    "The end."
 
     # This ends the game.
 

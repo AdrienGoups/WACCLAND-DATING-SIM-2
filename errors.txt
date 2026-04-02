@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2390: expected 'image_name_component' not found.
-    scene "bg/cockland smp.jpg" with Dissolve(50)
-          ^
-
-File "game/script.rpy", line 2392: expected 'image_name_component' not found.
-    show "char/sans ryuji2.jpg" with dissolve
-         ^
+File "game/script.rpy", line 24: unexpected EOF while parsing
+    Character("Momoka", who_color="#ffaf96")asami_neutra
+                                             ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Apr  1 19:04:18 2025
+Wed Apr  1 20:20:31 2026
